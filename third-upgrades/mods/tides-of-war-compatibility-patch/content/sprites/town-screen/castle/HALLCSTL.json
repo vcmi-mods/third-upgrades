@@ -1,9 +1,0 @@
-{
-    "basepath" : "town-screen/castle/frames/",
-	"images" :
-	[	
-		{ "frame" : 50, "file" : "ThCsAng2"},
-		{ "frame" : 57, "file" : "TBCAlt"},
-		{ "frame" : 64, "file" : "TBCAlt7UP"}
-	]
-}
