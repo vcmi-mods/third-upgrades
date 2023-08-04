@@ -1,0 +1,241 @@
+{
+	"core:conflux" :
+	{
+		"town" :
+		{
+			"structures" :
+			{
+				"extraAnimation": { "z" : -5 },
+				"extraCapitol": { "animation" : "town-screen/conflux/TBELEXT4.def", "x" : 0,   "y" : 247, "z" : 6 },
+				"horde2": {  "animation" : "TBELHRD2.def", "x" : 689, "y" : 250, "border" : "TOELHRD2.bmp", "area" : "TZELHRD2.bmp", "hidden" : true, "builds" : "horde1Upgr" },
+				"dwellingUp2Lvl1": { "animation" : "TBELUP_0.def", "x" : 689, "y" : 250, "border" : "TOELUP_0.bmp", "area" : "TZELUP_0.bmp" },
+				"dwellingUp2Lvl2": { "animation" : "TBELUP_1.def", "x" : 630, "y" : 50,  "border" : "TOELUP_1.bmp", "area" : "TZELUP_1.bmp" },
+				"dwellingUp2Lvl3": { "animation" : "TBELUP_2.def", "x" : 709, "y" : 210, "z" : -1, "border" : "TOELUP_2.bmp", "area" : "TZELUP_2.bmp" },
+				"dwellingUp2Lvl4": { "animation" : "TBELUP_3.def", "x" : 108, "y" : 131, "z" : -1, "border" : "TOELUP_3.bmp", "area" : "TZELUP_3.bmp" },
+				"dwellingUp2Lvl5": { "animation" : "TBELUP_4.def", "x" : 264, "y" : 168, "z" : -1, "border" : "TOELUP_4.bmp", "area" : "TZELUP_4.bmp" },
+				"dwellingUp2Lvl6": { "animation" : "TBELUP_5.def", "x" : 394, "y" : 283, "z" : 2,  "border" : "TOELUP_5.bmp", "area" : "TZELUP_5.bmp" },
+				"dwellingUp2Lvl7": { "animation" : "TBELUP_6.def", "x" : 43,  "y" : 0,   "z" : -2, "border" : "TOELUP_6.bmp", "area" : "TZELUP_6.bmp" }
+			},
+			"buildingsIcons": "town-screen/conflux/ALTHALLELEM.DEF",
+			"hallBackground": "TPTHBKFR",
+			"townBackground": "town-screen/conflux/TBELBACK.bmp",
+			"hallSlots":
+			[
+				[ [ "villageHall", "townHall", "cityHall", "capitol" ], [ "fort", "citadel", "castle" ], [ "tavern" ], [ "blacksmith" ] ],
+				[ [ "marketplace", "resourceSilo" ], [ "mageGuild1", "mageGuild2", "mageGuild3", "mageGuild4", "mageGuild5" ], [ "shipyard" ] ],
+				[ [ "special2" ], [ "special1" ], [ "horde1", "horde1Upgr", "horde2" ] ],
+				[ [ "dwellingLvl1", "dwellingUpLvl1", "dwellingUp2Lvl1" ], [ "dwellingLvl2", "dwellingUpLvl2", "dwellingUp2Lvl2" ], [ "dwellingLvl3", "dwellingUpLvl3", "dwellingUp2Lvl3" ], [ "dwellingLvl4", "dwellingUpLvl4", "dwellingUp2Lvl4" ] ],
+				[ [ "dwellingLvl5", "dwellingUpLvl5", "dwellingUp2Lvl5" ], [ "dwellingLvl6", "dwellingUpLvl6", "dwellingUp2Lvl6" ], [ "dwellingLvl7", "dwellingUpLvl7", "dwellingUp2Lvl7" ] ]
+			],
+			"creatures" :
+			[
+				["pixie", "sprite", "tumFairy"],
+				["airElemental", "stormElemental", "tumHurricaneElemental"],
+				["waterElemental", "iceElemental", "tumLifeElemental"],
+				["fireElemental", "energyElemental", "tumPlasmaElemental"],
+				["earthElemental", "magmaElemental", "tumMineralElemental"],
+				["psychicElemental", "magicElemental", "tumVoidElemental"],
+				["firebird", "phoenix", "sacredPhoenix"]
+			],
+			
+			"buildings" :
+			{
+				"extraCapitol":   {
+					"name" : "Nature",
+					"description" : "Nature mark unlocks 3rd level structures to build.",
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
+					]
+				},			
+				"horde2": 
+				{ 
+					"description" : "The Garden of Life increases weekly production of Fairies by 10 per week.",
+					"name" : "{Garden of Life}",			
+					"cost" :
+					{
+						"gold":	1000
+					},
+					"id" : 22, 
+					"requires" : [ "allOf", ["horde1Upgr"], ["dwellingUp2Lvl1"] ],
+					"upgrades" : "horde1Upgr",
+					"mode" : "auto"
+				},
+				
+				"dwellingUpLvl1" :
+				{
+					"name" : "Adv. Magic Lantern"
+				},
+				"dwellingUpLvl2" :
+				{
+					"name" : "Adv. Altar of Air"
+				},
+				"dwellingUpLvl3" :
+				{
+					"name" : "Adv. Altar of Water"
+				},
+				"dwellingUpLvl4" :
+				{
+					"name" : "Adv. Altar of Fire"
+				},
+				"dwellingUpLvl5" :
+				{
+					"name" : "Adv. Altar of Earth"
+				},
+				"dwellingUpLvl6" :
+				{
+					"name" : "Adv. Altar of Thought"
+				},
+				"dwellingUpLvl7" :
+				{
+					"name" : "Adv. Pyre"
+				},
+				
+				"dwellingUp2Lvl1": 
+				{ 
+					"description" : "Magic Lantern allows you to recruit Fairies.",
+					"name" : "{Upg. Magic Lantern}",
+				
+					"cost" :
+					{
+						"wood":    2,
+						"ore":     2,
+						"gold":	1300
+					},
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
+					],		
+					"id" : 44, 
+					"upgrades" : "dwellingUpLvl1"
+				},
+				"dwellingUp2Lvl2": 
+				{ 
+					"description" : "Altar of Air allows you to recruit Hurricane Elementals.",
+					"name" : "{Upg. Altar of Air}",
+				
+					"cost" :
+					{
+						"wood":    2,
+						"mercury": 2,
+						"ore":     5,
+						"gems":    2,
+						"gold":	 3000
+					},
+					"id" : 45, 
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
+					],		
+					"upgrades" : "dwellingUpLvl2"
+				},
+				"dwellingUp2Lvl3": 
+				{ 
+					"description" : "Altar of Water allows you to recruit Life Elementals.",
+					"name" : "{Upg. Altar of Water}",
+				
+					"cost" :
+					{
+
+						"mercury": 5,
+						"ore":     10,
+						"gold":	3500
+					},
+					"id" : 46, 
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
+					],		
+					"upgrades" : "dwellingUpLvl3"
+				},
+				"dwellingUp2Lvl4": 
+				{ 
+					"description" : "Altar of Fire allows you to recruit Plasma Elementals.",
+					"name" : "{Upg. Altar of Fire}",
+				
+					"cost" :
+					{
+						"wood":    5,
+						"mercury": 5,
+						"ore":     10,
+						"gold":	4000
+					},
+					"id" : 47, 
+					"requires" : 
+					[
+						"dwellingUp2Lvl3"
+					],
+					"upgrades" : "dwellingUpLvl4"
+				},
+				"dwellingUp2Lvl5": 
+				{ 
+					"description" : "Altar of Earth allows you to recruit Mineral Elementals.",
+					"name" : "{Upg. Altar of Earth}",
+				
+					"cost" :
+					{
+						"ore":     10,
+						"sulfur":  5,
+						"gold":	3000
+					},
+					"id" : 48, 
+					"requires" : [ "dwellingUp2Lvl4" ],
+					"upgrades" : "dwellingUpLvl5"
+				},
+				"dwellingUp2Lvl6": 
+				{ 
+					"description" : "Upg. Altar of Thought allows you to recruit Void Elementals.",
+					"name" : "{Upg. Altar of Thought}",
+				
+					"cost" :
+					{
+						"wood":    5,
+						"mercury": 5,
+						"ore":     5,
+						"sulfur":  5,
+						"crystal": 5,
+						"gems":    5,
+						"gold":	6000
+					},
+					"id" : 49, 
+					"requires" : 
+					[
+						"allOf", 
+							[ "dwellingUp2Lvl5" ],
+							[ "special2" ]
+					],
+					"upgrades" : "dwellingUpLvl6"
+				},
+				"dwellingUp2Lvl7": 
+				{ 
+					"description" : "The Funeral Pyre allows you to recruit Sacred Phoenixes.",
+					"name" : "{Upg. Pyre}",
+				
+					"cost" :
+					{
+						"wood":    20,
+						"mercury": 20,
+						"ore":     20,
+						"gold":	25000
+					},
+					"id" : 50, 
+					"requires" : 
+					[
+						"allOf", 
+							[ "dwellingUp2Lvl6" ],
+							[ "mageGuild3" ]
+					],
+					"upgrades" : "dwellingUpLvl7"
+				}
+			}	
+		}
+	}	
+}

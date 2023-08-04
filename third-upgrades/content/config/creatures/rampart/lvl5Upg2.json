@@ -1,0 +1,96 @@
+{
+	"tumElderDendroid":
+	{
+		"name" : 
+		{
+			"plural" : "Elder Dendroids",
+			"singular" : "Elder Dendroid"
+		},
+		"advMapAmount" : 
+		{
+			"max" : 10,
+			"min" : 8
+		},
+		"faction" : "rampart",
+		"attack" : 12,
+		"defense" : 16,
+		"damage" :
+		{
+			"max" : 16,
+			"min" : 12
+		},
+		"cost" :
+		{
+			"gold" : 690
+		},
+		"growth" : 3,
+		"horde" : 2,
+		"hitPoints" : 80,
+		"level" : 5,
+		"speed" : 5,
+		"fightValue" : 994,
+		"aiValue" : 1043,
+		"graphics" :
+		{
+			"animation" : "creatures/rampart/battle/cr205",
+			"map" : 	  "creatures/rampart/map/AVWCR205",
+			"iconSmall" : "creatures/rampart/iconsSmall/CPrS205X",
+			"iconLarge" : "creatures/rampart/iconsBig/CPrL205X",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+		},
+		"doubleWide" : false,
+		"sound" :
+		{
+			"attack": "BTREATTK.wav",
+			"defend": "BTREDFND.wav",
+			"killed": "BTREKILL.wav",
+			"move": "BTREMOVE.wav",
+			"wince": "BTREWNCE.wav"
+		},
+		"abilities" :
+		{
+			"binds" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.bind",
+				"val" : 100
+			},
+			"hpRegen" :
+			{
+				"type" : "HP_REGENERATION",
+				"subtype" : 1,
+				"val" : 20 //chance 50%, hp 40 original
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "CASTS"
+				},
+				"values" : [1, 1, 1, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENEMY_DEFENCE_REDUCTION",
+				},
+				"values" : [4, 8, 12, 16, 20, 24, 28, 32, 36, 40]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			}
+		]	
+	}
+}

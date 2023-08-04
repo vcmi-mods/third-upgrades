@@ -1,0 +1,86 @@
+{
+	"tumPhosphorescentTroglodyte": {
+		"name" : {
+			"singular" : "Phosphorescent Troglodyte",
+			"plural" : "Phosphorescent Troglodytes"
+		},
+		"faction" : "dungeon",
+		"level" : 1,
+		"cost" : {
+			"gold" : 75
+		},
+		"speed" : 6,
+		"hitPoints" : 6,
+		"attack" : 5,
+		"defense" : 5,
+		"damage" : {
+			"min" : 1,
+			"max" : 4
+		},
+		"growth" : 14,
+		"horde" : 7,
+		"aiValue" : 84,
+		"fightValue" : 84,
+		"advMapAmount" : {
+			"min" : 20,
+			"max" : 25
+		},
+		"abilities" : {
+			"blindImmunity" : {
+				"type" : "SPELL_IMMUNITY", //sprawdzić czy infernal ma też
+				"subtype" : "spell.blind",
+				"addInfo" : 1
+			},
+			"petrifyImmunity" : {
+				"type" : "SPELL_IMMUNITY", //sprawdzić czy Infernal ma też
+				"subtype" : "spell.stoneGaze",
+				"addInfo" : 1
+			},
+			"showerImmunity" : {
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.meteorShower",
+				"addInfo" : 1
+			},
+			"fearless" : {
+				"type" : "FEARLESS"
+			},
+			"hatePixie" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.pixie",
+				"val" : 50
+			},
+			"hateSprite" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.sprite",
+				"val" : 50
+			},
+			"hateFairy" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.tumFairy",
+				"val" : 50
+			}
+		},
+		"graphics" : {
+			"animation" : "creatures/dungeon/battle/CR225",
+			"map" : 	  "creatures/dungeon/map/AVWCR225",
+			"iconSmall" : "creatures/dungeon/iconsSmall/CPrS225X",
+			"iconLarge" : "creatures/dungeon/iconsBig/CPrL225X",
+			"animationTime" : {
+				"attack" : 1,
+				"idle" : 10,
+				"walk" : 0.8
+			},
+			"timeBetweenFidgets" : 1
+		},
+		"sound" : {
+			"attack" : "ITRGATTK.wav",
+			"defend" : "ITRGDFND.wav",
+			"killed" : "ITRGKILL.wav",
+			"move" : "ITRGMOVE.wav",
+			"wince" : "ITRGWNCE.wav"
+		}
+	}
+}

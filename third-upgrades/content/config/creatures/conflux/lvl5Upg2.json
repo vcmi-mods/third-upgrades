@@ -1,0 +1,119 @@
+
+{
+	"tumMineralElemental":
+	{
+		"name" :
+		{
+			"plural" : "Mineral Elementals",
+			"singular" : "Mineral Elemental"
+		},
+		"advMapAmount" : 
+		{
+			"max" : 10,
+			"min" : 8
+		},
+		"faction" : "conflux",
+		"attack" : 11,
+		"defense" : 12,
+		"cost" :
+		{
+			"gold" : 650
+		},
+		"damage" :
+		{
+			"max" : 10,
+			"min" : 8
+		},
+		"growth" : 5,
+		"hitPoints" : 40,
+		"speed" : 8,
+		"level" : 5,
+		"fightValue" : 637,
+		"aiValue" : 637,
+		"graphics" :
+		{
+			"animation" : 	"creatures/conflux/battle/CR250",
+			"map" : 		"creatures/conflux/map/AVWCR250",
+			"iconSmall" : 	"creatures/conflux/iconsSmall/CPrS250X",
+			"iconLarge" : 	"creatures/conflux/iconsBig/CPrL250X",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+		},
+		"sound" :
+		{
+			"attack": "MAGMATTK.wav",
+			"defend": "MAGMDFND.wav",
+			"killed": "MAGMKILL.wav",
+			"move": "MAGMMOVE.wav",
+			"wince": "MAGMWNCE.wav"
+		},
+		"abilities":
+		{
+			"nonLiving" : 
+			{
+				"type" : "NON_LIVING" //sprawdzić czy non living jest automatycznie mind immunity
+			},
+			"spellPower" : 
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 6
+			},
+			"spellPoints" : 
+			{
+				"type" : "CASTS",
+				"val" : 3
+			},
+			"immuneToMind" : 
+			{
+				"type" : "MIND_IMMUNITY"
+			},
+			"spellcaster":
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.protectEarth",
+				"val" : 2
+			},
+			"meteorShowerVulnerability" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.meteorShower",
+				"val" : 100
+			},
+			"lightingImmunity" :
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.lightningBolt"
+			},
+			"chainLightingImmunity" :
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.chainLightning"
+			},			
+			"armageddonImmunity" :
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.armageddon"
+			},
+			"protectEarth":
+			{
+				"type" : "ENCHANTED",
+				"subtype" : "spell.protectEarth",
+				"val" : 2
+			},
+			"castStoneSkin":
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.stoneSkin",
+				"val" : 2
+			}	
+		}
+			//stackExperience
+		
+			// Crexpbon folder Data - new upgrades - WOG
+	}
+}	

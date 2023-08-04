@@ -1,0 +1,14 @@
+{
+    "basepath" : "town-screen/conflux/frames/",
+	"images" :
+	[
+		{ "frame" : 23, "file" : "ThElHrd2"},
+		{ "frame" : 44, "file" : "ThElUp_0"},
+		{ "frame" : 45, "file" : "ThElUp_1"},
+		{ "frame" : 46, "file" : "ThElUp_2"},
+		{ "frame" : 47, "file" : "ThElUp_3"},
+		{ "frame" : 48, "file" : "ThElUp_4"},
+		{ "frame" : 49, "file" : "ThElUp_5"},
+		{ "frame" : 50, "file" : "ThElUp_6"}
+	]
+}

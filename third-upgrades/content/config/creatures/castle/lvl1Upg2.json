@@ -1,0 +1,102 @@
+
+{
+	"tumRoyalHalberdier":
+	{
+		"name" :
+		{
+			"plural" : "Royal Halberdiers",
+			"singular" : "Royal Halberdier"
+		},
+		"advMapAmount" : 
+		{
+			"max" : 25,
+			"min" : 20
+		},
+		"faction" : "castle",
+		"attack" : 7,
+		"defense" : 6,
+		"damage" :
+		{
+			"max" : 4,
+			"min" : 2
+		},
+		"growth" : 14,
+		"hitPoints" : 10,
+		"level" : 1,
+		"speed" : 6,
+		"cost" :
+		{
+			"gold" : 90
+		},
+		"fightValue" : 149,
+		"aiValue" :119,
+		"graphics" :
+		{
+			"animation" : 	"creatures/castle/battle/cr197",
+			"map" : 		"creatures/castle/map/AVWCR197.DEF",
+			"iconSmall" : 	"creatures/castle/iconsSmall/CPrS197X",
+			"iconLarge" : 	"creatures/castle/iconsBig/CPrL197X",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+		},
+
+		"doubleWide" : false,
+		"sound" :
+		{
+			"attack": "HALBATTK.wav",
+			"defend": "HALBDFND.wav",
+			"killed": "HALBKILL.wav",
+			"move": "HALBMOVE.wav",
+			"wince": "HALBWNCE.wav"
+		},
+		"abilities" :
+		{
+			"cavalryChargeImmunity" :
+			{
+				"type" : "CHARGE_IMMUNITY"
+			},
+			"blockRetaliation" :
+			{
+				"type" : "BLOCKS_RETALIATION"
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "FEARLESS"
+				},
+				"values" : [false, false, false, true, true, true, true, true, true, true]
+			},	
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : "creature.blackKnight",
+				},
+				"values" : [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : "creature.dreadKnight",
+				},
+				"values" : [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+			}
+		]
+	}	
+}

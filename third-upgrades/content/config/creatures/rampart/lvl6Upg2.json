@@ -1,0 +1,112 @@
+{
+	"tumLegendaryUnicorn":
+	{
+		"name" : 
+		{
+			"plural" : "Legendary Unicorns",
+			"singular" : "Legendary Unicorn"
+		},
+		"advMapAmount" : 
+		{
+			"max" : 8,
+			"min" : 5
+		},
+		"faction" : "rampart",
+		"attack" : 16,
+		"defense" : 14,
+		"damage" :
+		{
+			"max" : 22,
+			"min" : 20
+		},
+		"growth" : 2,
+		"hitPoints" : 150,
+		"level" : 6,
+		"cost" :
+		{
+			"gold" : 1100
+		},
+		"speed" : 10,
+		"fightValue" : 2836,
+		"aiValue" : 3042,
+		"graphics" :
+		{
+			"animation" : "creatures/rampart/battle/cr206",
+			"map" : 	  "creatures/rampart/map/AVWCR206",
+			"iconSmall" : "creatures/rampart/iconsSmall/CPrS206X",
+			"iconLarge" : "creatures/rampart/iconsBig/CPrL206X",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+		},
+		"doubleWide" : true,
+		"sound" :
+		{
+			"attack": "WUNCATTK.wav",
+			"defend": "WUNCDFND.wav",
+			"killed": "WUNCKILL.wav",
+			"move": "WUNCMOVE.wav",
+			"shoot": "WUNCSHOT.wav",
+			"wince": "WUNCWNCE.wav"
+		},
+		"abilities" :
+		{
+			"spellResistAura" :
+			{
+				"type" : "SPELL_RESISTANCE_AURA",
+				"val" : 40
+			},
+			"spellAfterBlind" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.blind",
+				"val" : 20
+			},
+			"unlimitedRetaliations" :
+			{
+				"type" : "UNLIMITED_RETALIATIONS"
+			},
+			"ufearless" :
+			{
+				"type" : "FEARLESS"
+			}	
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "FEARLESS"
+				},
+				"values" : [false, false, false, false, false, true, true, true, true, true]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : "spell.blind"
+				},
+				"values" : [0, 5, 5, 10, 10, 15, 15, 20, 25, 30]
+			}, 
+			{
+				"bonus":
+				{
+					"type" : "SPELL_IMMUNITY",
+					"subtype" : "spell.blind" // blind
+				},
+				"values" : [false, false, false, false, false, false, false, true, true, true]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			}
+		]	
+	}
+}

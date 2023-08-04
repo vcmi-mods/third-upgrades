@@ -1,0 +1,249 @@
+{
+	"core:dungeon" :
+	{
+		"town" :
+		{
+			"hallBackground": "TPTHBKDG",
+			"buildingsIcons": "town-screen/dungeon/AltHallDung.DEF",
+			"hallSlots":
+			[
+				[ [ "villageHall", "townHall", "cityHall", "capitol" ], [ "fort", "citadel", "castle" ], [ "tavern" ], [ "blacksmith" ] ],
+				[ [ "marketplace", "resourceSilo" ], [ "mageGuild1", "mageGuild2", "mageGuild3", "mageGuild4", "mageGuild5" ], [ "special2" ], [ "special3" ] ],
+				[ [ "special1" ], [ "special4" ], [ "horde1", "horde1Upgr", "horde2" ] ],
+				[ [ "dwellingLvl1", "dwellingUpLvl1", "dwellingUp2Lvl1" ], [ "dwellingLvl2", "dwellingUpLvl2", "dwellingUp2Lvl2" ], [ "dwellingLvl3", "dwellingUpLvl3", "dwellingUp2Lvl3" ], [ "dwellingLvl4", "dwellingUpLvl4", "dwellingUp2Lvl4" ] ],
+				[ [ "dwellingLvl5", "dwellingUpLvl5", "dwellingUp2Lvl5" ], [ "dwellingLvl6", "dwellingUpLvl6", "dwellingUp2Lvl6" ], [ "dwellingLvl7", "dwellingUpLvl7", "dwellingUp2Lvl7" ] ]
+			],
+			"creatures" :
+			[
+				["troglodyte", "infernalTroglodyte", "tumPhosphorescentTroglodyte"],
+				["harpy", "harpyHag", "tumHarpySanguinary"],
+				["beholder", "evilEye", "tumMonstrousEye"],
+				["medusa", "medusaQueen", "tumMedusaEmpress"],
+				["minotaur", "minotaurKing", "tumBlackMinotaur" ],
+				["manticore", "scorpicore", "tumChimera"],
+				["redDragon", "blackDragon", "darknessDragon"]
+			],
+
+			"structures" :
+			{
+				"extraCapitol":{ "animation" : "town-screen/dungeon/TBDGEXT5.def", "x" : 60, "y" : 110,  "z" : 0 },
+				"horde2": { "animation" : "TBDNHRD2.def", "x" : 0, "y" : 300, "z" : 2, "border" : "TODTR2HA.bmp", "area" : "TZDTR2HA.bmp", "hidden" : true, "builds" : "horde1Upgr" },
+				"special4":       { "z" : 1},
+				"dwellingUp2Lvl1": { "animation" : "TBDNUP_0.def", "x" : 0,   "y" : 300, "z" : 2,  "border" : "TODTRG2A.bmp", "area" : "TZDTRG2A.bmp" },
+				"dwellingUp2Lvl2": { "animation" : "TBDNUP_1.def", "x" : 0,   "y" : 26,  "border" : "TODHAR2.bmp",  "area" : "TZDHAR2.bmp" },
+				"dwellingUp2Lvl3": { "animation" : "TBDNUP_2.def", "x" : 118, "y" : 256, "z" : 1,  "border" : "TODBEH2A.bmp", "area" : "TZDBEH2A.bmp" },
+				"dwellingUp2Lvl4": { "animation" : "TBDNUP_3.def", "x" : 300, "y" : 29,  "z" : -1, "border" : "TODMED2.bmp",  "area" : "TZDMED2.bmp" },
+				"dwellingUp2Lvl5": { "animation" : "TBDNUP_4.def", "x" : 519, "y" : 172, "z" : 1,  "border" : "TODMIN2.bmp",  "area" : "TZDMIN2.bmp" },
+				"dwellingUp2Lvl6": { "animation" : "TBDNUP_5.def", "x" : 270, "y" : 253, "z" : -1, "border" : "TODMAN2.bmp",  "area" : "TZDMAN2.bmp" },
+				"dwellingUp2Lvl7": { "animation" : "TBDNUP_6.def", "x" : 550, "y" : 0,   "z" : -1, "border" : "TODDRA2A.bmp", "area" : "TZDDRA2A.bmp" }
+			
+			},
+
+			"buildings" :
+			{
+				"extraCapitol":   {
+					"name" : "Dracos",
+					"description" : "Dracos mark unlocks 3rd level structures to build.",
+					"id" : 29, 
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
+					],
+					"mode" : "auto" 
+				},
+				"horde2" :
+				{
+					"description" : "Mushroom Rings increase Phosphorescent Troglodytes production by 7 per week.",
+					"name" : "{Mushroom Rings}",
+					
+					"cost" :
+					{
+						"gold":	1000
+					},
+					"id" : 24, 
+					"upgrades" : "horde1Upgr",
+					"requires" : 
+								[
+								"allOf",
+									["dwellingUp2Lvl1"],
+									["horde1Upgr"]
+								],
+					"mode" : "auto"			
+				},
+				"dwellingUpLvl1":
+				{
+					"name" : "Adv. Warren"
+				},
+				"dwellingUpLvl2":
+				{
+					"name" : "Adv. Harpy Loft"
+				},
+				"dwellingUpLvl3":
+				{
+					"name" : "Adv. Pillar of Eyes"
+				},
+				"dwellingUpLvl4":
+				{
+					"name" : "Adv. Chapel of Stilled Voices"
+				},
+				"dwellingUpLvl5":
+				{
+					"name" : "Adv. Labyrinth"
+				},
+				"dwellingUpLvl6":
+				{
+					"name" : "Adv. Manticore Lair"
+				},
+				"dwellingUpLvl7":
+				{
+					"name" : "Adv. Dragon Cave"
+				},
+				"dwellingUp2Lvl1" :
+				{
+					"description" : "The Warren allows you to recruit Phosphorescent Troglodytes.",
+					"name" : "{Upg. Warren}",
+				
+					"cost" :
+					{
+						"wood":    15,
+						"gold":	1400
+					},
+					"id" : 44, 
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
+					],		
+					"upgrades" : "dwellingUpLvl1"
+				},
+				"dwellingUp2Lvl2" :
+				{
+				
+					"description" : "The Harpy Loft allows you to recruit Harpy Sanguinaries.",
+					"name" : "{Upg. Harpy Loft}",
+					
+					"cost" :
+					{
+						"sulfur":  2,
+						"crystal": 2,
+						"gold":	2000
+					},
+					"id" : 45, 
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
+					],		
+					"upgrades" : "dwellingUpLvl2"
+				},
+				"dwellingUp2Lvl3":
+				{
+				
+					"description" : "The Pillar of Eyes allows you to recruit Monstrous Eyes.",
+					"name" : "{Upg. Pillar of Eyes}",
+				
+					"cost" :
+					{
+						"wood":    2,
+						"mercury": 2,
+						"ore":     2,
+						"sulfur":  2,
+						"crystal": 2,
+						"gems":    2,
+						"gold":	2000
+					},
+					"id" : 46, 
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
+					],		
+					"upgrades" : "dwellingUpLvl3"
+				},
+				"dwellingUp2Lvl4":
+				{
+				
+					"description" : "The Chapel of Stilled Voices allows you to recruit Medusa Empresses.",
+					"name" : "{Upg. Chapel of Stilled Voices}",
+				
+					"cost" :
+					{
+						"wood":    10,
+						"ore":     10,
+						"gold":	 3500
+					},
+					"id" : 47, 
+					"requires" : ["dwellingUp2Lvl3"],
+					"upgrades" : "dwellingUpLvl4"
+				},
+				"dwellingUp2Lvl5":
+				{
+				
+					"description" : "The Labyrinth allows you to recruit Black Minotaurs.",
+					"name" : "{Upg. Labyrinth}",
+				
+					"cost" :
+					{
+						"ore":     15,
+						"gems":    15,
+						"gold":	7000
+					},
+					"id" : 48, 
+					"requires" : 
+					[
+						"mageGuild3"
+					],
+					"upgrades" : "dwellingUpLvl5"
+				},
+				"dwellingUp2Lvl6": 
+				{ 
+				
+					"description" : "The Manticore Lair allows you to recruit Chmieras.",
+					"name" : "{Upg. Manticore Lair}",
+				
+					"cost" :
+					{
+						"wood":    10,
+						"mercury": 10,
+						"ore":     10,
+						"sulfur":  10,
+						"gold":	6000
+					},
+					"id" : 49, 
+
+					"requires" : 
+					[
+						"dwellingUp2Lvl5"
+					],					
+					"upgrades" : "dwellingUpLvl6"
+				},
+				"dwellingUp2Lvl7": 
+				{ 
+				
+					"description" : "The Dragon Cave allows you to recruit Darkness Dragons.",
+					"name" : "{Upg. Dragon Cave}",
+				
+					"cost" :
+					{
+						"wood":    30,
+						"ore":     30,
+						"sulfur":  40,
+						"gold":	30000
+					},
+					"id" : 50, 
+					"requires" : 
+					[
+						"allOf",
+							["dwellingUp2Lvl6"], ["mageGuild4"]
+					],
+					"upgrades" : "dwellingUpLvl7"
+				}				
+			}
+		}
+	}
+}

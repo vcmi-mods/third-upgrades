@@ -1,0 +1,114 @@
+{
+	"tumInquisitor":
+	{
+		"name" :
+		{
+			"plural" : "Inquisitors",
+			"singular" : "Inquisitor"
+		},
+		"advMapAmount" : 
+		{
+			"max" : 14,
+			"min" : 10
+		},
+		"faction" : "castle",
+		"attack" : 12,
+		"defense" : 12,
+		"damage" :
+		{
+			"max" : 10,
+			"min" : 8
+		},
+		"growth" : 4,
+		"hitPoints" : 35,
+		"level" : 4,
+		"speed" : 8,
+		"cost" :
+		{
+			"gold" : 420
+		},
+		"fightValue" : 595,
+		"aiValue" : 595,
+		"graphics" :
+		{
+			"animation" : 	"creatures/castle/battle/cr291",
+			"map" : 		"creatures/castle/map/AVWCR291",
+			"iconSmall" : 	"creatures/castle/iconsSmall/CPrS291X",
+			"iconLarge" : 	"creatures/castle/iconsBig/CPrL291X",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+		},
+		"doubleWide" : false,
+		"sound" :
+		{
+			"attack": "CRUSATTK.wav",
+			"defend": "CRUSDFND.wav",
+			"killed": "CRUSKILL.wav",
+			"move": "CRUSMOVE.wav",
+			"wince": "CRUSWNCE.wav"
+		},
+		"abilities" :
+		{
+			"extraAttack" :
+			{
+				"type": "ADDITIONAL_ATTACK",
+				"val" : 1
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type": "GENERAL_DAMAGE_REDUCTION",
+					"subtype" : 1 //ranged
+				},
+				"values" : [0, 0, 0, 0, 0, 0, 5, 10, 15, 20]
+			},
+			{
+				"bonus" :
+				{
+					"type": "GENERAL_DAMAGE_REDUCTION",
+					"subtype" : 0 //melee
+				},
+				"values" :  [0, 0, 0, 0, 0, 0, 5, 10, 15, 20]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "DOUBLE_DAMAGE_CHANCE"
+				},
+				"values" : [0, 8, 12, 16, 20, 24, 28, 32, 36, 40]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : "creature.vampire"
+				},
+				"values" : [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : "creature.vampireLord"
+				},
+				"values" : [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			}
+		]
+	}
+	
+}

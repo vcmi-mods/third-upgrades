@@ -1,0 +1,129 @@
+{
+	"tumFairy" :
+	{
+		"name" :
+		{
+			"plural" : "Fairies",
+			"singular" : "Fairy"
+		},
+		"advMapAmount" : 
+		{
+			"max" : 25,
+			"min" : 20
+		},
+		"faction" : "conflux",
+		"attack" : 2,
+		"defense" : 2,
+		"cost" :
+		{
+			"gold" : 50
+		},
+		"damage" :
+		{
+			"max" : 3,
+			"min" : 2
+		},
+		"growth" : 20,
+		"horde" : 10,
+		"hitPoints" : 3,
+		"speed" : 10,
+		"level" : 1,
+		"fightValue" : 90,
+		"aiValue" : 104,
+		"graphics" :
+		{
+			"animation" : 	"creatures/conflux/battle/CR246",
+			"map" : 		"creatures/conflux/map/AVWCR246",
+			"iconSmall" : 	"creatures/conflux/iconsSmall/CPrS246X",
+			"iconLarge" : 	"creatures/conflux/iconsBig/CPrL246X",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+		},
+		"sound" :
+		{
+			"attack": "SPRTATTK.wav",
+			"defend": "SPRTDFND.wav",
+			"killed": "SPRTKILL.wav",
+			"move": "SPRTMOVE.wav",
+			"wince": "SPRTWNCE.wav"
+		},
+		"abilities" :
+		{
+			"canFly" : 
+			{
+				"type" : "FLYING"
+			},
+			"noRetaliation" : 
+			{
+				"type" : "BLOCKS_RETALIATION"
+			},
+			"spellResistAura" :
+			{
+				"type" : "SPELL_RESISTANCE_AURA", //spytać czy na pewno ta
+				"val" : 20
+			},
+			"castsBless" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.bless",
+				"val" : 2
+			},
+			"castsCount" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"castLength" :
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 50
+			}
+		},
+		 "stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : 56 //"creature.skeleton",
+				},
+				"values" : [0, 0, 0, 0, 0, 10, 20, 30, 40, 50]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : 57 //"creature.skeletonWarrior",
+				},
+				"values" : [0, 0, 0, 0, 0, 10, 20, 30, 40, 50]
+			},
+//			{
+//				"bonus" :
+//				{
+//					"type" : "HATE",
+//					"subtype" : "creature.nuBonesWarrior",
+//				},
+//				"values" : [0, 0, 0, 0, 0, 10, 20, 30, 40, 50]
+//			},
+			{
+				"bonus" :
+				{
+					"type" : "MAGIC_RESISTANCE"
+				},
+				"values" : [0, 0, 0, 2, 5, 8, 11, 14, 17, 20]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+			}
+		]
+	}
+}	

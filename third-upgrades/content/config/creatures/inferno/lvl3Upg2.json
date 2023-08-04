@@ -1,0 +1,86 @@
+{
+	"tumAstralCerberus": {
+		"name" : {
+			"singular" : "Astral Cerberus",
+			"plural" : "Astral Cerberi"
+		},
+		"faction" : "inferno",
+		"level" : 3,
+		"cost" : {
+			"gold" : 280
+		},
+		"speed" : 9,
+		"hitPoints" : 25,
+		"attack" : 12,
+		"defense" : 8,
+		"damage" : {
+			"min" : 4,
+			"max" : 7
+		},
+		"doubleWide" : true,
+		"growth" : 5,
+		"horde" : 3,
+		"aiValue" : 478,
+		"fightValue" : 425,
+		"advMapAmount" : {
+			"min" : 12,
+			"max" : 17
+		},
+		"abilities" : {
+			"noRetaliation" : {
+				"type" : "BLOCKS_RETALIATION"
+			},
+			"threeHeads" : {
+				"type" : "THREE_HEADED_ATTACK"
+			},
+			"fearless" : {
+				"type" : "FEARLESS"
+			},
+			"poison" : //sprawdzić
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.poison",
+				"val" : 50
+			},
+			"hateGriffin" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.griffin",
+				"val" : 50
+			},
+			"hateRoyalGriffin" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.royalGriffin",
+				"val" : 50
+			},
+			"hateCesarGriffin" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.tumCeasarGriffin",
+				"val" : 50
+			}
+		},
+
+		"graphics" : {
+			"animation" : "creatures/inferno/battle/CR215",
+			"map" : 	  "creatures/inferno/map/AVWCR215",
+			"iconSmall" : "creatures/inferno/iconsSmall/CPrs215X",
+			"iconLarge" : "creatures/inferno/iconsBig/CPrL215X",
+			"animationTime" : {
+				"attack" : 1,
+				"idle" : 10,
+				"walk" : 1
+			},
+			"timeBetweenFidgets" : 1,
+			"troopCountLocationOffset" : 0
+		},
+		"sound" : {
+			"attack" : "CERBATTK.wav",
+			"defend" : "CERBDFND.wav",
+			"killed" : "CERBKILL.wav",
+			"move" : "CERBMOVE.wav",
+			"wince" : "CERBWNCE.wav"
+		}
+	}
+}

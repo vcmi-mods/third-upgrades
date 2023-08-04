@@ -1,0 +1,30 @@
+{
+	"core:masterGremlin" :
+	{
+		"upgrades": ["tumGrandmasterGremlin"]
+	},
+	"core:obsidianGargoyle" :
+	{
+		"upgrades": ["tumMarbleGargoyle"]
+	},
+	"core:stoneGolem" : //FIXME correct ID is ironGolem, unchangeable due to HOTRAITS.TXT
+	{
+		"upgrades": ["tumSteelGolem"]
+	},
+	"core:archMage" :
+	{
+		"upgrades": ["tumSupremeArchMage"]
+	},
+	"core:masterGenie" :
+	{
+		"upgrades": ["tumArcaneGenie"]
+	},
+	"core:nagaQueen" :
+	{
+		"upgrades": ["tumNagaEmpress"]
+	},
+	"core:titan" :
+	{
+		"upgrades": ["lordofThunder"]
+	}
+}

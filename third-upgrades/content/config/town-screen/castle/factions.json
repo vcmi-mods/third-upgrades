@@ -1,0 +1,252 @@
+{
+	"core:castle" :
+	{
+		"town" :
+		{
+			"hallBackground": "TPTHBKCS",
+			"buildingsIcons": "town-screen/castle/HALLCSTL",
+			"hallSlots":
+			[
+			
+				[ [ "villageHall", "townHall", "cityHall", "capitol" ], [ "fort", "citadel", "castle" ], [ "tavern", "special3" ], [ "blacksmith" ] ],
+				[ [ "marketplace", "resourceSilo" ], [ "mageGuild1", "mageGuild2", "mageGuild3", "mageGuild4" ], [ "shipyard", "special1" ] ],
+				[ [ "special2" ], [ "horde1", "horde1Upgr", "horde2" ] ],
+				[ [ "dwellingLvl1", "dwellingUpLvl1", "dwellingUp2Lvl1" ], [ "dwellingLvl2", "dwellingUpLvl2", "dwellingUp2Lvl2" ], [ "dwellingLvl3", "dwellingUpLvl3", "dwellingUp2Lvl3" ], [ "dwellingLvl4", "dwellingUpLvl4", "dwellingUp2Lvl4"	] ],
+				[ [ "dwellingLvl5", "dwellingUpLvl5", "dwellingUp2Lvl5" ], [ "dwellingLvl6", "dwellingUpLvl6", "dwellingUp2Lvl6" ], [ "dwellingLvl7", "dwellingUpLvl7", "dwellingUp2Lvl7" ] ]
+			],
+			"creatures" :
+			[
+				[ "pikeman", "halberdier", "tumRoyalHalberdier" ],
+				[ "archer", "marksman", "tumCrossbowman" ],
+				[ "griffin", "royalGriffin","tumCeasarGriffin" ],
+				[ "swordsman", "crusader", "tumInquisitor" ],
+				[ "monk", "zealot", "tumHighPriest" ],
+				[ "cavalier", "champion", "tumHolyChampion" ],
+				[ "angel", "archangel", "supremeArchangel" ]
+			],
+
+			"structures" :
+			{
+				"extraCapitol":{ "animation" : "town-screen/castle/TBCTEXT5.def", "x" : 580, "y" : 0,  "z" : -5 },
+				"citadel":          { "z" : -2 },
+				"castle":           { "z" : -2 },				
+				"shipyard":			{ "z" : -1 },
+				"villageHall":		{ "y" : 218 },
+				"horde1":			{ "z" : -2 },
+				"horde1Upgr":		{ "z" : -2 },
+				"horde2":		 	{ "animation" : "TBCSHRD2.def", "x" : 76,  "y" : 35,  "z" : -1, "border" : "TOCSGR2H.bmp", "area" : "TZCSGR2H.bmp", "hidden" : true, "builds" : "horde1Upgr" },
+				"dwellingLvl3":		{ "z" : -2 },
+				"dwellingUpLvl3":	{ "z" : -2 },
+				"dwellingUpLvl1":	{ "z" : -2 },
+				"dwellingUp2Lvl1": 	{ "animation" : "TBCSUP_0.def", "x" : 304, "y" : 65,  "border" : "TOCSPIK2.bmp", "area" : "TZCSPIK2.bmp" },
+				"dwellingUp2Lvl2":	{ "animation" : "TBCSUP_1.def", "x" : 360, "y" : 115, "border" : "TOCSCRS2.bmp", "area" : "TZCSCRS2.bmp" },
+				"dwellingUp2Lvl3":	{ "animation" : "TBCSUP_2.def", "x" : 76,  "y" : 35,  "z" : -1, "border" : "TOCSGR2N.bmp", "area" : "TZCSGR2N.bmp" },
+				"dwellingUp2Lvl4":	{ "animation" : "TBCSUP_3.def", "x" : 176, "y" : 85,  "border" : "TOCSSWD2.bmp", "area" : "TZCSSWD2.bmp" },
+				"dwellingUp2Lvl5":	{ "animation" : "TBCSUP_4.def", "x" : 563, "y" : 173, "z" : 1,  "border" : "TOCSMON2.bmp", "area" : "TZCSMON2.bmp" },
+				"dwellingUp2Lvl6":	{ "animation" : "TBCSUP_5.def", "x" : 160, "y" : 190, "z" : -1, "border" : "TOCSCAV2.bmp", "area" : "TZCSCAV2.bmp" },
+				"dwellingUp2Lvl7":	{ "animation" : "TBCSUP_6.def", "x" : 303, "y" : 0,   "z" : -1, "border" : "TOCSANG2.bmp", "area" : "TZCSANG2.bmp" }
+			},
+
+			"buildings" :
+			{
+				"extraCapitol":   {
+					"name" : "Faith",
+					"description" : "Faith mark unlocks 3rd level structures to build.",
+					"id" : 29, 
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
+					],
+					"mode" : "auto" 
+				},
+				"horde2" :  {
+					"description" : "The Griffin Bastion increases Cesar Griffin production by 3 per week.",
+					"name" : "{Griffin Bastion}",	
+					"cost" :
+					{
+						"gold":	1000
+					},
+					"requires" : 
+					[ 
+						"allOf",
+							["horde1Upgr"], 
+							["dwellingUp2Lvl3"]
+					],
+					"upgrades" : "horde1Upgr",
+					"id" : 23,
+					"mode" : "auto"
+				},
+				"dwellingUpLvl1" :
+				{
+					"name" : "Adv. Guardhouse"
+				},
+				"dwellingUpLvl2" :
+				{
+					"name" : "Adv. Archers' Tower"
+				},
+				"dwellingUpLvl3" :
+				{
+					"name" : "Adv. Griffin Tower"
+				},
+				"dwellingUpLvl4" :
+				{
+					"name" : "Adv. Barracks"
+				},
+				"dwellingUpLvl5" :
+				{
+					"name" : "Adv. Monastery"
+				},
+				"dwellingUpLvl6" :
+				{
+					"name" : "Adv. Training Grounds"
+				},
+				"dwellingUpLvl7" :
+				{
+					"name" : "Adv. Portal of Glory"
+				},
+				"dwellingUp2Lvl1" :
+				{
+					"description" : "The Guardhouse allows you to recruit Royal Halberdiers.",
+					"name" : "{Upg. Guardhouse}",	
+					"cost" :
+					{
+						"ore" :  15,
+						"gold" : 1500
+					},
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
+					],		
+					"upgrades" : "dwellingUpLvl1",
+					"id" : 44
+				},
+				"dwellingUp2Lvl2" : 
+				{
+					"description" : "The Archers' Tower allows you to recruit Crossbowmen.",
+					"name" : "{Upg. Archers' Tower}",
+				
+					"cost" :
+					{
+						"wood":    10,
+						"ore":     10,
+						"gold":	2000
+					},
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
+					],		
+					"upgrades" : "dwellingUpLvl2",
+					"id" : 45
+				},
+				"dwellingUp2Lvl3" : 
+				{
+					"description" : "The Griffin Tower allows you to recruit Cesar Griffins.",
+					"name" : "{Upg. Griffin Tower}",
+					"cost" :
+					{
+						"ore":     10,
+						"gold":	2000
+					},
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
+					],	
+					"upgrades" : "dwellingUpLvl3",
+					"id" : 46
+				},
+				"dwellingUp2Lvl4" : 
+				{
+					"description" : "The Barracks allow you to recruit Inquisitors.",
+					"name" : "{Upg. Barracks}",
+				
+					"cost" :
+					{
+						"ore":     10,
+						"crystal": 5,
+						"gold":	4000
+					},
+					"requires" : 
+					[
+						"allOf",
+							["special3"], 
+							["dwellingUp2Lvl3"]
+					],					
+					"upgrades" : "dwellingUpLvl4",
+					"id" : 47
+				},
+				"dwellingUp2Lvl5" : 
+				{
+					"description" : "The Monastery allows you to recruit High Priests.",
+					"name" : "{Upg. Monastery}",
+					"cost" :
+					{
+						"wood":    7,
+						"mercury": 4,
+						"ore":     7,
+						"sulfur":  4,
+						"crystal": 4,
+						"gems":    4,
+						"gold":	4000
+					},
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"],
+							["mageGuild3"]
+							
+					],
+					"upgrades" : "dwellingUpLvl5",
+					"id" : 48
+				},
+				
+				"dwellingUp2Lvl6" : 
+				{
+					"description" : "The Training Grounds allow you to recruit Holy Champions.",
+					"name" : "{Upg. Training Grounds}",
+					"cost" :
+					{
+						"wood": 30,
+						"gold":	8000
+					},
+					"requires" : 
+					[ 
+						"dwellingUp2Lvl5"
+					],
+					"upgrades" : "dwellingUpLvl6",
+					"id" : 49
+				},
+				"dwellingUp2Lvl7" : 
+				{ 
+					"description" : "The Portal of Glory allows you to recruit Supreme Archangels.",
+					"name" : "{Upg. Portal of Glory}",
+					"cost" :
+					{
+						"mercury": 20,
+						"sulfur":  20,
+						"crystal": 20,
+						"gems":    20,
+						"gold":	40000
+					},
+					"requires" : 
+					[ 
+						"allOf",	
+							["castle"],
+							["dwellingUp2Lvl6"] 
+					],
+					"upgrades"	: "dwellingUpLvl7",
+					"id" : 50
+//					"id" : 64
+				}
+			}
+		}
+	}
+}

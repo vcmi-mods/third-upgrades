@@ -1,0 +1,30 @@
+{
+	"core:infernalTroglodyte" :
+	{
+		"upgrades": ["tumPhosphorescentTroglodyte"]
+	},
+	"core:harpyHag" :
+	{
+		"upgrades": ["tumHarpySanguinary"]
+	},
+	"core:evilEye" :
+	{
+		"upgrades": ["tumMonstrousEye"]
+	},
+	"core:medusaQueen" :
+	{
+		"upgrades": ["tumMedusaEmpress"]
+	},
+	"core:minotaurKing" :
+	{
+		"upgrades": ["tumBlackMinotaur"]
+	},
+	"core:scorpicore" :
+	{
+		"upgrades": ["tumChimera"]
+	},
+	"core:blackDragon" :
+	{
+		"upgrades": ["darknessDragon"]
+	}
+}

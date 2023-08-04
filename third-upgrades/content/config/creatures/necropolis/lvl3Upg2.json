@@ -1,0 +1,103 @@
+{
+	"tumSpecter":
+	{
+		"name" : 
+		{
+			"plural" : "Specters",
+			"singular" : "Specter"
+		},
+		"advMapAmount" : 
+		{
+			"max" : 17,
+			"min" : 12
+		},
+		"faction" : "necropolis",
+		"attack" : 9,
+		"defense" : 7,
+		"cost" :
+		{
+			"gold" : 260
+		},
+		"damage" :
+		{
+			"max" : 6,
+			"min" : 3
+		},
+		"growth" : 7,
+		"hitPoints" : 20,
+		"level" : 3,
+		"speed" : 8,
+		"fightValue" : 295,
+		"aiValue" : 345,
+		"graphics" :
+		{
+			"animation" : "creatures/necropolis/battle/CR261",
+			"map" : 	  "creatures/necropolis/map/AVWCR261",
+			"iconSmall" : "creatures/necropolis/iconsSmall/CPrs261X",
+			"iconLarge" : "creatures/necropolis/iconsBig/CPrL261X",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+		},
+		"doubleWide" : false,
+		"sound" :
+		{
+			"attack": "WRTHATTK.wav",
+			"defend": "WRTHDFND.wav",
+			"killed": "WRTHKILL.wav",
+			"move": "WRTHMOVE.wav",
+			"wince": "WRTHWNCE.wav"
+		},
+		"abilities":
+		{
+			"canFly" : 
+			{
+				"type" : "FLYING"
+			},
+			"undead" :
+			{
+				"type" : "UNDEAD"
+			},
+			"drainsMana" : {
+				"type" : "MANA_DRAIN",
+				"val" : 2
+			},
+			"regenerate" : {
+				"type" : "HP_REGENERATION",
+				"val" : 100000,
+				"valueType" : "ADDITIVE_VALUE",
+				"subtype" : 1
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_IMMUNITY",
+					"subtype" : 54 // slow
+				},
+				"values" : [false, false, false, true, true, true, true, true, true, true]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : 50 //sorrow
+				},
+				"values" : [0, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			}
+		]
+	}
+}

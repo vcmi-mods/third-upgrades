@@ -1,0 +1,13 @@
+{
+    "basepath" : "town-screen/castle/frames/",
+    "sequences" :
+    [
+        {
+            "group" : 0,
+            "frames" :
+            [
+                "TBCTEXT5"
+            ]
+        }  
+    ]
+}

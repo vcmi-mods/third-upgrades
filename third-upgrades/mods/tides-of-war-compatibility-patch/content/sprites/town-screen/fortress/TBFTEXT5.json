@@ -1,0 +1,13 @@
+{
+    "basepath" : "town-screen/fortress/frames/",
+    "sequences" :
+    [
+        {
+            "group" : 0,
+            "frames" :
+            [
+                "TBFTEXT5"
+            ]
+        }  
+    ]
+}

@@ -1,0 +1,116 @@
+{
+	"tumLavaBasilisk":
+	{
+		"name" :
+		{
+			"plural" : "Lava Basilisks",
+			"singular" : "Lava Basilisk"
+		},
+		"advMapAmount" : 
+		{
+			"max" : 14,
+			"min" : 10
+		},
+		"faction" : "fortress",
+		"attack" : 15,
+		"defense" : 13,
+		"cost" :
+		{
+			"gold" : 620
+		},
+		"damage" :
+		{
+			"max" : 11,
+			"min" : 8
+		},
+		"growth" : 4,
+		"hitPoints" : 67,
+		"level" : 4,
+		"speed" : 9,
+		"fightValue" : 729,
+		"aiValue" : 928,
+		"graphics" :
+		{
+			"animation" : 	"creatures/fortress/battle/CR242",
+			"map" : 		"creatures/fortress/map/AVWCR242",
+			"iconSmall" : 	"creatures/fortress/iconsSmall/CPrS242X",
+			"iconLarge" : 	"creatures/fortress/iconsBig/CPrL242X",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+		},
+		"doubleWide" : true,
+		"sound" :
+		{
+			"attack": "GBASATTK.wav",
+			"defend": "GBASDFND.wav",
+			"killed": "GBASKILL.wav",
+			"move": "GBASMOVE.wav",
+			"wince": "GBASWNCE.wav"
+		},
+		"abilities" :
+		{
+			"petrify" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.stoneGaze",
+				"val" : 20,
+				"addInfo" : [0, 2]
+			},
+			"fireShield" :
+			{
+				"type" : "FIRE_SHIELD",
+				"val" : 20
+			},
+			"fireImm" :
+			{
+				"type" : "FIRE_IMMUNITY",
+				"subtype" : 0 //all spells
+			},
+			"fireBall" :
+			{
+				"type" : "SPELL_LIKE_ATTACK",
+				"subtype" : "spell.fireball"
+			},
+			"castsCurse" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.fireWall",
+				"val" : 1
+			},
+			"castsCount" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"castLength" :
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 50
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{	
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : 70, //stoneGaze
+					"addInfo" : 3
+				},
+				"values" : [3, 6, 9, 12, 15, 18, 21, 24, 27, 30]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			}
+		]
+	},
+}	

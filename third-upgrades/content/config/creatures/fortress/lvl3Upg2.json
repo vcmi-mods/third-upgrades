@@ -1,0 +1,102 @@
+{
+	"tumChaoticDragonFly":
+	{
+		"name" :
+		{
+			"plural" : "Chaotic Dragon Flies",
+			"singular" : "Chaotic Dragon Fly"
+		},
+		"advMapAmount" : 
+		{
+			"max" : 17,
+			"min" : 12
+		},
+		"faction" : "fortress",
+		"attack" : 12,
+		"defense" : 10,
+		"cost" :
+		{
+			"gold" : 367
+		},
+		"damage" :
+		{
+			"max" : 8,
+			"min" : 5
+		},
+		"growth" : 8,
+		"hitPoints" : 30,
+		"speed" : 15,
+		"level" : 3,
+		"fightValue" : 325,
+		"aiValue" : 405,
+		"graphics" :
+		{
+			"animation" : 	"creatures/fortress/battle/CR241",
+			"map" : 		"creatures/fortress/map/AVWCR241",
+			"iconSmall" : 	"creatures/fortress/iconsSmall/CPrS241X",
+			"iconLarge" : 	"creatures/fortress/iconsBig/CPrL241X",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+		},
+		"sound" :
+		{
+			"attack": "FDFLATTK.wav",
+			"defend": "FDFLDFND.wav",
+			"killed": "FDFLKILL.wav",
+			"move": "FDFLMOVE.wav",
+			"shoot": "FDFLSHOT.wav",
+			"wince": "FDFLWNCE.wav"
+		},
+		"abilities" :
+		{
+			"canFly" : 
+			{
+				"type" : "FLYING"
+			},
+			"dispellHelpful" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.dispelHelpful",
+				"val" : 100,
+				"addInfo" : [1, 0]
+			},
+			"castWeakness" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.weakness",
+				"val" : 100,
+				"addInfo" : [1, 0]
+			},
+			"unlimitedRetaliation" :
+			{
+				"type" : "UNLIMITED_RETALIATIONS"
+			},
+			"strikeAndReturn" : 
+			{
+				"type" : "RETURN_AFTER_STRIKE"
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "BLOCKS_RETALIATION"
+				},
+				"values" : [false, false, false, true, true, true, true, true, true, true]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [0, 0, 0, 1, 2, 3, 3, 4, 4, 5]
+			}
+		]
+	}
+}	

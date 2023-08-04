@@ -1,0 +1,247 @@
+{
+	"core:fortress" :
+	{
+
+		"town" :
+		{
+			"structures" :
+			{
+				"extraCapitol":{ "animation" : "town-screen/fortress/TBFTEXT5.def", "x" : 415, "y" : 0,  "z" : -6 },					
+				"horde2": { "animation" : "TBFRHRD2.def", "x" : 641, "y" : 68,  "z" : 1,  "border" : "TOFGNL2H.bmp", "area" : "TZFGNL2H.bmp", "hidden" : true, "builds" : "horde1Upgr" },
+				
+				"dwellingLvl3":   { "x" : 194, "y" : 86 }, // poprawic kordynaty
+				"dwellingUpLvl3": { "x" : 159, "y" : 18 }, //poprawic kordynaty
+				
+				"dwellingUp2Lvl1": { "animation" : "TBFRUP_0.def", "x" : 641, "y" : 107, "z" : 1,  "border" : "TOFGNL2.bmp",  "area" : "TZFGNL2.bmp" },
+				"dwellingUp2Lvl2": { "animation" : "TBFRUP_1.def", "x" : 125, "y" : 163, "border" : "TOFLIZ2.bmp",  "area" : "TZFLIZ2.bmp" },
+				"dwellingUp2Lvl3": { "animation" : "TBFRUP_3.def", "x" : 159, "y" : 19,  "border" : "TOFFLY2A.bmp", "area" : "TZFFLY2A.bmp" },
+				"dwellingUp2Lvl4": { "animation" : "TBFRUP_4.def", "x" : 0,   "y" : 257, "border" : "TOFBAS2.bmp",  "area" : "TZFBAS2.bmp" },
+				"dwellingUp2Lvl5": { "animation" : "TBFRUP_2.def", "x" : 15,  "y" : 69,  "z" : -2, "border" : "TOFGOR2.bmp",  "area" : "TZFGOR2.bmp" },
+				"dwellingUp2Lvl6": { "animation" : "TBFRUP_5.def", "x" : 0,   "y" : 4,   "border" : "TOFWYV2.bmp",  "area" : "TZFWYV2.bmp" },
+				"dwellingUp2Lvl7": { "animation" : "TBFRUP_6.def", "x" : 587, "y" : 263, "z" : 5,  "border" : "TOFHYD2A.bmp", "area" : "TZFHYD2A.bmp" }
+			},
+			"buildingsIcons": "town-screen/fortress/HALLFORTALT.DEF",
+			"hallBackground": "TPTHBKFR.BMP",
+			"hallSlots":
+			[
+				[ [ "villageHall", "townHall", "cityHall", "capitol" ], [ "fort", "citadel", "castle" ], [ "tavern" ], [ "blacksmith" ] ],
+				[ [ "marketplace", "resourceSilo" ], [ "mageGuild1", "mageGuild2", "mageGuild3" ], [ "shipyard" ] ],
+				[ [ "special1" ], [ "special2", "special3" ], [ "horde1", "horde1Upgr", "horde2" ] ],
+				[ [ "dwellingLvl1", "dwellingUpLvl1", "dwellingUp2Lvl1" ], [ "dwellingLvl2", "dwellingUpLvl2", "dwellingUp2Lvl2" ], [ "dwellingLvl3", "dwellingUpLvl3", "dwellingUp2Lvl3" ], [ "dwellingLvl4", "dwellingUpLvl4", "dwellingUp2Lvl4" ] ],
+				[ [ "dwellingLvl5", "dwellingUpLvl5", "dwellingUp2Lvl5" ], [ "dwellingLvl6", "dwellingUpLvl6", "dwellingUp2Lvl6" ], [ "dwellingLvl7", "dwellingUpLvl7", "dwellingUp2Lvl7" ] ]
+			],
+			"creatures" :
+			[
+				["gnoll", "gnollMarauder", "tumGnollShaman"],
+				["lizardman", "lizardWarrior", "tumEliteLizard"],
+				["serpentFly", "fireDragonFly", "tumChaoticDragonFly"],
+				["basilisk", "greaterBasilisk", "tumLavaBasilisk"],
+				["gorgon", "mightyGorgon", "tumCatopleba"],
+				["wyvern", "wyvernMonarch", "tumAcidWyvern"],
+				["hydra", "chaosHydra", "hellHydra"]
+			],
+			
+			"buildings" :
+			{
+				"extraCapitol":   {
+					"name" : "Marsh",
+					"description" : "Marsh mark unlocks 3rd level structures to build.",
+					"id" : 29, 
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
+					],
+					"mode" : "auto" 
+				},
+				
+				"dwellingUpLvl1" :
+				{
+					"name" : "Adv. Gnoll Hut"
+				},
+				"dwellingUpLvl2" :
+				{
+					"name" : "Adv. Lizard Den"
+				},
+				"dwellingUpLvl3" :
+				{
+					"name" : "Adv. Serpent Fly Hive"
+				},
+				"dwellingUpLvl4" :
+				{
+					"name" : "Adv. Basilisk Pit"
+				},
+				"dwellingUpLvl5" :
+				{
+					"name" : "Adv. Gorgon Lair"
+				},
+				"dwellingUpLvl6" :
+				{
+					"name" : "Adv. Wyvern Nest"
+				},
+				"dwellingUpLvl7" :
+				{
+					"name" : "Adv. Hydra Pond"
+				},
+				
+				"horde2" : 
+				{ 
+					"description" : "The Captain's Quarters increase Gnoll Shamans production by 6 per week.",
+					"name" : "{Captain's Quarters}",
+					
+					"cost" :
+					{
+						"gold":	1000
+					},
+					"requires" : 
+					[ 
+						"allOf",
+							["horde1Upgr"], 
+							["dwellingUp2Lvl1"]
+					],
+					"upgrades" : "horde1Upgr",
+					"id" : 23, 
+					"mode" : "auto"
+				},
+				
+				"dwellingUp2Lvl1": 
+				{ 
+					"description" : "The Gnoll Hut allows you to recruit Gnoll Shamans.",
+					"name" : "{Upg. Gnoll Hut}",
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
+					],	
+					"cost" :
+					{
+						"wood":    20,
+						"gold":	1400
+					},
+					"upgrades" : "dwellingUpLvl1",
+					"id" : 44
+				},
+				"dwellingUp2Lvl2":
+				{ 
+				
+				"description" : "The Lizard Den allows you yo recruit Elite Lizards.",
+				"name" : "{Upg. Lizard Den}",
+				
+					"cost" :
+					{
+						"wood":    5,
+						"ore":     5,
+						"gold":	2000
+					},
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
+					],	
+					"upgrades" : "dwellingUpLvl2",
+					"id" : 45
+				},
+				"dwellingUp2Lvl3": 
+				{ 
+					"description" : "The Serpent Fly Hive allows you to recruit Chaotic Dragon Flies.",
+					"name" : "{Upg. Serpent Fly Hive}",
+				
+					"cost" :
+					{
+						"wood":    5,
+						"mercury": 4,
+						"sulfur":  4,
+						"gold":	2000
+					},
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
+					],		
+					"upgrades" : "dwellingUpLvl3",
+					"id" : 46 
+				},
+				"dwellingUp2Lvl4": 
+				{ 
+					"description" : "The Basilisk Pit allows you to recruit Lava Basilisks.",
+					"name" : "{Upg. Basilisk Pit}",
+				
+					"cost" :
+					{
+						"wood":    10,
+						"ore":     15,
+						"gold":	4000
+					},
+					"requires" : 
+					[ 
+						"dwellingUp2Lvl3"
+					],
+					"upgrades" : "dwellingUpLvl4",
+					"id" : 47
+				},
+				"dwellingUp2Lvl5": 
+				{ 
+					"description" : "The Gorgon Lair allows you to recruit Catoblepasses.",
+					"name" : "{Upg. Gorgon Lair}",
+				
+					"cost" :
+					{
+						"wood":    15,
+						"mercury": 5,
+						"ore":     15,
+						"sulfur":  5,
+						"gold":	4500
+					},
+					"requires" : 
+					[
+						"allOf", 
+							[ "mageGuild3" ],
+							[ "special1" ]
+					],
+					"upgrades" : "dwellingUpLvl5",
+					"id" : 48
+				},
+				"dwellingUp2Lvl6": 
+				{ 
+					"description" : "The Wyvern Nest allows you to recruit Acid Wyverns.",
+					"name" : "{Upg. Wyvern Nest}",
+				
+					"cost" :
+					{
+						"wood":    25,
+						"mercury": 10,
+						"gold":	7500
+					},
+					"requires" : 
+					[
+						"allOf", ["castle"], [ "dwellingUp2Lvl5" ]
+					],
+					"upgrades" : "dwellingUpLvl6",
+					"id" : 49
+				},
+				"dwellingUp2Lvl7": 
+				{ 
+					"description" : "The Hydra Pond allows you to recruit Hell Hydras.",
+					"name" : "{Upg. Hydra Pond}",	
+					"cost" :
+					{
+						"wood":    20,
+						"ore":     20,
+						"sulfur":  30,
+						"gold":	25000
+					},
+					"requires" : 
+					[
+						"dwellingUp2Lvl6"
+					],
+					"upgrades" : "dwellingUpLvl7",
+					"id" : 50
+				}
+			}
+		}
+	}	
+}

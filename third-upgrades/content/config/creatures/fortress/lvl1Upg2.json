@@ -1,0 +1,68 @@
+{
+	"tumGnollShaman": {
+		"name" : {
+			"singular" : "Gnoll Shaman",
+			"plural" : "Gnoll Shamans"
+		},
+		"faction" : "fortress",
+		"level" : 1,
+		"cost" : {
+			"gold" : 80
+		},
+		"speed" : 8,
+		"hitPoints" : 9,
+		"attack" : 5,
+		"defense" : 6,
+		"damage" : {
+			"min" : 2,
+			"max" : 4
+		},
+		"growth" : 12,
+		"horde" : 6,
+		"aiValue" : 95,
+		"fightValue" : 95,
+		"advMapAmount" : {
+			"min" : 20,
+			"max" : 25
+		},
+		"hasDoubleWeek" : true,
+		"graphics" : {
+			"animation" : "creatures/fortress/battle/CR321",
+			"map" : 	  "creatures/fortress/map/AVWCR321",
+			"iconSmall" : "creatures/fortress/iconsSmall/CPrS321X",
+			"iconLarge" : "creatures/fortress/iconsBig/CPrL321X",
+			"animationTime" : {
+				"attack" : 1,
+				"idle" : 10,
+				"walk" : 1
+			},
+			"timeBetweenFidgets" : 1
+		},
+		"sound" : {
+			"attack" : "GNLMATTK.wav",
+			"defend" : "GNLMDFND.wav",
+			"killed" : "GNLMKILL.wav",
+			"move" : "GNLMMOVE.wav",
+			"wince" : "GNLMWNCE.wav"
+		},
+		"abilities":
+		{
+			"castsCurse" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.curse",
+				"val" : 2
+			},
+			"castsCount" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"castLength" :
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 50
+			}
+		}
+	}
+}

@@ -1,0 +1,95 @@
+{
+	"tumNagaEmpress":
+	{
+		"name" :
+		{
+			"plural" : "Naga Empresses",
+			"singular" : "Naga Empress"
+		},
+		"advMapAmount" : 
+		{
+			"max" : 8,
+			"min" : 5
+		},
+		"faction" : "tower",
+		"attack" : 18,
+		"defense" : 13,
+		"damage" :
+		{
+			"max" : 35,
+			"min" : 35
+		},
+		"growth" : 2,
+		"hitPoints" : 150,
+		"speed" : 9,
+		"level" : 6,
+		"cost" :
+		{
+			"gold" : 2400
+		},
+		"fightValue" : 3603,
+		"aiValue" : 4118,
+		"graphics" :
+		{
+			"animation" : 	"creatures/tower/battle/Cr211",
+			"map" : 		"creatures/tower/map/AVWCR211",
+			"iconSmall" : 	"creatures/tower/iconsSmall/CPrs211X",
+			"iconLarge" : 	"creatures/tower/iconsBig/CPrL211X",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+		},
+		"doubleWide" : true,
+		"sound" :
+		{
+			"attack": "NGRDATTK.wav",
+			"defend": "NGRDDFND.wav",
+			"killed": "NGRDKILL.wav",
+			"move": "NGRDMOVE.wav",
+			"wince": "NGRDWNCE.wav"
+		},
+		"abilities" :
+		{
+			"noRetaliation" : 
+			{
+				"type" : "BLOCKS_RETALIATION"
+			},
+			"threeHeads" : 
+			{
+				"type" : "THREE_HEADED_ATTACK"
+			},
+			"chargeImmunity" :
+			{
+				"type" : "CHARGE_IMMUNITY" //i chyba trzeba dopisać Death Blow
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "DOUBLE_DAMAGE_CHANCE"
+				},
+				"values" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "UNLIMITED_RETALIATIONS"
+				},
+				"values" : [0, 0, 0, 1, 1, 2, 2, 3, 3, 5]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			}
+		]
+	}
+}

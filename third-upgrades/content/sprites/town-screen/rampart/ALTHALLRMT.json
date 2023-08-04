@@ -1,0 +1,16 @@
+{
+    "basepath" : "town-screen/rampart/frames/",
+	"images" :
+	[
+		{ "frame" : 20, "file" : "TPRDwf2H"},
+		{ "frame" : 23, "file" : "TPRTre2H"},
+		{ "frame" : 44, "file" : "TPRCen2"},
+		{ "frame" : 45, "file" : "TPRDwf2"},
+		{ "frame" : 46, "file" : "TPRElf2"},
+		{ "frame" : 47, "file" : "TPRPeg2"},
+		{ "frame" : 48, "file" : "TPRTre2"},
+		{ "frame" : 49, "file" : "TPRUni2"},
+		{ "frame" : 50, "file" : "TPRDra2"}
+
+	]
+}

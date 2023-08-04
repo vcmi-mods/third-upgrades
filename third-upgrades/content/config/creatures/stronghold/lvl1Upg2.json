@@ -1,0 +1,81 @@
+{
+	"tumHobgoblinOverlord": {
+		"name" : {
+			"singular" : "Hobgoblin Overlord",
+			"plural" : "Hobgoblin Overlords"
+		},
+		"faction" : "stronghold",
+		"level" : 1,
+		"cost" : {
+			"gold" : 70
+		},
+		"speed" : 7,
+		"hitPoints" : 5,
+		"attack" : 6,
+		"defense" : 5,
+		"damage" : {
+			"min" : 1,
+			"max" : 2
+		},
+		"growth" : 15,
+		"horde" : 8,
+		"hasDoubleWeek" : true,
+		"aiValue" : 117,
+		"fightValue" : 106,
+		"advMapAmount" : {
+			"min" : 20,
+			"max" : 25
+		},
+		"graphics" : {
+			"animation" : "creatures/stronghold/battle/CR232",
+			"map" : 	  "creatures/stronghold/map/AVWCR232",
+			"iconSmall" : "creatures/stronghold/iconsSmall/CPrS232X",
+			"iconLarge" : "creatures/stronghold/iconsBig/CPrL232X",
+			"animationTime" : {
+				"attack" : 1,
+				"idle" : 10,
+				"walk" : 1.24
+			},
+			"timeBetweenFidgets" : 1,
+		},
+		"sound" : {
+			"attack" : "HGOBATTK.wav",
+			"defend" : "HGOBDFND.wav",
+			"killed" : "HGOBKILL.wav",
+			"move" : "HGOBMOVE.wav",
+			"wince" : "HGOBWNCE.wav"
+		},
+		"abilities":
+		{
+			"extraAttack" :
+			{
+				"type" : "ADDITIONAL_ATTACK",
+				"val" : 1
+			},
+			"stoneSkin" :
+			{
+				"type" : "ENCHANTED",
+				"subtype" : "spell.stoneSkin",
+				"val" : 1
+			},
+			"hateDwarf" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.dwarf",
+				"val" : 50
+			},
+			"hateBattleDwarf" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.battleDwarf",
+				"val" : 50
+			},
+			"hateBerserkerDwarf" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.tumBerserkerDwarf",
+				"val" : 50
+			}
+		}
+	}
+}

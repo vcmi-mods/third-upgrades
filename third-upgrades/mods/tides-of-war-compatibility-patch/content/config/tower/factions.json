@@ -1,0 +1,67 @@
+{
+	"core:tower" :
+	{
+		"town" :
+		{
+			"hallBackground": "town-screen/tower/TowerHallBg.png",
+			"buildingsIcons": "town-screen/tower/ALTHALLTOWR.DEF",
+			"hallSlots":
+			[	
+				[ [ "villageHall", "townHall", "cityHall", "capitol" ], [ "fort", "citadel", "castle" ], [ "tavern" ], [ "blacksmith" ] ],
+				[ [ "marketplace", "resourceSilo" ], [ "mageGuild1", "mageGuild2", "mageGuild3", "mageGuild4", "mageGuild5" ], [ "special3" ], [ "special4" ] ],
+				[ [ "special1" ], [ "special2" ], [ "horde1", "horde1Upgr", "horde1Upgr2" ] ],
+				[ [ "dwellingLvl1", "dwellingUpLvl1", "dwellingUp2Lvl1" ], [ "dwellingLvl2", "dwellingUpLvl2", "dwellingUp2Lvl2" ], [ "dwellingLvl3", "dwellingUpLvl3", "dwellingUp2Lvl3" ], [ "dwellingLvl4", "dwellingUpLvl4", "dwellingUp2Lvl4" ] ],
+				[ [ "dwellingLvl5", "dwellingUpLvl5", "dwellingUp2Lvl5" ], [ "dwellingLvl6", "dwellingUpLvl6", "dwellingUp2Lvl6" ], [ "dwellingLvl7", "dwellingUpLvl7", "dwellingUp2Lvl7" ], [ "dwellingLvl7B", "dwellingUpLvl7B" ] ]
+			],
+			"creatures" :
+			[
+				["gremlin", "masterGremlin", "tumGrandmasterGremlin"],
+				["stoneGargoyle", "obsidianGargoyle", "tumMarbleGargoyle"],
+				["ironGolem", "stoneGolem", "tumSteelGolem"],
+				["mage", "archMage", "tumSupremeArchMage"],
+				["genie", "masterGenie", "tumArcaneGenie"],
+				["naga", "nagaQueen", "tumNagaEmpress"],
+				["giant", "titan", "tumLordOfThunder", "mdtDrakeGolem", "mdtDragonGolem"]
+			],
+
+			"structures" :
+			{
+				"dwellingLvl7B":   { "animation" : "town-screen/tower/TBDRGM1", "x" : 75, "y" : 114, "z" : -1,  "border" : "town-screen/tower/buildings-border/TBTwA7un.bmp", "area" : "town-screen/tower/buildings-area/TATwA7un.bmp" },
+				"dwellingUpLvl7B": { "animation" : "town-screen/tower/TBDRGM2", "x" : 75, "y" : 114, "z" : -1,  "border" : "town-screen/tower/buildings-border/TBTwA7up.bmp", "area" : "town-screen/tower/buildings-area/TATwA7up.bmp" }		
+			},
+
+			"buildings" :
+			{
+				"dwellingLvl7":   
+				{ 
+					"requires" : [ "allOf", [ "dwellingLvl5" ], [ "dwellingLvl6" ], [ "noneOf", [ "dwellingLvl7B" ] ] ]
+				},
+				"dwellingLvl7B" :
+				{
+					"name" : "Dragon Factory",
+					"description" : "The Dragon Factory allows you to recruit Drake Golems.",
+					"cost" : {
+						"wood" : 20,
+						"ore" : 20,
+						"gold" : 10000
+					},
+					"id" : 57, 
+					"requires" : [ "allOf", [ "dwellingUpLvl3" ], [ "blacksmith" ], [ "noneOf", [ "dwellingLvl7" ] ] ]
+				},
+				"dwellingUpLvl7B" :
+				{
+					"name" : "Upg. Dragon Factory",
+					"description" : "The Dragon Factory allows you to recruit Dragon Golems.",
+					"cost" : {
+						"wood" : 20,
+						"mercury" : 20,
+						"ore" : 20,
+						"gold" : 20000
+					},
+					"id" : 64, 
+					"upgrades" : "dwellingLvl7B"
+				}		
+			}
+		}
+	}
+}

@@ -1,0 +1,79 @@
+{
+	"tumWingedMagog": {
+		"name" : {
+			"singular" : "Winged Magog",
+			"plural" : "Winged Magogs"
+		},
+		"faction" : "inferno",
+		"level" : 2,
+		"cost" : {
+			"gold" : 350
+		},
+		"speed" : 7,
+		"shots" : 24,
+		"hitPoints" : 13,
+		"attack" : 9,
+		"defense" : 5,
+		"damage" : {
+			"min" : 4,
+			"max" : 6
+		},
+		"growth" : 8,
+		"aiValue" : 420,
+		"fightValue" : 343,
+		"advMapAmount" : {
+			"min" : 16,
+			"max" : 22
+		},
+		"abilities" : {
+			"shooter" : {
+				"type" : "SHOOTER" //dopisać że strzela fireballami i no melee penalty
+			},
+			"canFly" : {
+				"type" : "FLYING"
+			},
+			"fireImmunity" : {
+				"type" : "FIRE_IMMUNITY",
+				"subtype" : 1
+			},
+			"fireShield" :
+			{
+				"type" : "FIRE_SHIELD",
+				"val" : 25
+			}
+		},
+		"graphics" : {
+			"animation" : "creatures/inferno/battle/CR214.def",
+			"map" : 	  "creatures/inferno/map/AVWCR214",
+			"iconSmall" : "creatures/inferno/iconsSmall/CPrs214X",
+			"iconLarge" : "creatures/inferno/iconsBig/CPrL214X",
+			"animationTime" : {
+				"attack" : 1,
+				"idle" : 10,
+				"walk" : 1.33
+			},
+			"missile" : {
+				"projectile" : "CPRGOGX.DEF",
+				"attackClimaxFrame" : 6,
+				"frameAngles" : [ 90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0 ],
+				"offset" : {
+					"lowerX" : 15,
+					"lowerY" : -9,
+					"middleX" : 69,
+					"middleY" : -51,
+					"upperX" : 38,
+					"upperY" : -89
+				},
+			},
+			"timeBetweenFidgets" : 1,
+		},
+		"sound" : {
+			"attack" : "MGOGATTK.wav",
+			"defend" : "MGOGDFND.wav",
+			"killed" : "MGOGKILL.wav",
+			"move" : "MGOGMOVE.wav",
+			"shoot" : "MGOGSHOT.wav",
+			"wince" : "MGOGWNCE.wav"
+		}
+	}
+}

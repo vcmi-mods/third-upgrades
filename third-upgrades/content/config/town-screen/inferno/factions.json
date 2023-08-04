@@ -1,0 +1,263 @@
+{
+	"core:inferno" :
+	{
+		"town" :
+		{
+			"structures" :
+			{
+				"extraCapitol":{ "animation" : "town-screen/inferno/TBIFEXT5.def", "x" : 378, "y" : 91,  "z" : -1 },
+				"horde4": { "animation" : "TBINHRD2.def", "x" : 614, "y" : 221, "border" : "TOIMP2HA.bmp", "area" : "TZIMP2HA.bmp", "hidden" : true, "builds" :  "horde1Upgr" },
+				"horde3": { "animation" : "TBINHRD4.def", "x" : 9,   "y" : 273, "border" : "TOIHND2H.bmp", "area" : "TZIHND2H.bmp", "hidden" : true, "builds" : "horde2Upgr" },		
+				"dwellingUp2Lvl1": { "animation" : "TBINUP_0.def", "x" : 614, "y" : 221, "border" : "TOIMP2A.bmp",  "area" : "TZIMP2A.bmp"  },
+				"dwellingUp2Lvl2": { "animation" : "TBINUP_1.def", "x" : 187, "y" : 212, "z" : 4,  "border" : "TOIGOG2A.bmp", "area" : "TZIGOG2A.bmp" },
+				"dwellingUp2Lvl3": { "animation" : "TBINUP_2.def", "x" : 9,   "y" : 273, "border" : "TOIHND2.bmp",  "area" : "TZIHND2.bmp"  },
+				"dwellingUp2Lvl4": { "animation" : "TBINUP_3.def", "x" : 412, "y" : 197, "z" : 2,  "border" : "TOIDMN2.bmp",  "area" : "TZIDMN2.bmp" },
+				"dwellingUp2Lvl5": { "animation" : "TBINUP_4.def", "x" : 359, "y" : 244, "z" : 3,  "border" : "TOIPIT2.bmp",  "area" : "TZIPIT2.bmp" },
+				"dwellingUp2Lvl6": { "animation" : "TBINUP_5.def", "x" : 220, "y" : 282, "z" : 5,  "border" : "TOIEFR2.bmp",  "area" : "TZIEFR2.bmp" },
+				"dwellingUp2Lvl7": { "animation" : "TBINUP_6.def", "x" : 420, "y" : 105, "z" : -1, "border" : "TOIDVL2.bmp",  "area" : "TZIDVL2.bmp" }
+			},
+			"buildingsIcons": "town-screen/inferno/ALTHALLINFR.DEF",
+			"hallBackground": "TPTHBKIN",
+			"hallSlots":
+			[
+				[ [ "villageHall", "townHall", "cityHall", "capitol" ], [ "fort", "citadel", "castle" ], [ "tavern" ], [ "blacksmith" ] ],
+				[ [ "marketplace", "resourceSilo" ], [ "mageGuild1", "mageGuild2", "mageGuild3", "mageGuild4", "mageGuild5" ], [ "special4" ], [ "special2" ] ],
+				[ [ "special3" ], [ "horde1", "horde1Upgr", "horde4" ], [ "horde2", "horde2Upgr", "horde3" ] ],
+				[ [ "dwellingLvl1", "dwellingUpLvl1", "dwellingUp2Lvl1" ], [ "dwellingLvl2", "dwellingUpLvl2", "dwellingUp2Lvl2" ], [ "dwellingLvl3", "dwellingUpLvl3", "dwellingUp2Lvl3" ], [ "dwellingLvl4", "dwellingUpLvl4", "dwellingUp2Lvl4" ] ],
+				[ [ "dwellingLvl5", "dwellingUpLvl5", "dwellingUp2Lvl5" ], [ "dwellingLvl6", "dwellingUpLvl6", "dwellingUp2Lvl6" ], [ "dwellingLvl7", "dwellingUpLvl7", "dwellingUp2Lvl7" ] ]
+			],
+			"creatures" :
+			[
+				["imp", "familiar", "tumVermin"],
+				["gog", "magog", "tumWingedMagog"],
+				["hellHound", "cerberus", "tumAstralCerberus"],
+				["demon", "hornedDemon", "tumSharpHornedDemon"],
+				["pitFiend", "pitLord", "tumPitMaster"],
+				["efreet", "efreetSultan", "tumEfreetRajah"],
+				["devil", "archDevil", "hellBaron"]
+			],
+			
+			"buildings" :
+			{
+				"extraCapitol":   {
+					"name" : "Chaos",
+					"description" : "Chaos mark unlocks 3rd level structures to build.",
+					"id" : 29, 
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
+					],
+					"mode" : "auto" 
+				},
+				"dwellingUpLvl1":
+				{
+					"name" : "Adv. Imp Crucible"
+				},			
+				"dwellingUpLvl2":
+				{
+					"name" : "Adv. Hall of Sins"
+				},
+				"dwellingUpLvl3":
+				{
+					"name" : "Adv. Kennels"
+				},
+				"dwellingUpLvl4":
+				{
+					"name" : "Adv. Demon Gate"
+				},
+				"dwellingUpLvl5":
+				{
+					"name" : "Adv. Hell Hole"
+				},
+				"dwellingUpLvl6":
+				{
+					"name" : "Adv. Fire Lake"
+				},
+				"dwellingUpLvl7":
+				{
+					"name" : "Adv. Forsaken Palace"
+				},
+				"horde4" :
+				{
+					"description" : "The Birthing Pools increase Vermins production by 8 per week.",
+					"name" : "{Birthing Pools}",
+					"cost" :
+					{
+						"gold":	1000
+					},
+					"id" : 17, 
+					"upgrades" : "horde1Upgr",
+					"requires" : 
+					[
+						"allOf",
+							["dwellingUp2Lvl1"],
+							["horde1Upgr"]
+					],
+					"mode" : "auto"			
+				},
+				"dwellingUp2Lvl1" :
+				{
+					"description" : "The Imp Crucible allows you to recruit Vermins.",
+					"name" : "{Upg. Imp Crucible}",
+				
+					"cost" :
+					{
+						"wood" : 5,
+						"ore" :  5,
+						"gold":	 1300
+					},
+					"id" : 44, 
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
+					],	
+					"upgrades" : "dwellingUpLvl1"
+				},
+				"dwellingUp2Lvl2" :
+				{
+				
+					"description" : "The Hall of Sins allows you to recruit Winged Magogs.",
+					"name" : "{Upg. Hall of Sins}",
+					
+					"cost" :
+					{
+						"ore" : 	5,
+						"mercury":  5,
+						"gold":	    2000
+					},
+					"id" : 45, 
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
+					],	
+					"upgrades" : "dwellingUpLvl2"
+				},
+				"horde3":
+				{
+					
+					"description" : "The Cages increase Astral Cerberi by 3 per week.",
+					"name" : "{Cages}",
+				
+					"cost" :
+					{
+						"gold":	1000
+					},
+					"id" : 20, 
+					"requires" : 
+					[
+						"allOf",
+							["dwellingUp2Lvl3"],
+							["horde2Upgr"]
+					],
+					"upgrades" : "horde2Upgr",
+					"mode" : "auto"
+				},
+				"dwellingUp2Lvl3":
+				{
+				
+					"description" : "The Kennels allow you to recruit Astral Cerberi.",
+					"name" : "{Upg. Kennels}",
+				
+					"cost" :
+					{
+						"wood":    10,
+						"sulfur":  5,
+						"gold":	   3000
+					},
+					"id" : 46, 
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
+					],	
+					"upgrades" : "dwellingUpLvl3"
+				},
+				"dwellingUp2Lvl4":
+				{
+				
+					"description" : "The Demon Gate allows you to recruit Sharp-Horned Demons.",
+					"name" : "{Upg. Demon Gate}",
+					"requires" : 
+					[ 
+						"dwellingUp2Lvl3"
+					],					
+					"cost" :
+					{
+						"wood":    10,
+						"ore":     10,
+						"gold":	   4000
+					},
+					"id" : 47,
+					"upgrades" : "dwellingUpLvl4"
+				},
+				"dwellingUp2Lvl5":
+				{
+				
+					"description" : "The Hell Hole allows you to recruit Pit Masters.",
+					"name" : "{Upg. Hell Hole}",
+				
+					"cost" :
+					{
+						"mercury": 5,
+						"sulfur":  5,
+						"gold":	6000
+					},
+					"id" : 48, 
+					"requires" : 
+					[
+						"dwellingUp2Lvl4"
+					],
+					"upgrades" : "dwellingUpLvl5"
+				},
+				"dwellingUp2Lvl6": 
+				{ 
+				
+					"description" : "The Fire Lake allows you to recruit Efreeti Rajahs.",
+					"name" : "{Upg. Fire Lake}",
+				
+					"cost" :
+					{
+						"mercury": 8,
+						"ore":     15,
+						"sulfur":  8,
+						"gems":    8,
+						"gold":	   7000
+					},
+					"id" : 49, 
+					"requires" : ["dwellingUp2Lvl5"],
+					"upgrades" : "dwellingUpLvl6"
+				},
+				"dwellingUp2Lvl7": 
+				{ 
+				
+					"description" : "The Forsaken Palace allows you to recruit Hell Barons.",
+					"name" : "{Upg. Forsaken Palace}",
+				
+					"cost" :
+					{
+						"wood":    15,
+						"mercury": 40,
+						"ore":     15,
+						"gold":	35000
+					},
+					"id" : 50, 
+					"requires" : 
+					[
+						"allOf", 
+							[ "castle" ],
+							[ "mageGuild3" ],
+							[ "special3" ]
+					],
+					"upgrades" : "dwellingUpLvl7"
+				}
+			}
+		}
+	}	
+}

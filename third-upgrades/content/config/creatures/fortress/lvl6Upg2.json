@@ -1,0 +1,99 @@
+{
+	"tumAcidWyvern":
+	{
+		"name" :
+		{
+			"plural" : "Acid Wyverns",
+			"singular" : "Acid Wyvern"
+		},
+		"advMapAmount" : 
+		{
+			"max" : 6,
+			"min" : 5
+		},
+		"faction" : "fortress",
+		"attack" : 18,
+		"defense" : 15,
+		"cost" :
+		{
+			"gold" : 1500
+		},
+		"damage" :
+		{
+			"max" : 23,
+			"min" : 20
+		},
+		"growth" : 2,
+		"hitPoints" : 90,
+		"level" : 6,
+		"speed" : 14,
+		"doubleWide" : true,
+		"fightValue" : 1381,
+		"aiValue" : 1718,
+		"graphics" :
+		{
+			"animation" : 	"creatures/fortress/battle/CR243",
+			"map" : 		"creatures/fortress/map/AVWCR243",
+			"iconSmall" : 	"creatures/fortress/iconsSmall/CPrS243X",
+			"iconLarge" : 	"creatures/fortress/iconsBig/CPrL243X",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+		},
+		"sound" :
+		{
+			"attack": "WYVMATTK.wav",
+			"defend": "WYVMDFND.wav",
+			"killed": "WYVMKILL.wav",
+			"move": "WYVMMOVE.wav",
+			"wince": "WYVMWNCE.wav"
+		},
+		"abilities" :
+		{
+			"canFly" : 
+			{
+				"type" : "FLYING"
+			},
+			"petrify" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.poison",
+				"val" : 50
+			},
+			"acidBreath" :
+			{
+				"type" : "ACID_BREATH",
+				"val" : 25,
+				"addInfo" : 30
+			},
+			"reduceDefence" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.acidBreath",
+				"val" : 100
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{	
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : 71, //poison
+				},
+				"values" : [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [0, 0, 1, 2, 3, 4, 4, 5, 5, 6]
+			}
+		]
+	},
+}	

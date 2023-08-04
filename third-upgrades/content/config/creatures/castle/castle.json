@@ -1,0 +1,30 @@
+{
+	"core:halberdier" :
+	{
+		"upgrades": ["tumRoyalHalberdier"]
+	},
+	"core:marksman" :
+	{
+		"upgrades": ["tumCrossbowman"]
+	},
+	"core:royalGriffin" :
+	{
+		"upgrades": ["tumCeasarGriffin"]
+	},
+	"core:crusader" :
+	{
+		"upgrades": ["tumInquisitor"]
+	},
+	"core:zealot" :
+	{
+		"upgrades": ["tumHighPriest"]
+	},
+	"core:champion" :
+	{	
+		"upgrades": ["tumHolyChampion"]		
+	},
+	"core:archangel" :
+	{
+		"upgrades": ["supremeArchangel"]
+	}
+}

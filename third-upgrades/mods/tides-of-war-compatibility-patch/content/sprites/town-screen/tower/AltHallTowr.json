@@ -1,0 +1,16 @@
+{
+    "basepath" : "town-screen/tower/frames/",
+	"images" :
+	[
+		{ "frame" : 20, "file" : "TPTGa2H" },
+		{ "frame" : 44, "file" : "TPTGrem2" },
+		{ "frame" : 45, "file" : "TPTGar2" },
+		{ "frame" : 46, "file" : "TPTGolm2" },
+		{ "frame" : 47, "file" : "TPTMag2" },
+		{ "frame" : 48, "file" : "TPTGen2" },
+		{ "frame" : 49, "file" : "TPTNaga2" },
+		{ "frame" : 50, "file" : "TPTTit2" },
+		{ "frame" : 57, "file" : "TPTTit2alt" },
+		{ "frame" : 64, "file" : "TPTTit2upAlt" }
+	]
+}

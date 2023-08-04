@@ -1,0 +1,145 @@
+{
+	"tumEfreetRajah":
+	{
+		"name" :
+		{
+			"plural" : "Efreet Rajahs",
+			"singular" : "Efreet Rajah"
+		},
+		"advMapAmount" : 
+		{
+			"max" : 8,
+			"min" : 5
+		},
+		"faction" : "inferno",
+		"attack" : 20,
+		"defense" : 16,
+		"cost" :
+		{
+			"gold" : 1300
+		},
+		"damage" :
+		{
+			"max" : 25,
+			"min" : 18
+		},
+		"growth" : 2,
+		"hitPoints" : 100,
+		"level" : 6,
+		"speed" : 15,
+		"fightValue" : 2002,
+		"aiValue" : 2402,
+		"graphics" :
+		{
+			"animation" : 	"creatures/inferno/battle/CR218",
+			"map" : 		"creatures/inferno/map/AVWCR218",
+			"iconSmall" : 	"creatures/inferno/iconsSmall/CPrs218X",
+			"iconLarge" : 	"creatures/inferno/iconsBig/CPrL218X",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+		},
+		"doubleWide" : false,
+		"sound" :
+		{
+			"attack": "ESULATTK.wav",
+			"defend": "ESULDFND.wav",
+			"killed": "ESULKILL.wav",
+			"move": "ESULMOVE.wav",
+			"shoot": "ESULSHOT.wav",
+			"wince": "ESULWNCE.wav"
+		},
+		"abilities" :
+		{
+			"hateGenies" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.genie",
+				"val" : 50
+			},
+			"hateMasterGenies" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.masterGenie",
+				"val" : 50
+			},
+			"hateVisionaryGenies" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.tumArcaneGenie",
+				"val" : 50
+			},
+			"canFly" :
+			{
+				"type" : "FLYING"
+			},
+			"immuneToFire" :
+			{
+				"type" : "FIRE_IMMUNITY",
+				"subtype" : 0
+			},
+			"fireShield" :
+			{
+				"type" : "FIRE_SHIELD",
+				"val" : 30
+			},
+			"immuneToMind" :
+			{
+				"type" : "MIND_IMMUNITY",
+				"subtype" : 0
+			},
+			"spellFireWall" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.fireWall",
+				"val" : 20,
+				"addInfo" : [0, 2]
+			},
+			"spellpower" :
+			{
+				"type" : "CREATURE_SPELL_POWER",
+				"val" : 100
+			},
+			"fireShieldPower" : 
+			{
+				"type" : "SPECIFIC_SPELL_POWER",
+				"subtype" : "spell.fireShield",
+				"val" : 50
+			},
+			"castFireShield" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.fireShield",
+				"val" : 3
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "BLOCKS_RETALIATION"
+				},
+				"values" : [false, false, false, false, false, false, true, true, true, true,]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "RECEPTIVE"
+				},
+				"values" : [false, false, false, false, true, true, true, true, true, true,]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [0, 0, 0, 1, 1, 2, 2, 2, 2, 3]
+			}
+		]
+	}	
+}

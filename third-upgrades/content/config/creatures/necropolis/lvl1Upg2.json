@@ -1,0 +1,93 @@
+{
+	"tumSkeletonKnight":
+	{
+		"name" : 
+		{
+			"plural" : "Skeleton Knights",
+			"singular" : "Skeleton Knight"
+		},
+		"advMapAmount" : 
+		{
+			"max" : 25,
+			"min" : 20
+		},
+		"faction" : "necropolis",
+		"attack" : 7,
+		"defense" : 9,
+		"cost" :
+		{
+			"gold" : 95
+		},
+		"damage" :
+		{
+			"max" : 3,
+			"min" : 2
+		},
+		"growth" : 12,
+		"hitPoints" : 6,
+		"horde" : 6,
+		"level" : 1,
+		"speed" : 5,
+		"fightValue" : 110,
+		"aiValue" : 110,
+		"graphics" :
+		{
+			"animation" : "creatures/necropolis/battle/CR220",
+			"map" : 	  "creatures/necropolis/map/AVWCR220",
+			"iconSmall" : "creatures/necropolis/iconsSmall/CPrs220X",
+			"iconLarge" : "creatures/necropolis/iconsBig/CPrL220X",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+		},
+		"doubleWide" : false,
+		"sound" :
+		{
+			"attack": "SKLWATTK.wav",
+			"defend": "SKLWDFND.wav",
+			"killed": "SKLWKILL.wav",
+			"move": "SKLWMOVE.wav",
+			"wince": "SKLWWNCE.wav"
+		},
+		"abilities" :
+		{
+			"addAttack" :
+			{
+				"type" : "ADDITIONAL_ATTACK",
+				"val" : 1
+			},
+			"undead" :
+			{
+				"type" : "UNDEAD"
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "NO_DISTANCE_PENALTY"
+				},
+				"values" : [false, false, false, false, false, false, false, true, true, true]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SHOTS"
+				},
+				"values" : [0, 1, 2, 2, 3, 3, 4, 4, 5, 5]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [0, 0, 1, 1, 1, 2, 2, 2, 3, 3]
+			}
+		]	
+	}
+}

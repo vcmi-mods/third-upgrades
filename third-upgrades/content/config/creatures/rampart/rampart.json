@@ -1,0 +1,30 @@
+{
+	"core:centaurCaptain" :
+	{
+		"upgrades": ["tumCentaurGeneral"]
+	},
+	"core:battleDwarf" :
+	{
+		"upgrades": ["tumBerserkerDwarf"]
+	},
+	"core:grandElf" :
+	{
+		"upgrades": ["tumSharpshooterElf"]
+	},
+	"core:silverPegasus" :
+	{
+		"upgrades": ["tumGoldenPegasus"]
+	},
+	"core:dendroidSoldier" :
+	{
+		"upgrades": ["tumElderDendroid"]
+	},
+	"core:warUnicorn" :
+	{
+		"upgrades": ["tumLegendaryUnicorn"]
+	},
+	"core:goldDragon" :
+	{
+		"upgrades": ["diamondDragon"]
+	}
+}

@@ -1,0 +1,91 @@
+{
+	"tumWolfRiderKiller" :
+	{
+		"name" : 
+		{
+			"plural" : "Wolf Rider Killers",
+			"singular" : "Wolf Rider Killer"
+		},
+		"advMapAmount" : 
+		{
+			"max" : 22,
+			"min" : 16
+		},
+		"faction" : "stronghold",
+		"attack" : 9,
+		"defense" : 5,
+		"cost" :
+		{
+			"gold" : 185
+		},
+		"damage" :
+		{
+			"max" : 4,
+			"min" : 4
+		},
+		"growth" : 9,
+		"hitPoints" : 10,
+		"level" : 2,
+		"speed" : 9,
+		"doubleWide" : true,
+		"fightValue" : 226,
+		"aiValue" : 263,
+		"graphics" :
+		{
+			"animation" : "creatures/stronghold/battle/CR233",
+			"map" : 	  "creatures/stronghold/map/AVWCR233",
+			"iconSmall" : "creatures/stronghold/iconsSmall/CPrS233X",
+			"iconLarge" : "creatures/stronghold/iconsBig/CPrL233X",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+		},
+		"sound" :
+			{
+				"attack": "creatures/stronghold/wolf/wolfattk.wav",
+				"defend": "creatures/stronghold/wolf/wolfdfnd.wav",
+				"killed": "creatures/stronghold/wolf/wolfkill.wav",
+				"move":   "creatures/stronghold/wolf/wolfmove.wav",
+				"wince":  "creatures/stronghold/wolf/wolfwnce.wav"
+			},
+		"abilities":
+		{
+			"extraAttack" :
+			{
+				"type" : "ADDITIONAL_ATTACK",
+				"val" : 1
+			},
+			"stoneSkin" :
+			{
+				"type" : "ENCHANTED",
+				"subtype" : "spell.bloodlust",
+				"val" : 3
+			},
+			"unlimitedRetaliation" :
+			{
+				"type" : "UNLIMITED_RETALIATIONS"
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "ADDITIONAL_RETALIATION",
+				},
+				"values" : [0, 0, 0, 0, 0, 0, 1, 1, 1, 1]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [0, 0, 0, 0, 0, 1, 1, 1, 1, 2]
+			}
+		]
+	}
+}

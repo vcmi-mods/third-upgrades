@@ -1,0 +1,128 @@
+{
+	"tumChimera":
+	{
+		"name" :
+		{
+			"plural" : "Chimeras",
+			"singular" : "Chimera"
+		},
+		"advMapAmount" : 
+		{
+			"max" : 8,
+			"min" : 5
+		},
+		"faction" : "dungeon",
+		"attack" : 20,
+		"defense" : 16,
+		"cost" :
+		{
+			"gold" : 1580
+		},
+		"damage" :
+		{
+			"max" : 24,
+			"min" : 18
+		},
+		"growth" : 2,
+		"hitPoints" : 110,
+		"level" : 6,
+		"speed" : 13,
+		"fightValue" : 1341,
+		"aiValue" : 1537,
+		"graphics" :
+		{
+			"animation" : 	"creatures/dungeon/battle/CR230",
+			"map" : 		"creatures/dungeon/map/AVWCR230",
+			"iconSmall" : 	"creatures/dungeon/iconsSmall/CPrS230X",
+			"iconLarge" : 	"creatures/dungeon/iconsBig/CPrL230X",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 0.80,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+		},
+		"doubleWide" : true,
+		"sound" :
+		{
+			"attack": "SCRPATTK.wav",
+			"defend": "SCRPDFND.wav",
+			"killed": "SCRPKILL.wav",
+			"move": "SCRPMOVE.wav",
+			"shoot": "SCRPSHOT.wav",
+			"wince": "SCRPWNCE.wav"
+		},
+		"abilities":
+		{	
+			"canFly" : 
+			{
+				"type" : "FLYING"
+			},
+			"cavalryChargeImmunity" :
+			{
+				"type" : "CHARGE_IMMUNITY"
+			},
+			"acidBreath" :
+			{
+				"type" : "ACID_BREATH", //dopisać o dispelu helpfull spells
+				"val" : 25,
+				"addInfo" : 30
+			},
+			"threeHeads" : 
+			{
+				"type" : "THREE_HEADED_ATTACK"
+			},
+			"reduceDefence" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.acidBreath",
+				"val" : 100
+			},
+			"spellResistAura" :
+			{
+				"type" : "SPELL_RESISTANCE_AURA",
+				"val" : 20
+			},
+			"extraRetal" : 
+			{
+				"type" : "ADDITIONAL_RETALIATION",
+				"val" : 2
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "ACID_BREATH",
+					"addInfo" : 5
+				},
+				"values" : [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : 81 // acidBreathDamage
+				},
+				"values" : [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_IMMUNITY",
+					"subtype" : 74, // paralyze
+				},
+				"values" : [false, false, true, true, true, true, true, true, true, true]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [0, 0, 0, 1, 1, 2, 2, 2, 2, 3]
+			}
+		]
+	}
+}	

@@ -1,0 +1,172 @@
+{
+	"tumHurricaneElemental":
+	{
+		"name" :
+		{
+			"plural" : "Hurricane Elementals",
+			"singular" : "Hurricane Elemental"
+		},
+		"advMapAmount" : 
+		{
+			"max" : 22,
+			"min" : 16
+		},
+		"faction" : "conflux",
+		"attack" : 10,
+		"defense" : 10,
+		"cost" :
+		{
+			"gold" : 325
+		},
+		"damage" :
+		{
+			"max" : 8,
+			"min" : 3
+		},
+		"growth" : 6,
+		"hitPoints" : 30,
+		"speed" : 10,
+		"level" : 2,
+		"shots" : 24,
+		"fightValue" : 344,
+		"aiValue" : 354,
+		"graphics" :
+		{
+			"animation" : 	"creatures/conflux/battle/CR247",
+			"map" : 		"creatures/conflux/map/AVWCR247",
+			"iconSmall" : 	"creatures/conflux/iconsSmall/CPrS247X",
+			"iconLarge" : 	"creatures/conflux/iconsBig/CPrL247X",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			},
+			"missile" :
+			{
+				"projectile": "CPRGTIX.DEF",
+				"attackClimaxFrame" : 4,
+				"offset" :
+				{
+					"upperX" : 50,
+					"upperY" : -100,
+					"middleX" : 80,
+					"middleY" : -80,
+					"lowerX" : 45,
+					"lowerY" : -40
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+		},
+		"sound" :
+		{
+			"attack": "STORATTK.wav",
+			"defend": "STORDFND.wav",
+			"killed": "STORKILL.wav",
+			"move": "STORMOVE.wav",
+			"shoot": "STORSHOT.wav",
+			"wince": "STORWNCE.wav"
+		},
+		"abilities":
+		{
+			"canShoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"noMeleePenalty" : {
+				"type" : "NO_MELEE_PENALTY"
+			},
+			"nonLiving" : 
+			{
+				"type" : "NON_LIVING"
+			},
+			"lightingVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.lightningBolt",
+				"val" : 100
+			},
+			"chainLightingVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.chainLightning",
+				"val" : 100
+			},
+			"armageddonVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.armageddon",
+				"val" : 100
+			},
+			"spellPower" : 
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 6
+			},
+			"spellPoints" : 
+			{
+				"type" : "CASTS",
+				"val" : 3
+			},
+			"protectAir":
+			{
+				"type" : "ENCHANTED",
+				"subtype" : "spell.protectAir",
+				"val" : 2
+			},	
+			"castAirShield":
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.airShield",
+				"val" : 2
+			},	
+			"airShield" :
+			{
+				"type" : "ENCHANTED",
+				"subtype" : "spell.airShield",
+				"val" : 1
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : 77, //thunderbolt
+					"addInfo" : 2
+				},
+				"values" : [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "AIR_IMMUNITY"
+				},
+				"values" : [false, false, false, false, false, true, true, true, true, true]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "MIND_IMMUNITY"
+				},
+				"values" : [false, false, true, true, true, true, true, true, true, true]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SHOTS"
+				},
+				"values" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			}
+		]
+	}
+}	

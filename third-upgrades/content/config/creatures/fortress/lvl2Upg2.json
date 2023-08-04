@@ -1,0 +1,132 @@
+{
+	"tumEliteLizard":
+	{
+		"name" :
+		{
+			"plural" : "Elite Lizards",
+			"singular" : "Elite Lizard"
+		},
+		"advMapAmount" : 
+		{
+			"max" : 22,
+			"min" : 16
+		},
+		"faction" : "fortress",
+		"attack" : 6,
+		"defense" : 10,
+		"cost" :
+		{
+			"gold" : 260
+		},
+		"damage" :
+		{
+			"max" : 5,
+			"min" : 3
+		},
+		"growth" : 9,
+		"hitPoints" : 20,
+		"level" : 2,
+		"speed" : 6,
+		"shots" : 24,
+		"fightValue" : 169,
+		"aiValue" : 260,
+		"graphics" :
+		{
+			"animation" : 	"creatures/fortress/battle/CR240",
+			"map" : 		"creatures/fortress/map/AVWCR240",
+			"iconSmall" : 	"creatures/fortress/iconsSmall/CPrS240X",
+			"iconLarge" : 	"creatures/fortress/iconsBig/CPrL240X",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			},
+			"missile" :
+			{
+				"projectile": "creatures/fortress/battle/projectile/PPLIZAXUP.DEF",
+				"attackClimaxFrame" : 9,
+				"offset" :
+				{
+					"upperX" : 41,
+					"upperY" : -92,
+					"middleX" : 58,
+					"middleY" : -79,
+					"lowerX" : 29,
+					"lowerY" : -14
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+		},
+		"doubleWide" : false,
+		"sound" :
+		{
+			"attack": "ALIZATTK.wav",
+			"defend": "ALIZDFND.wav",
+			"killed": "ALIZKILL.wav",
+			"move": "ALIZMOVE.wav",
+			"shoot": "ALIZSHOT.wav",
+			"wince": "ALIZWNCE.wav"
+		},
+		"abilities" :
+		{
+			"canShoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"extraAttack" :
+			{
+				"type": "ADDITIONAL_ATTACK",
+				"val" : 1
+			},
+			"poison" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.poison",
+				"val" : 80,
+				"addInfo" : [0,1]
+			},
+			"freeShoot" :
+			{
+				"type": "FREE_SHOOTING"
+			},
+			"noWall" :
+			{
+				"type": "NO_WALL_PENALTY"
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "ADDITIONAL_ATTACK",
+				},
+				"values" : [0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+			},
+			{
+				"bonus" :
+				{	
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : 71, //poison
+				},
+				"values" : [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SHOTS"
+				},
+				"values" : [1, 1, 2, 3, 4, 5, 6, 8, 10, 12]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+			}
+		]
+	}	
+}

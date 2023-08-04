@@ -1,0 +1,129 @@
+{
+	"tumVermin" :
+	{
+		"name" :
+		{
+			"plural" : "Vermins",
+			"singular" : "Vermin"
+		},
+		"advMapAmount" : 
+		{
+			"max" : 25,
+			"min" : 20
+		},
+		"faction" : "inferno",
+		"attack" : 6,
+		"defense" : 5,
+		"cost" :
+		{
+			"gold" : 90
+		},
+		"damage" :
+		{
+			"max" : 4,
+			"min" : 2
+		},
+		"growth" : 15,
+		"horde" : 8,
+		"hitPoints" : 6,
+		"speed" : 9,
+		"level" : 1,
+		"fightValue" : 97,
+		"aiValue" : 90,
+		"graphics" :
+		{
+			"animation" : 	"creatures/inferno/battle/CR213",
+			"map" : 		"creatures/inferno/map/AVWCR213",
+			"iconSmall" : 	"creatures/inferno/iconsSmall/CPrs213X",
+			"iconLarge" : 	"creatures/inferno/iconsBig/CPrL213X",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+		},
+		"doubleWide" : false,
+		"sound" :
+		{
+			"attack": "FMLRATTK.wav",
+			"defend": "FMLRDFND.wav",
+			"killed": "FMLRKILL.wav",
+			"move": "FMLRMOVE.wav",
+			"wince": "FMLRWNCE.wav"
+		},
+		"abilities" :
+		{
+			"manaChannel" :
+			{
+				"type" : "MANA_CHANNELING",
+				"val" : 20
+			},
+			"canFly" :
+			{
+				"type" : "FLYING"
+			},
+			"hateGremlin" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.gremlin",
+				"val" : 50
+			},
+			"hateMasterGremlin" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.masterGremlin",
+				"val" : 50
+			},
+			"hateGrandmasterGremlin" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.tumGrandmasterGremlin",
+				"val" : 50
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "ENCHANTED",
+					"subtype" : 49, // mirth
+					"addInfo" : 3 
+				},
+				"values" : [1, 1, 1, 1, 2, 2, 2, 3, 3, 3]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : "creature.tumGrandmasterGremlin"
+				},
+				"values" : [0, 0, 0, 0, 5, 10, 20, 30, 40, 50]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "MANA_CHANNELING"
+				},
+				"values" : [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "FIRE_IMMUNITY",
+					"subtype" : 0
+				},
+				"values" : [false, false, false, false, false, false, false, true, true, true]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [0, 0, 0, 0, 1, 1, 1, 1, 1, 2]
+			}
+		]
+	}	
+}

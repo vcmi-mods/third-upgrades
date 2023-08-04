@@ -1,0 +1,96 @@
+{
+	"tumBerserkerDwarf" :
+	{
+		"name" : 
+		{
+			"plural" : "Berserker Dwarves",
+			"singular" : "Berserker Dwarf"
+		},
+		"advMapAmount" : 
+		{
+			"max" : 22,
+			"min" : 16
+		},
+		"faction" : "rampart",
+		"attack" : 8,
+		"defense" : 8,
+		"damage" :
+		{
+			"max" : 5,
+			"min" : 3
+		},
+		"growth" : 8,
+		"hitPoints" : 25,
+		"horde" : 4,
+		"level" : 2,
+		"speed" : 6,
+		"cost" :
+		{
+			"gold" : 190
+		},
+		"fightValue" : 274,
+		"aiValue" : 274,
+		"graphics" :
+		{
+			"animation" : "creatures/rampart/battle/cr203",
+			"map" : 	  "creatures/rampart/map/AVWCR203",
+			"iconSmall" : "creatures/rampart/iconsSmall/CPrS203X",
+			"iconLarge" : "creatures/rampart/iconsBig/CPrL203X",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+		},
+		"doubleWide" : false,
+		"sound" :
+		{
+			"attack": "BDRFATTK.wav",
+			"defend": "BDRFDFND.wav",
+			"killed": "BDRFKILL.wav",
+			"move": "BDRFMOVE.wav",
+			"wince": "BDRFWNCE.wav"
+		},
+		"abilities" :
+		{
+			"magicResistance" :
+			{
+				"type" : "MAGIC_RESISTANCE",
+				"val" : 60
+			},
+			"bloodlust" :
+			{
+				"type" : "ENCHANTED",
+				"subtype" : "spell.bloodlust",
+				"val" : 1
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "MAGIC_RESISTANCE"
+				},
+				"values" : [4, 8, 12, 16, 20, 24, 28, 32, 36, 40]
+			},
+			{
+				"bonus" :
+				{
+				"type" : "GENERAL_DAMAGE_REDUCTION",
+				"subtype" : 0, //shield effect
+				},
+				"values" : [0, 0, 2, 6, 10, 14, 18, 22, 26, 30]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+			}
+		]	
+	}
+}

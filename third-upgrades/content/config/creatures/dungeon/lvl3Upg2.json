@@ -1,0 +1,164 @@
+{
+	"tumMonstrousEye":
+	{
+		"name" :
+		{
+			"plural" : "Monstrous Eyes",
+			"singular" : "Monstrous Eye"
+		},
+		"advMapAmount" : 
+		{
+			"max" : 17,
+			"min" : 12
+		},
+		"faction" : "dungeon",
+		"attack" : 12,
+		"defense" : 10,
+		"cost" :
+		{
+			"gold" : 330
+		},
+		"damage" :
+		{
+			"max" : 5,
+			"min" : 3
+		},
+		"growth" : 7,
+		"hitPoints" : 22,
+		"level" : 3,
+		"speed" : 7,
+		"shots" : 24,
+		"fightValue" : 291,
+		"aiValue" : 292,
+		"graphics" :
+		{
+			"animation" : 	"creatures/dungeon/battle/CR226",
+			"map" : 		"creatures/dungeon/map/AVWCR226",
+			"iconSmall" : 	"creatures/dungeon/iconsSmall/CPrS226X",
+			"iconLarge" : 	"creatures/dungeon/iconsBig/CPrL226X",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			},
+			"missile" :
+			{
+				"projectile": "CPRGTIX.DEF", //brak oryginalnego strzału (promień)
+				"attackClimaxFrame" : 9,
+				"offset" :
+				{
+					"upperX" : 41,
+					"upperY" : -92,
+					"middleX" : 58,
+					"middleY" : -79,
+					"lowerX" : 29,
+					"lowerY" : -14
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+		},
+		"sound" :
+		{
+			"attack": "EVLIATTK.wav",
+			"defend": "EVLIDFND.wav",
+			"killed": "EVLIKILL.wav",
+			"move": "EVLIMOVE.wav",
+			"shoot": "EVLISHOT.wav",
+			"wince": "EVLIWNCE.wav"
+		},
+		"abilities":
+		{
+			"canShoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"extraAttack" :
+			{
+				"type": "ADDITIONAL_ATTACK",
+				"val" : 1
+			},
+			"noPenalty" : 
+			{
+				"type" : "NO_WALL_PENALTY" //sprawdzić
+			},
+			"noDefaultCast" : 
+			{
+				"type" : "NO_SPELLCAST_BY_DEFAULT"
+			},
+			"noMeleePenalty" : 
+			{
+				"type" : "NO_MELEE_PENALTY"
+			},
+			"castsHypnotize" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.hypnotize",
+				"val" : 1,
+				"addInfo" : 100,
+				"turns" : 3
+			},
+			"castsCount" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"spellpower" : 
+			{ 
+				"type" : "CREATURE_SPELL_POWER", 
+				"val" : 100
+			},
+			"visionsMonsters" :
+			{
+				"type" : "VISIONS",
+				"subtype" : 0,
+				"val" : 3,
+				"valueType" : "INDEPENDENT_MAX",
+				"propagator" : "HERO"
+			},
+			"visionsHeroes" :
+			{
+				"type" : "VISIONS",
+				"subtype" : 1,
+				"val" : 3,
+				"valueType" : "INDEPENDENT_MAX",
+				"propagator" : "HERO"				
+			},
+			"visionsTowns" :
+			{
+				"type" : "VISIONS",
+				"subtype" : 2,
+				"val" : 3,
+				"valueType" : "INDEPENDENT_MAX",
+				"propagator" : "HERO"				
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : 45, //weakness
+					"addInfo" : 2
+				},
+				"values" : [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "MIND_IMMUNITY"
+				},
+				"values" : [false, false, true, true, true, true, true, true, true, true]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			}
+		]
+	}
+}	

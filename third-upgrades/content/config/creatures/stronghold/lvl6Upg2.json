@@ -1,0 +1,98 @@
+{
+	"tumCyclopsEmperor" :
+	{
+		"name" : 
+		{
+			"plural" : "Cyclops Emperors",
+			"singular" : "Cyclops Emperor"
+		},
+		"advMapAmount" : 
+		{
+			"max" : 6,
+			"min" : 5
+		},
+		"faction" : "stronghold",
+		"attack" : 20,
+		"defense" : 15,
+		"cost" :
+		{
+			"gold" : 1500
+		},
+		"damage" :
+		{
+			"max" : 20,
+			"min" : 18
+		},
+		"growth" : 2,
+		"hitPoints" : 85,
+		"shots" : 24,
+		"speed" : 10,
+		"level" : 3,
+		"fightValue" : 1230,
+		"aiValue" : 1521,
+		"graphics" :
+		{
+			"animation" : "creatures/stronghold/battle/CR237",
+			"map" : 	  "creatures/stronghold/map/AVWCR237",
+			"iconSmall" : "creatures/stronghold/iconsSmall/CPrS237X",
+			"iconLarge" : "creatures/stronghold/iconsBig/CPrL237X",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			},
+			"missile" :
+			{
+				"projectile": "PORCHX.DEF",
+				"attackClimaxFrame" : 9,
+				"offset" :
+				{
+					"upperX" : 41,
+					"upperY" : -92,
+					"middleX" : 58,
+					"middleY" : -79,
+					"lowerX" : 29,
+					"lowerY" : -14
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+		},
+		"sound" :
+		{
+			"attack": "ORCCATTK.wav",
+			"defend": "ORCCDFND.wav",
+			"killed": "ORCCKILL.wav",
+			"move": "ORCCMOVE.wav",
+			"shoot": "ORCCSHOT.wav",
+			"wince": "ORCCWNCE.wav"
+		},
+		"abilities":
+		{
+			"siegeDoubleAttack" :
+			{
+				"type" : "CATAPULT_EXTRA_SHOTS", //to wystarczy?
+				"val" : 1
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "SHOTS"
+				},
+				"values" : [0, 0, 1, 2, 3, 4, 5, 6, 7, 8]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+			}
+		]
+	}
+	
+}

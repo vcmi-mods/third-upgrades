@@ -1,0 +1,229 @@
+{
+	"core:tower" :
+	{
+		"town" :
+		{
+			"hallBackground": "TPTHBKTW",
+			"buildingsIcons": "town-screen/tower/ALTHALLTOWR.DEF",
+			"hallSlots":
+			[	
+				[ [ "villageHall", "townHall", "cityHall", "capitol" ], [ "fort", "citadel", "castle" ], [ "tavern" ], [ "blacksmith" ] ],
+				[ [ "marketplace", "resourceSilo" ], [ "mageGuild1", "mageGuild2", "mageGuild3", "mageGuild4", "mageGuild5" ], [ "special3" ], [ "special4" ] ],
+				[ [ "special1" ], [ "special2" ], [ "horde1", "horde1Upgr", "horde1Upgr2" ] ],
+				[ [ "dwellingLvl1", "dwellingUpLvl1", "dwellingUp2Lvl1" ], [ "dwellingLvl2", "dwellingUpLvl2", "dwellingUp2Lvl2" ], [ "dwellingLvl3", "dwellingUpLvl3", "dwellingUp2Lvl3" ], [ "dwellingLvl4", "dwellingUpLvl4", "dwellingUp2Lvl4" ] ],
+				[ [ "dwellingLvl5", "dwellingUpLvl5", "dwellingUp2Lvl5" ], [ "dwellingLvl6", "dwellingUpLvl6", "dwellingUp2Lvl6" ], [ "dwellingLvl7", "dwellingUpLvl7", "dwellingUp2Lvl7" ] ]
+			],
+			"creatures" :
+			[
+				["gremlin", "masterGremlin", "tumGrandmasterGremlin"],
+				["stoneGargoyle", "obsidianGargoyle", "tumMarbleGargoyle"],
+				["ironGolem", "stoneGolem", "tumSteelGolem"],
+				["mage", "archMage", "tumSupremeArchMage"],
+				["genie", "masterGenie", "tumArcaneGenie"],
+				["naga", "nagaQueen", "tumNagaEmpress"],
+				["giant", "titan", "lordofThunder"]
+			],
+
+			"structures" :
+			{
+				"extraCapitol":{ "animation" : "town-screen/tower/TBTWEXT5.def", "x" : 430, "y" : 28,  "z" : 0 },				
+				"horde1":         { "y" : 46 },
+				"horde1Upgr":     { "y" : 27 },
+				"horde1Upgr2":    	  { "animation" : "TBTWHRD2.def", "x" : 0, "y" : 28, "border" : "TOTGAR2H.bmp", "area" : "TZTGAR2H.bmp", "hidden" : true, "builds" : "horde1Upgr" },
+				"dwellingUp2Lvl1": { "animation" : "TBTWUP_0.def", "x" : 446, "y" : 221, "z" : 1,  "border" : "TOTGRM2A.bmp", "area" : "TZTGRM2A.bmp" },
+				"dwellingUp2Lvl2": { "animation" : "TBTWUP_1.def", "x" : 4,   "y" : 28,  "border" : "TOTGAR2.bmp",  "area" : "TZTGAR2.bmp" },				 
+				"dwellingUp2Lvl3": { "animation" : "TBTWUP_2.def", "x" : 209, "y" : 177, "z" : 1,  "border" : "TOTGOL2A.bmp", "area" : "TZTGOL2A.bmp" },
+				"dwellingUp2Lvl4": { "animation" : "TBTWUP_3.def", "x" : 613, "y" : 74,  "border" : "TOTMAG2.bmp",  "area" : "TZTMAG2.bmp" },
+				"dwellingUp2Lvl5": { "animation" : "TBTWUP_4.def", "x" : 511, "y" : 8,   "border" : "TOTGEN2.bmp",  "area" : "TZTGEN2.bmp" },
+				"dwellingUp2Lvl6": { "animation" : "TBTWUP_5.def", "x" : 681, "y" : 157, "z" : 2,  "border" : "TOTNAG2.bmp",  "area" : "TZTNAG2.bmp" },
+				"dwellingUp2Lvl7": { "animation" : "TBTWUP_6.def", "x" : 75,  "y" : 91,  "z" : -1, "border" : "TOTTIT2.bmp",  "area" : "TZTTIT2.bmp" }			
+			},
+
+			"buildings" :
+			{
+				"extraCapitol":   {
+					"name" : "Geomancy",
+					"description" : "Geomancy mark unlocks 3rd level structures to build.",
+					"id" : 29, 
+					"requires" : 
+					[ 
+						"allOf", ["castle"], ["dwellingUpLvl6"]
+					],
+					"mode" : "auto" 
+				},
+				"dwellingUpLvl1":
+				{
+					"name" : "Adv. Workshop"
+				},
+				"dwellingUpLvl2":
+				{
+					"name" : "Adv. Parapet"
+				},
+				"dwellingUpLvl3":
+				{
+					"name" : "Adv. Golem Factory"
+				},
+				"dwellingUpLvl4":
+				{
+					"name" : "Adv. Mage Tower"
+				},
+				"dwellingUpLvl5":
+				{
+					"name" : "Adv. Altar of Wishes"
+				},
+				"dwellingUpLvl6":
+				{
+					"name" : "Adv. Golden Pavilion"
+				},
+				"dwellingUpLvl7":
+				{
+					"name" : "Adv. Cloud Temple"
+				},
+				"dwellingUp2Lvl1":
+				{
+					"description" : "The Workshop allows you to recruit Grandmaster Gremlins.",
+					"name" : "{Upg. Workshop}",
+					"requires" : 
+					[ 
+						"allOf", ["castle"],["dwellingUpLvl6"]
+					],
+					"upgrades" : "dwellingUpLvl1",					
+					"cost" :
+					{
+						"wood":    5,
+						"ore":     5,
+						"gold":	1300
+					},
+					"id" : 44					
+				},
+				"dwellingUp2Lvl2":
+				{
+					"description" : "The Parapet allows you to recruit Marble Gorgoyles.",
+					"name" : "{Upg. Parapet}",
+					"requires" : 
+					[ 
+						"allOf",["castle"],["dwellingUpLvl6"]
+					],					
+					"cost" :
+					{
+						"ore":    15,
+						"gold":	2500
+					},
+					"id" : 45, 
+					"upgrades" : "dwellingUpLvl2"
+				},
+				"horde1Upgr2" :
+				{
+					"description" : "The Sculptor's Wings increase Marble Gorgoyle production by 4 per week.",
+					"name" : "{Sculptor's Wings}",				
+					"cost" :
+					{
+						"gold":	1000
+					},
+					"requires" : [ "allOf",["horde1Upgr"], ["dwellingUp2Lvl2"] ],
+					"upgrades" : "horde1Upgr",
+					"id" : 20,
+					"mode" : "auto" 
+				},
+
+				"dwellingUp2Lvl3":
+				{
+					"description" : "The Golem Factory allows you to recruit Steel Golems.",
+					"name" : "{Upg. Golem Factory}",
+					"requires" : 
+					[ 
+						"allOf",["castle"],["dwellingUpLvl6"]
+					],				
+					"cost" :
+					{
+						"wood":    10,
+						"mercury": 5,
+						"ore":     10,
+						"gold":	4000
+					},
+					"id" : 46, 
+					"upgrades" : "dwellingUpLvl3"
+				},
+				"dwellingUp2Lvl4":
+				{
+					"description" : "The Mage Tower allows you to recruit Supreme Arch Magi.",
+					"name" : "{Upg. Mage Towers}",
+					"requires" : 
+					[ 
+						"allOf",["dwellingUp2Lvl3"],["mageGuild2"]
+					],						
+					"cost" :
+					{
+						"wood":    10,
+						"mercury": 5,
+						"ore":     5,
+						"crystal": 5,
+						"sulfur":  5,
+						"gems":    5,
+						"gold":	4500
+					},
+					"id" : 47, 
+					"upgrades" : "dwellingUpLvl4"
+				},
+				"dwellingUp2Lvl5":
+				{
+					"description" : "The Altar of Wishes allows you to recruit Arcane Genies.",
+					"name" : "{Upg. Altar of Wishes}",
+					"requires" : 
+					[ 
+						"dwellingUp2Lvl6"
+					],					
+					"cost" :
+					{
+						"wood":    10,
+						"ore":     5,
+						"crystal": 6,
+						"gems":    6,
+						"gold":	5000
+					},
+					"id" : 48, 
+					"upgrades" : "dwellingUpLvl5"
+				},
+				"dwellingUp2Lvl6":
+				{
+					"description" : "The Golden Pavilion allows you to recruit Naga Empresses.",
+					"name" : "{Upg. Golden Pavilion}",
+					"requires" : 
+					[ 
+						"allOf", ["castle"],["special3"],["mageGuild3"]
+					],					
+					"cost" :
+					{
+						"wood":    5,
+						"ore":     5,
+						"mercury": 5,
+						"sulfur":  5,
+						"crystal": 5,
+						"gems":    5,
+						"gold":	7000
+					},
+					"id" : 49, 
+					"upgrades" : "dwellingUpLvl6"
+				},
+				"dwellingUp2Lvl7":
+				{
+					"description" : "Cloud Temple allows you to recruit Lords of Thunder.",
+					"name" : "{Upg. Cloud Temple}",
+					"requires" : 
+					[ 
+						"dwellingUp2Lvl6"
+					],					
+					"cost" :
+					{
+						"wood":    15,
+						"ore":     15,
+						"gems":    40,
+						"gold":	30000
+					},
+					"id" : 50, 
+					"upgrades" : "dwellingUpLvl7"
+				}			
+			}
+		}
+	}
+}

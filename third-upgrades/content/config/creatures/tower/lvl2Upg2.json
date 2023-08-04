@@ -1,0 +1,91 @@
+{
+	"tumMarbleGargoyle":
+	{
+		"name" :
+		{
+			"plural" : "Marble Gorgoyle",
+			"singular" : "Marble Gorgoyle"
+		},
+		"advMapAmount" : 
+		{
+			"max" : 22,
+			"min" : 16
+		},
+		"faction" : "tower",
+		"attack" : 9,
+		"defense" : 9,
+		"damage" :
+		{
+			"max" : 4,
+			"min" : 2
+		},
+		"cost" :
+		{
+			"gold" : 190
+		},
+		"growth" : 9,
+		"hitPoints" : 16,
+		"horde" : 4,
+		"level" : 2,
+		"speed" : 10,
+		"fightValue" : 155,
+		"aiValue" : 201,
+		"graphics" :
+		{
+			"animation" : 	"creatures/tower/battle/Cr208",
+			"map" : 		"creatures/tower/map/AVWCR208",
+			"iconSmall" : 	"creatures/tower/iconsSmall/CPrs208X.bmp",
+			"iconLarge" : 	"creatures/tower/iconsBig/CPrL208X",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+		},
+		"doubleWide" : false,
+		"sound" :
+		{
+			"attack": "OGRGATTK.wav",
+			"defend": "OGRGDFND.wav",
+			"killed": "OGRGKILL.wav",
+			"move": "OGRGMOVE.wav",
+			"wince": "OGRGWNCE.wav"
+		},
+		"abilities" :
+		{
+			"canFly" : 
+			{
+				"type" : "FLYING"
+			},
+			"nonliving" :
+			{
+				"type" : "GARGOYLE"
+			},
+			"noMorale" :
+			{
+				"type" : "NO_MORALE" //check combo gorgoyle + no morale
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "ENCHANTER",
+					"subtype" : "spell.stoneSkin",
+					"addInfo" : 3
+				},
+				"values" : [0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			}
+		]
+	}
+}

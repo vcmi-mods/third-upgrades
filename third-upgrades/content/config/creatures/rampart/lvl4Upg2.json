@@ -1,0 +1,103 @@
+{
+	"tumGoldenPegasus":
+	{
+		"name" : 
+		{
+			"plural" : " Golden Pegasi",
+			"singular" : "Golden Pegasus"
+		},
+		"advMapAmount" : 
+		{
+			"max" : 14,
+			"min" : 10
+		},
+		"faction" : "rampart",
+		"attack" : 10,
+		"defense" : 10,
+		"cost" :
+		{
+			"gold" : 315
+		},
+		"damage" :
+		{
+			"max" : 10,
+			"min" : 6
+		},
+		"growth" : 5,
+		"hitPoints" : 40,
+		"speed" : 15,
+		"level" : 4,
+		"fightValue" : 564,
+		"aiValue" : 718,
+		"graphics" :
+		{
+			"animation" : "creatures/rampart/battle/cr204",
+			"map" : 	  "creatures/rampart/map/AVWCR204",
+			"iconSmall" : "creatures/rampart/iconsSmall/CPrS204X",
+			"iconLarge" : "creatures/rampart/iconsBig/CPrL204X",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+		},
+		"doubleWide" : true,
+		"sound" :
+		{
+			"attack": "APEGATTK.wav",
+			"defend": "APEGDFND.wav",
+			"killed": "APEGKILL.wav",
+			"move": "APEGMOVE.wav",
+			"wince": "APEGWNCE.wav"
+		},
+		"abilities" :
+		{
+			"canFly" : 
+			{
+				"type" : "FLYING"
+			},
+			"increaseManaCost" :
+			{
+				"type" : "CHANGES_SPELL_COST_FOR_ENEMY",
+				"val" : 1
+			},
+			"noReataliation" :
+			{
+				"type" : "BLOCKS_RETALIATION"
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "ENEMY_DEFENCE_REDUCTION",
+				},
+				"values" : [0, 0, 0, 0, 0, 1, 2, 3, 4, 5]
+			}, 
+			{
+				"bonus" :
+				{
+					"type" : "RETURN_AFTER_STRIKE"
+				},
+				"values" : [false, false, false, false, true, true, true, true, true, true]
+			}, 
+			{
+				"bonus" :
+				{
+				"type" : "BLOCKS_RETALIATION"
+				},
+				"values" : [0, 0, 0, 1, 1, 1, 1, 2, 2, 3]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [0, 0, 0, 1, 1, 2, 2, 2, 2, 3]
+			}
+		]	
+	}
+}

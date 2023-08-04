@@ -1,0 +1,69 @@
+{
+	"tumHarpySanguinary": {
+		"name" : {
+			"singular" : "Harpy Sanguinary",
+			"plural" : "Harpy Sanguinaries"
+		},
+		"faction" : "dungeon",
+		"level" : 2,
+		"cost" : {
+			"gold" : 230
+		},
+		"speed" : 10,
+		"hitPoints" : 14,
+		"attack" : 8,
+		"defense" : 6,
+		"damage" : {
+			"min" : 2,
+			"max" : 4
+		},
+		"growth" : 8,
+		"horde" : 0,
+		"aiValue" : 238,
+		"fightValue" : 196,
+		"advMapAmount" : {
+			"min" : 16,
+			"max" : 22
+		},
+		"abilities" : {
+			"FLYING_ARMY" : {
+				"type" : "FLYING"
+			},
+			"noRetaliation" : {
+				"type" : "BLOCKS_RETALIATION"
+			},
+			"strikeAndReturn" : {
+				"type" : "RETURN_AFTER_STRIKE"
+			},
+			"fearless" : {
+				"type" : "FEARLESS"
+			},
+			"age" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.age",
+				"val" : 20
+			}
+		},
+		"graphics" : {
+			"animation" : "creatures/dungeon/battle/CR227",
+			"map" : 	  "creatures/dungeon/map/AVWCR227",
+			"iconSmall" : "creatures/dungeon/iconsSmall/CPrS227X",
+			"iconLarge" : "creatures/dungeon/iconsBig/CPrL227X",
+			"animationTime" : {
+				"attack" : 1,
+				"idle" : 10,
+				"walk" : 0.85
+			},
+			"timeBetweenFidgets" : 1
+		},
+		"sound" : {
+			"attack" : "HHAGATTK.wav",
+			"defend" : "HHAGDFND.wav",
+			"killed" : "HHAGKILL.wav",
+			"move" : "HHAGMOVE.wav",
+			"shoot" : "HHAGSHOT.wav",
+			"wince" : "HHAGWNCE.wav"
+		}
+	}
+}

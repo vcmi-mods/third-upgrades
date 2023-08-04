@@ -1,0 +1,259 @@
+{
+	"core:rampart" :
+	{
+		"town" :
+		{
+			"structures" :
+			{
+				"extraCapitol":{ "animation" : "town-screen/rampart/TBRMEXT5.def", "x" : 436, "y" : 55,  "z" : -1 },
+				"grail":          { "z" : -2},
+				"horde1":         { "z" : -1},
+				"horde1Upgr":     { "z" : -1 },
+				"horde1Upgr2":{ "animation" : "TBRMHRD2.def", "x" : 0,   "y" : 143, "border" : "TORDWF2H.bmp", "area" : "TZRDWF2H.bmp", "hidden" : true,"builds" : "horde1Upgr" },	"horde2Upgr2":{ "animation" : "TBRMHRD4.def", "x" : 47,  "y" : 142, "z" : -1, "border" : "TORTRE2H.bmp", "area" : "TZRTRE2H.bmp", "hidden" : true, "builds" : "horde2Upgr" },				
+				"dwellingLvl2":   { "z" : -1 },
+				"dwellingLvl3":   { "z" : -1 },			
+				"dwellingUpLvl2": { "z" : -1 },
+				"dwellingUpLvl3": { "z" : -1 },			
+				"dwellingUp2Lvl1": { "animation" : "TBRMUP_0.def", "x" : 0,   "y" : 236, "z" : 2,  "border" : "TORCEN2A.bmp", "area" : "TZRCEN2A.bmp" },
+				"dwellingUp2Lvl2": { "animation" : "TBRMUP_1.def", "x" : 0,   "y" : 143, "border" : "TORDWF2.bmp",  "area" : "TZRDWF2.bmp" },
+				"dwellingUp2Lvl3": { "animation" : "TBRMUP_2.def", "x" : 665, "y" : 101, "border" : "TORELF2.bmp",  "area" : "TZRELF2.bmp" },
+				"dwellingUp2Lvl4": { "animation" : "TBRMUP_3.def", "x" : 287, "y" : 28,  "z" : -1, "border" : "TORPEG2A.bmp", "area" : "TZRPEG2A.bmp" },
+				"dwellingUp2Lvl5": { "animation" : "TBRMUP_4.def", "x" : 63,  "y" : 146, "z" : -1, "border" : "TORTRE2.bmp",  "area" : "TZRTRE2.bmp" },
+				"dwellingUp2Lvl6": { "animation" : "TBRMUP_5.def", "x" : 362, "y" : 90,  "z" : -2, "border" : "TORUNI2.bmp",  "area" : "TZRUNI2.bmp" },
+				"dwellingUp2Lvl7": { "animation" : "TBRMUP_6.def", "x" : 502, "y" : 5,   "z" : -5, "border" : "TORDR2AA.bmp", "area" : "TZRDR2AA.bmp" }
+			},
+			"buildingsIcons": "town-screen/rampart/ALTHALLRMT.DEF",
+			"hallBackground": "TPTHBKRM",
+			"hallSlots":
+			[
+				[ [ "villageHall", "townHall", "cityHall", "capitol" ], [ "fort", "citadel", "castle" ], [ "tavern" ], [ "blacksmith" ] ],
+				[ [ "marketplace", "resourceSilo" ], [ "mageGuild1", "mageGuild2", "mageGuild3", "mageGuild4", "mageGuild5" ], [ "special1", "special2" ] ],
+				[ [ "special3" ], [ "horde2", "horde2Upgr", "horde2Upgr2" ], [ "horde1", "horde1Upgr", "horde1Upgr2" ] ],
+				[ [ "dwellingLvl1", "dwellingUpLvl1", "dwellingUp2Lvl1" ], [ "dwellingLvl2", "dwellingUpLvl2", "dwellingUp2Lvl2" ], [ "dwellingLvl3", "dwellingUpLvl3", "dwellingUp2Lvl3" ], [ "dwellingLvl4", "dwellingUpLvl4", "dwellingUp2Lvl4" ] ],
+				[ [ "dwellingLvl5", "dwellingUpLvl5", "dwellingUp2Lvl5" ], [ "dwellingLvl6", "dwellingUpLvl6", "dwellingUp2Lvl6" ], [ "dwellingLvl7", "dwellingUpLvl7", "dwellingUp2Lvl7" ] ]
+			],
+			"creatures" :
+			[
+				["centaur", "centaurCaptain", "tumCentaurGeneral"],
+				["dwarf", "battleDwarf", "tumBerserkerDwarf"],
+				["woodElf", "grandElf", "tumSharpshooterElf"],
+				["pegasus", "silverPegasus",  "tumGoldenPegasus" ],
+				["dendroidGuard", "dendroidSoldier", "tumElderDendroid"],
+				["unicorn", "warUnicorn", "tumLegendaryUnicorn"],
+				["greenDragon", "goldDragon", "diamondDragon"]
+			],
+			
+			"buildings" :
+			{
+				"extraCapitol":   {
+					"name" : "Wild",
+					"description" : "Wild mark unlocks 3rd level structures to build.",
+					"id" : 29, 
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
+					],
+					"mode" : "auto" 
+				},
+				"dwellingUpLvl1":
+				{
+					"name" : "Adv. Centaur Stables"
+				},
+				"dwellingUpLvl2":
+				{
+					"name" : "Adv. Dwarf Cottage"
+				},
+				"dwellingUpLvl3":
+				{
+					"name" : "Adv. Homestead"
+				},
+				"dwellingUpLvl4":
+				{
+				"name" : "Adv. Enchanted Springs"
+				},
+				"dwellingUpLvl5":
+				{
+					"name" : "Adv. Dendroid Arches"
+				},
+				"dwellingUpLvl6":
+				{
+					"name" : "Adv. Unicorn Glade"
+				},
+				"dwellingUpLvl7":
+				{
+					"name" : "Adv. Dragon Cliffs"
+				},
+				"dwellingUp2Lvl1":
+				{
+					"description" : "The Centaur Stables allow you to recruit Centaur Generals",
+					"name" : "{Upg. Centaur Stables}",
+					"cost" :
+					{
+						"wood": 15,
+						"gold":	1500
+					},
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
+					],	
+					"upgrades" : "dwellingUpLvl1",
+					"id" : 44
+				},
+				"horde1Upgr2" :
+				{
+					"name" : "{Miners' Guild}",
+					"description" : "The Miners' Guild increases Berserker Dwarves production by 4 per week.",
+					"cost" : 
+					{
+						"gold" : 1000
+					},
+					"id" : 20,
+					"requires" : 
+					[
+						"allOf",
+							["horde1Upgr"],
+							["dwellingUp2Lvl2"]
+					],
+					"upgrades" : "horde1Upgr",
+					"mode" : "auto"
+				},
+				"dwellingUp2Lvl2":
+				{
+					"description" : "The Dwarf Cottage allows you to recruit Berserker Dwarves.",
+					"name" : "{Upg. Dwarf Cottage}", 
+					"cost" :
+					{
+						"wood": 10,
+						"gold":	2000
+					},
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
+					],			
+					"upgrades" : "dwellingUpLvl2",
+					"id" : 45
+				},
+				"dwellingUp2Lvl3":
+				{
+					"description" : "The Homestead allows you to recruit Elven Sharpshooters",
+					"name" : "{Upg. Homestead}",
+					
+					"cost" :
+					{
+						"wood":    20,
+						"gold":	3000
+					},
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
+					],		
+					"upgrades" : "dwellingUpLvl3",
+					"id" : 46
+				},
+				"dwellingUp2Lvl4":
+				{
+					"description" : "The Enchanted Spring allows you to recruit Golden Pegasi.",
+					"name" : "{Upg. Enchanted Spring}",
+					
+					"cost" :
+					{
+						"crystal": 15,
+						"gold":	4000
+					},
+					"requires" : 
+					[
+						"dwellingUp2Lvl3"
+					],			 
+					"upgrades" : "dwellingUpLvl4",
+					"id" : 47
+				},
+				"dwellingUp2Lvl5":
+				{
+					"description" : "The Dendroid Arches allow you to recruit Elder Dendroids.",
+					"name" : "{Upg. Dendroid Arches}",
+					
+					"cost" :
+					{
+						"gold":	4000
+					},
+					"requires" : 
+					[ 
+						"dwellingUp2Lvl4"
+					],
+								
+					"upgrades" : "dwellingUpLvl5",
+					"id" : 48
+				},
+				"horde2Upgr2" :
+				{
+					"name" : "{Dendroid Saplings}",
+					"description" : "The Dendroid Saplings increase Elder Dendroids production by 2 per week.",
+					"cost" : 
+					{
+						"gold" : 2000
+					},
+					"id" : 23,
+					"requires" : 
+					[
+						"allOf",
+							["horde2Upgr"],
+							["dwellingUp2Lvl5"]
+					],
+								
+					"upgrades" : "horde2Upgr",			
+					"mode" : "auto"
+				},
+				"dwellingUp2Lvl6":
+				{
+					"description" : "The Unicorn Glade allows you to recruit Legendary Unicorns.",
+					"name" : "{Upg. Unicorn Glade}",
+					
+					"cost" :
+					{
+						"wood":    5,
+						"ore":     5,
+						"gems":    15,
+						"gold":	7000
+					},
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"],
+							["special2"]
+					],
+					"upgrades" : "dwellingUpLvl6",
+					"id" : 49
+				},
+				"dwellingUp2Lvl7":
+				{
+					"description" : "The Dragon Cliffs allow you to recruit Diamond Dragons.",
+					"name" : "{Upg. Dragon Cliffs}",
+					
+					"cost" :
+					{
+						"ore":     60,
+						"crystal": 40,
+						"gold":	30000
+					},
+					"requires" : 
+					[ 
+						"allOf",	
+							["dwellingUp2Lvl6"], 
+						    ["mageGuild4"]
+					],	
+					"upgrades" : "dwellingUpLvl7",
+					"id" : 50
+				}
+			}	
+		}
+	}	
+}

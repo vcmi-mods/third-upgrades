@@ -1,0 +1,89 @@
+{
+	"tumCentaurGeneral":
+	{
+		"name" :
+		{
+			"plural" : "Centaur Generals",
+			"singular" : "Centaur General"
+		},
+		"advMapAmount" : 
+		{
+			"max" : 25,
+			"min" : 20
+		},
+		"faction" : "rampart",
+		"attack" : 7,
+		"defense" : 4,
+		"damage" :
+		{
+			"max" : 4,
+			"min" : 3
+		},
+		"growth" : 14,
+		"hitPoints" : 14,
+		"level" : 1,
+		"speed" : 10,
+		"cost" :
+		{
+			"gold" : 100
+		},
+		"fightValue" : 150,
+		"aiValue" : 170,
+		"graphics" :
+		{
+			"animation" : 	"creatures/rampart/battle/cr293",
+			"map" : 		"creatures/rampart/map/AVWCR293",
+			"iconSmall" : 	"creatures/rampart/iconsSmall/CPrS293X",
+			"iconLarge" : 	"creatures/rampart/iconsBig/CPrL293X",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 50.00,
+				"attack" : 1.00
+			}
+		},
+		"doubleWide" : true,
+		"sound" :
+		{
+			"attack": "ECNTATTK.wav",
+			"defend": "ECNTDFND.wav",
+			"killed": "ECNTKILL.wav",
+			"move": "ECNTMOVE.wav",
+			"wince": "ECNTWNCE.wav"
+		},
+		"abilities" :
+		{
+
+			"jousting" :
+			{
+				"type" : "JOUSTING"
+			}
+//aura of bravery? ask vmaiko
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "LEVEL_SPELL_IMMUNITY",
+				},
+				"values" : [0, 0, 0, 0, 0, 1, 1, 1, 1, 1]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "MIND_IMMUNITY"
+				},
+				"values" : [false, false, false, false, false, false, true, true, true, true]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			}
+		]
+	}	
+}

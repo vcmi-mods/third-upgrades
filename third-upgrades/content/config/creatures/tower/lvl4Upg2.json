@@ -1,0 +1,170 @@
+{
+	"tumSupremeArchMage": {
+		"name" : {
+			"singular" : "Supreme Arch Mage",
+			"plural" : "Supreme Arch Magi"
+		},
+		"faction" : "tower",
+		"level" : 4,
+		"cost" : {
+			"gold" : 600
+		},
+		"speed" : 9,
+		"hitPoints" : 35,
+		"attack" : 15,
+		"defense" : 10,
+		"damage" : {
+			"min" : 8,
+			"max" : 10
+		},
+		"shots" : 24,
+		"growth" : 4,
+		"aiValue" : 740,
+		"fightValue" : 620,
+		"advMapAmount" : {
+			"min" : 10,
+			"max" : 14
+		},
+		"abilities" : {
+			"SHOOTING_ARMY" : {
+				"type" : "SHOOTER"
+			},
+			"const_no_melee_penalty" : {
+				"type" : "NO_MELEE_PENALTY"
+			},
+			"const_no_wall_penalty" : {
+				"type" : "NO_WALL_PENALTY" //check this
+			},
+			"reduceSpellCost" : {
+				"type" : "CHANGES_SPELL_COST_FOR_ALLY",
+				"val" : 2
+			},
+			"weakness" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.weakness",
+				"val" : 20,
+				"addInfo" : [0,1]
+			},
+			"deasease" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.disease",
+				"val" : 20,
+				"addInfo" : [0,1]
+			},
+			"curse" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.curse",
+				"val" : 20,
+				"addInfo" : [0,1]
+			}
+		},
+		"graphics" : {
+			"animation" : "creatures/tower/battle/CR257",
+			"map" : 	  "creatures/tower/map/AVWCR257",
+			"iconSmall" : "creatures/tower/iconsSmall/CPrs257X",
+			"iconLarge" : "creatures/tower/iconsBig/CPrL257X",
+			"animationTime" : {
+				"attack" : 1,
+				"idle" : 10,
+				"walk" : 1
+			},
+			"missile" : {
+				"projectile" : "PMAGEX.DEF",
+				"attackClimaxFrame" : 8,
+				"frameAngles" : [ 90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0 ],
+				"offset" : {
+					"lowerX" : 18,
+					"lowerY" : -92,
+					"middleX" : 43,
+					"middleY" : -99,
+					"upperX" : 28,
+					"upperY" : -107
+				},
+				"ray" : [
+					{
+						"end" : [
+							160,
+							192,
+							0,
+							64
+						],
+						"start" : [
+							160,
+							192,
+							0,
+							255
+						]
+					},
+					{
+						"end" : [
+							128,
+							224,
+							128,
+							128
+						],
+						"start" : [
+							128,
+							224,
+							128,
+							255
+						]
+					},
+					{
+						"end" : [
+							32,
+							176,
+							32,
+							255
+						],
+						"start" : [
+							32,
+							176,
+							32,
+							255
+						]
+					},
+					{
+						"end" : [
+							128,
+							224,
+							128,
+							128
+						],
+						"start" : [
+							128,
+							224,
+							128,
+							255
+						]
+					},
+					{
+						"end" : [
+							160,
+							192,
+							0,
+							64
+						],
+						"start" : [
+							160,
+							192,
+							0,
+							255
+						]
+					}
+				]
+			},
+			"timeBetweenFidgets" : 1,
+		},
+		"sound" : {
+			"attack" : "AMAGATTK.wav",
+			"defend" : "AMAGDFND.wav",
+			"killed" : "AMAGKILL.wav",
+			"move" : "AMAGMOVE.wav",
+			"shoot" : "AMAGSHOT.wav",
+			"wince" : "AMAGWNCE.wav"
+		}
+	}
+}

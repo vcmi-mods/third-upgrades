@@ -1,0 +1,117 @@
+{
+	"tumPlasmaElemental" :
+	{
+		"name" :
+		{
+			"plural" : "Plasma Elementals",
+			"singular" : "Plasma Elemental"
+		},
+		"advMapAmount" : 
+		{
+			"max" : 24,
+			"min" : 10
+		},
+		"faction" : "conflux",
+		"attack" : 12,
+		"defense" : 10,
+		"cost" :
+		{
+			"gold" : 500
+		},
+		"damage" :
+		{
+			"max" : 6,
+			"min" : 4
+		},
+		"growth" : 5,
+		"hitPoints" : 35,
+		"speed" : 10,
+		"level" : 4,
+		"fightValue" : 604,
+		"aiValue" : 794,
+		"graphics" :
+		{
+			"animation" : 	"creatures/conflux/battle/CR249",
+			"map" : 		"creatures/conflux/map/AVWCR249",
+			"iconSmall" : 	"creatures/conflux/iconsSmall/CPrS249X",
+			"iconLarge" : 	"creatures/conflux/iconsBig/CPrL249X",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+		},
+		"sound" :
+		{
+			"attack": "FELMATTK.wav",
+			"defend": "FELMDFND.wav",
+			"killed": "FELMKILL.wav",
+			"move": "FELMMOVE.wav",
+			"wince": "FELMWNCE.wav"
+		},
+		"abilities" :
+		{
+			"canFly" : 
+			{
+				"type" : "FLYING"
+			},
+			"nonLiving" : 
+			{
+				"type" : "NON_LIVING"
+			},
+			"immuneToMind" : 
+			{
+				"type" : "MIND_IMMUNITY"
+			},
+			"immuneToFire" : 
+			{
+				"type" : "FIRE_IMMUNITY",
+				"subtype" : 0
+			},
+			"frostRingVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.frostRing",
+				"val" : 100
+			},
+			"iceBoltVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.iceBolt",
+				"val" : 100
+			},
+			"spellPower" : 
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 6
+			},
+			"spellPoints" : 
+			{
+				"type" : "CASTS",
+				"val" : 3
+			},
+			"spellcaster":
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.fireShield",
+				"val" : 2
+			},
+			"protectFire":
+			{
+				"type" : "ENCHANTED",
+				"subtype" : "spell.protectFire",
+				"val" : 2
+			},	
+			"fireShield" :
+			{
+				"type" : "FIRE_SHIELD",
+				"val" : 20
+			}			
+		}
+			// stackExperience
+		
+			// Crexpbon folder Data - new upgrades - WOG
+	}
+}	

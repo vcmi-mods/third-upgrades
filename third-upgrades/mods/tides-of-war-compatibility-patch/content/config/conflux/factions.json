@@ -1,0 +1,96 @@
+{
+	"core:conflux" :
+	{
+		"town" :
+		{
+			"structures" :
+			{
+				"dwellingLvl3B": { "animation" : "town-screen/conflux/TBzTrtn.def", "x" : 700, "y" : 161, "z" : -1, "border" : "town-screen/conflux/buildings-border/ToBzT1.bmp", "area" : "town-screen/conflux/buildings-area/TBzT1.bmp" }, 
+				"dwellingUpLvl3B": { "animation" : "town-screen/conflux/TBzTrtUp.def", "x" : 700, "y" : 161, "z" : -1, "border" : "town-screen/conflux/buildings-border/ToBzT1Up.bmp", "area" : "town-screen/conflux/buildings-area/TBzT1Up.bmp" }
+			},
+			"buildingsIcons": "town-screen/conflux/ALTHALLELEM.DEF",
+			"hallBackground": "town-screen/conflux/ConfluxHallBg.BMP",
+			"townBackground": "town-screen/conflux/TBELBACK.bmp",
+			"hallSlots":
+			[
+				[ [ "villageHall", "townHall", "cityHall", "capitol" ], [ "fort", "citadel", "castle" ], [ "tavern" ], [ "blacksmith" ] ],
+				[ [ "marketplace", "resourceSilo" ], [ "mageGuild1", "mageGuild2", "mageGuild3", "mageGuild4", "mageGuild5" ], [ "shipyard" ] ],
+				[ [ "special2" ], [ "special1" ], [ "horde1", "horde1Upgr", "horde2" ] ],
+				[ [ "dwellingLvl1", "dwellingUpLvl1", "dwellingUp2Lvl1" ], [ "dwellingLvl2", "dwellingUpLvl2", "dwellingUp2Lvl2" ], [ "dwellingLvl3", "dwellingUpLvl3", "dwellingUp2Lvl3" ], [ "dwellingLvl3B", "dwellingUpLvl3B" ] ],
+				[ [ "dwellingLvl4", "dwellingUpLvl4", "dwellingUp2Lvl4" ], [ "dwellingLvl5", "dwellingUpLvl5", "dwellingUp2Lvl5" ], [ "dwellingLvl6", "dwellingUpLvl6", "dwellingUp2Lvl6" ], [ "dwellingLvl7", "dwellingUpLvl7", "dwellingUp2Lvl7" ] ]
+			],
+			"creatures" :
+			[
+				["pixie", "sprite", "tumFairy"],
+				["airElemental", "stormElemental", "tumHurricaneElemental"],
+				["waterElemental", "iceElemental", "tumLifeElemental", "mdtTriton", "mdtAbyssalTriton"],
+				["fireElemental", "energyElemental", "tumPlasmaElemental"],
+				["earthElemental", "magmaElemental", "tumMineralElemental"],
+				["psychicElemental", "magicElemental", "tumVoidElemental"],
+				["firebird", "phoenix", "tumSacredPhoenix"]
+			],
+			
+			"buildings" :
+			{
+				"dwellingLvl3":   
+				{ 
+					"requires" : [ "allOf", [ "dwellingLvl1" ], [ "mageGuild1" ], [ "noneOf", [ "dwellingLvl3B" ] ] ]
+				},
+			
+				"dwellingLvl3B" :
+				{
+					"description" : "The Drowned Hall allows you to recruit Tritons.",
+					"name" : "Drowned Hall",
+					"cost" : 
+					{
+						"gold" : 2000,
+						"wood" : 5,
+						"ore" : 5
+					},
+					"requires" : [ "allOf", [ "dwellingLvl1" ], [ "mageGuild1" ], [ "noneOf", [ "dwellingLvl3" ] ] ],
+					"id" : 53
+				},
+				"dwellingUpLvl3B" :
+				{
+					"description" : "The Drowned Hall allows you to recruit Abyssal Tritons.",
+					"name" : "Upg. Drowned Hall",
+					"id" : 60,
+					"cost" : 
+					{
+						"gems" : 3,
+						"gold" : 2000
+					},
+					"upgrades" : "dwellingLvl3B"
+				},
+				"dwellingLvl5":   
+				{ 
+					"requires" : 
+					[ 
+							"anyOf", 
+							[ "dwellingLvl3" ], 
+							[ "dwellingLvl3B" ]	
+					]	
+				},
+				"dwellingUp2Lvl4": 
+				{ 
+					"description" : "Altar of Fire allows you to recruit Plasma Elementals.",
+					"name" : "{Upg. Altar of Fire}",
+				
+					"cost" :
+					{
+						"wood":    5,
+						"mercury": 5,
+						"ore":     10,
+						"gold":	4000
+					},
+					"id" : 47, 
+					"requires" : 
+					[
+						"anyOf", [ "dwellingUp2Lvl3" ], [ "dwellingUpLvl3B" ]
+					],
+					"upgrades" : "dwellingUpLvl4"
+				}
+			}	
+		}
+	}	
+}

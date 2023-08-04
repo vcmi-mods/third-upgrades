@@ -1,0 +1,148 @@
+{
+	"tumLifeElemental": {
+		"name" : {
+			"singular" : "Life Elemental",
+			"plural" : "Life Elementals"
+		},
+		"faction" : "conflux",
+		"level" : 3,
+		"cost" : {
+			"gold" : 450
+		},
+		"speed" : 8,
+		"hitPoints" : 30,
+		"attack" : 10,
+		"defense" : 10,
+		"damage" : {
+			"min" : 3,
+			"max" : 7
+		},
+		"shots" : 24,
+		"doubleWide" : true,
+		"growth" : 6,
+		"aiValue" : 498,
+		"fightValue" : 410,
+		"advMapAmount" : {
+			"min" : 12,
+			"max" : 17
+		},
+		"abilities" : {
+			"nonLiving" : {
+				"type" : "NON_LIVING" //dopisać ice immunity
+			},
+			"SHOOTING_ARMY" : {
+				"type" : "SHOOTER"
+			},
+			"noMeleePenalty" : {
+				"type" : "NO_MELEE_PENALTY"
+			},
+			"spellPoints" : {
+				"type" : "CASTS",
+				"val" : 3
+			},
+			"immuneToMind" : {
+				"type" : "MIND_IMMUNITY"
+			},
+			"extraAttack" : {
+				"type" : "ADDITIONAL_ATTACK",
+				"val" : 1
+			},	
+			"hpRegen" : {
+				"type" : "HP_REGENERATION",
+				"val" : 100000,
+				"valueType" : "ADDITIVE_VALUE",
+				"subtype" : 0
+			},			
+			"spellcaster" : {
+				"type" : "ENCHANTED",
+				"subtype" : "spell.protectWater",
+				"val" : 2
+			},
+			"spellPower" : {
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 6
+			},
+			"immuneToWater" : {
+				"type" : "WATER_IMMUNITY",
+				"subtype" : 2
+			},
+			"iceBolt" : {
+				"type" : "SPELL_BEFORE_ATTACK",
+				"val" : 30,
+				"subtype" : "spell.iceBolt",
+				"addInfo" : [1, 1]
+			},
+			"fireShieldVulnerablity" : {
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.fireShield",
+				"val" : 100
+			},
+			"fireWallVulnerablity" : {
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.fireWall",
+				"val" : 100
+			},
+			"fireballVulnerablity" : {
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.fireball",
+				"val" : 100
+			},
+			"infernoVulnerablity" : {
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.inferno",
+				"val" : 100
+			},
+			"armageddonVulnerablity" : {
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.armageddon",
+				"val" : 100
+			}
+		},
+		"graphics" : {
+			"animation" : "creatures/conflux/battle/CR248",
+			"map" : 	  "creatures/conflux/map/AVWCR248",
+			"iconSmall" : "creatures/conflux/iconsSmall/CPrS248X",
+			"iconLarge" : "creatures/conflux/iconsBig/CPrL248X",
+			"animationTime" : {
+				"attack" : 1,
+				"idle" : 10,
+				"walk" : 1
+			},
+			"missile" : {
+				"projectile" : "PICEE.DEF",
+				"attackClimaxFrame" : 4,
+				"frameAngles" : [
+					90,
+					72,
+					45,
+					27,
+					0,
+					-27,
+					-45,
+					-72,
+					-90,
+					0,
+					0,
+					0
+				],
+				"offset" : {
+					"lowerX" : 18,
+					"lowerY" : -92,
+					"middleX" : 43,
+					"middleY" : -99,
+					"upperX" : 28,
+					"upperY" : -107
+				},
+			},
+			"timeBetweenFidgets" : 1,
+		},
+		"sound" : {
+			"attack" : "ICELATTK.wav",
+			"defend" : "ICELDFND.wav",
+			"killed" : "ICELKILL.wav",
+			"move" : "ICELMOVE.wav",
+			"shoot" : "ICELSHOT.wav",
+			"wince" : "ICELWNCE.wav"
+		}
+	}
+}

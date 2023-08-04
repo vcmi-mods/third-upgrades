@@ -1,0 +1,30 @@
+{
+	"core:sprite" :
+	{
+		"upgrades": ["tumFairy"]
+	},	
+	"core:stormElemental" :
+	{
+		"upgrades": ["tumHurricaneElemental"]
+	},
+	"core:iceElemental" :
+	{
+		"upgrades": ["tumLifeElemental"]
+	},
+	"core:energyElemental" :
+	{
+		"upgrades": ["tumPlasmaElemental"]
+	},
+	"core:magmaElemental" :
+	{
+		"upgrades": ["tumMineralElemental"]
+	},
+	"core:magicElemental" :
+	{
+		"upgrades": ["tumVoidElemental"]
+	},
+	"core:phoenix" :
+	{	
+		"upgrades": ["sacredPhoenix"]
+	}
+}

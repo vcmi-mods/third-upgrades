@@ -1,0 +1,164 @@
+{
+	"tumLichKing":
+	{
+		"name" : 
+		{
+			"plural" : "Lich Kings",
+			"singular" : "Lich King"
+		},
+		"advMapAmount" : 
+		{
+			"max" : 10,
+			"min" : 8
+		},
+		"faction" : "necropolis",
+		"attack" : 15,
+		"defense" : 10,
+		"cost" :
+		{
+			"gold" : 650
+		},
+		"damage" :
+		{
+			"max" : 15,
+			"min" : 13
+		},
+		"growth" : 3,
+		"hitPoints" : 45,
+		"level" : 5,
+		"shots" : 24,
+		"speed" : 8,
+		"fightValue" : 1155,
+		"aiValue" : 1402,
+		"graphics" :
+		{
+			"animation" : "creatures/necropolis/battle/CR222",
+			"map" : 	  "creatures/necropolis/map/AVWCR222",
+			"iconSmall" : "creatures/necropolis/iconsSmall/CPrS222X",
+			"iconLarge" : "creatures/necropolis/iconsBig/CPrL222X",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			},
+			"missile" :
+			{
+				"projectile": "PLICH.DEF",
+				"attackClimaxFrame" : 8,
+				"offset" :
+				{
+					"upperX" : 41,
+					"upperY" : -92,
+					"middleX" : 58,
+					"middleY" : -79,
+					"lowerX" : 29,
+					"lowerY" : -14
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+		},
+		"doubleWide" : false,
+		"sound" :
+		{
+			"attack": "PLCHATTK.wav",
+			"defend": "PLCHDFND.wav",
+			"killed": "PLCHKILL.wav",
+			"move": "PLCHMOVE.wav",
+			"shoot": "PLCHSHOT.wav",
+			"wince": "PLCHWNCE.wav",
+		},
+		"abilities" :
+		{
+			"canShoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"undead" :
+			{
+				"type" : "UNDEAD"
+			},
+			"summons50HP" : 
+			{
+				"type" : "SPECIFIC_SPELL_POWER",
+				"subtype" : "spell.summonDemons", //przerobić na szkielety
+				"val" : 50
+			},
+			"resurrects" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.summonDemons",
+				"val" : 0
+			},
+			"castsAmount" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"deathCloud" :
+			{
+				"type" : "SPELL_LIKE_ATTACK",
+				"subtype" : "spell.deathCloud"
+			},
+			"airShield" :
+			{
+				"type" : "ENCHANTED",
+				"subtype" : "spell.precision",
+				"val" : 3,
+				"addInfo" : 1
+			},
+			"hateMage" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.mage",
+				"val" : 50
+			},
+			"hateArchMage" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.archMage",
+				"val" : 50
+			},
+			"hateSupremeArchMage" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.tumSupremeArchMage",
+				"val" : 50
+			}
+		},	
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : "creature.enchanter",
+				},
+				"values" : [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : 24, //deathRipple
+				},
+				"values" : [0, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SHOTS"
+				},
+				"values" : [0, 0, 1, 1, 1, 2, 2, 2, 3, 3]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [0, 0, 1, 1, 1, 2, 2, 2, 3, 3]
+			}
+		]
+	}
+}

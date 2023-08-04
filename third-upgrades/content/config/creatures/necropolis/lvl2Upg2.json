@@ -1,0 +1,57 @@
+{
+	"tumGhoul": {
+		"name" : {
+			"singular" : "Ghoul",
+			"plural" : "Ghouls"
+		},
+		"faction" : "necropolis",
+		"level" : 2,
+		"cost" : {
+			"gold" : 140
+		},
+		"speed" : 6,
+		"hitPoints" : 25,
+		"attack" : 5,
+		"defense" : 5,
+		"damage" : {
+			"min" : 2,
+			"max" : 4
+		},
+		"growth" : 8,
+		"aiValue" : 17,
+		"fightValue" : 135,
+		"advMapAmount" : {
+			"min" : 16,
+			"max" : 22
+		},
+		"abilities" : {
+			"IS_UNDEAD" : {
+				"type" : "UNDEAD" //flesheater?
+			},
+			"castDisease" : {
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.disease",
+				"val" : 50
+			}
+		},
+		"graphics" : {
+			"animation" : "creatures/necropolis/battle/CR329",
+			"map" : 	  "creatures/necropolis/map/AVWCR329",
+			"iconSmall" : "creatures/necropolis/iconsSmall/CPrs329X",
+			"iconLarge" : "creatures/necropolis/iconsBig/CPrL329X",
+			"animationTime" : {
+				"attack" : 1,
+				"idle" : 10,
+				"walk" : 1.3
+			},
+			"timeBetweenFidgets" : 1,
+		},
+		"sound" : {
+			"attack" : "ZMBLATTK.wav",
+			"defend" : "ZMBLDFND.wav",
+			"killed" : "ZMBLKILL.wav",
+			"move" : "ZMBLMOVE.wav",
+			"wince" : "ZMBLWNCE.wav"
+		}
+	}
+}

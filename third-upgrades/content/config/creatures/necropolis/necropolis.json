@@ -1,0 +1,30 @@
+{
+	"core:skeletonWarrior" :
+	{
+		"upgrades": ["tumSkeletonKnight"]
+	},
+	"core:zombieLord" :
+	{
+		"upgrades": ["tumGhoul"]
+	},
+	"core:wraith" :
+	{
+		"upgrades": ["tumSpecter"]
+	},
+	"core:vampireLord" :
+	{
+		"upgrades": ["tumNosferatu"]
+	},
+	"core:powerLich" :
+	{
+		"upgrades": ["tumLichKing"]
+	},
+	"core:dreadKnight" :
+	{
+		"upgrades": ["tumDeathKnight"]
+	},
+	"core:ghostDragon" :
+	{
+		"upgrades": ["bloodDragon"]
+	}
+}

@@ -1,0 +1,138 @@
+{
+	"tumDeathKnight":
+	{
+		"name" : 
+		{
+			"plural" : "Death Knights",
+			"singular" : "Death Knight"
+		},
+		"advMapAmount" : 
+		{
+			"max" : 8,
+			"min" : 5
+		},
+		"faction" : "necropolis",
+		"attack" : 20,
+		"defense" : 20,
+		"cost" :
+		{
+			"gold" : 3000
+		},
+		"damage" :
+		{
+			"max" : 35,
+			"min" : 20
+		},
+		"growth" : 2,
+		"hitPoints" : 150,
+		"level" : 6,
+		"speed" : 10,
+		"fightValue" : 2320,
+		"aiValue" : 2833,
+		"graphics" :
+		{
+			"animation" : "creatures/necropolis/battle/CR223",
+			"map" : 	  "creatures/necropolis/map/AVWCR223",
+			"iconSmall" : "creatures/necropolis/iconsSmall/CPrS223X",
+			"iconLarge" : "creatures/necropolis/iconsBig/CPrL223X",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+		},
+		"doubleWide" : true,
+		"sound" :
+		{
+			"attack": "BLRDATTK.wav",
+			"defend": "BLRDDFND.wav",
+			"killed": "BLRDKILL.wav",
+			"move": "BLRDMOVE.wav",
+			"wince": "BLRDWNCE.wav"
+		},
+		"abilities" :
+		{
+			"undead" :
+			{
+				"type" : "UNDEAD"
+			},
+			"curses" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.curse",
+				"val" : 30
+			},
+			"deathStrike" :
+			{
+				"type" : "DOUBLE_DAMAGE_CHANCE",
+				"val" : 20
+			},
+			"deathStare" : 
+			{
+				"type" : "DEATH_STARE",
+				"subtype" : 0,
+				"val" : 10
+			},
+			"hateCavalier" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.cavalier",
+				"val" : 50
+			},
+			"hateChampion" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.champion",
+				"val" : 50
+			},
+			"hateHolyChampion" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.tumHolyChampion",
+				"val" : 50
+			}
+		},	
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : "creature.tumHolyChampion"
+				},
+				"values" : [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "BLOCKS_RETALIATION"
+				},
+				"values" : [false, false, false, false, false, false, true, true, true, true]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : 42 // curse
+				},
+				"values" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "DOUBLE_DAMAGE_CHANCE"
+				},
+				"values" : [10, 17, 25, 33, 38, 46, 52, 58, 64, 70]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			}
+		]
+	}
+}

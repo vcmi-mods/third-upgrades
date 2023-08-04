@@ -1,0 +1,122 @@
+{
+	"tumMedusaEmpress":
+	{
+		"name" :
+		{
+			"plural" : "Medusa Empresses",
+			"singular" : "Medusa Empress"
+		},
+		"advMapAmount" : 
+		{
+			"max" : 14,
+			"min" : 10
+		},
+		"faction" : "dungeon",
+		"aiValue" : 489,
+		"attack" : 10,
+		"cost" :
+		{
+			"gold" : 370
+		},
+		"damage" :
+		{
+			"max" : 8,
+			"min" : 6
+		},
+		"defense" : 10,
+		"fightValue" : 468,
+		"graphics" :
+		{
+			"animation" : 	"creatures/dungeon/battle/CR228",
+			"map" : 		"creatures/dungeon/map/AVWCR228",
+			"iconSmall" : 	"creatures/dungeon/iconsSmall/CPrS228X",
+			"iconLarge" : 	"creatures/dungeon/iconsBig/CPrL228X",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			},
+			"missile" :
+			{
+				"projectile": "PMAGEX.DEF",
+				"attackClimaxFrame" : 7,
+				"offset" :
+				{
+					"upperX" : 41,
+					"upperY" : -92,
+					"middleX" : 58,
+					"middleY" : -79,
+					"lowerX" : 29,
+					"lowerY" : -14
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+		},
+		"growth" : 4,
+		"hitPoints" : 35,
+		"level" : 4,
+		"shots" : 16,
+		"doubleWide" : true,
+		"sound" :
+		{
+			"attack": "MEDQATTK.wav",
+			"defend": "MEDQDFND.wav",
+			"killed": "MEDQKILL.wav",
+			"move": "MEDQMOVE.wav",
+			"shoot": "MEDQSHOT.wav",
+			"wince": "MEDQWNCE.wav"
+		},
+		"speed" : 8,
+		"abilities":
+		{
+			"canShoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"petrification" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.stoneGaze",
+				"val" : 20,
+				"addInfo" : [0, 1]
+			},
+			"noPenalty" : 
+			{
+				"type" : "NO_MELEE_PENALTY"
+			},
+			"extraAttack" :
+			{
+				"type" : "ADDITIONAL_ATTACK",
+				"val" : 1
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "SHOTS"
+				},
+				"values" : [1, 1, 1, 2, 2, 2, 3, 3, 3, 4]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : 70, // stoneGaze
+					"addInfo" : 2000 // FIXME: replace with range?
+				},
+				"values" : [0, 0, 0, 2, 4, 6, 8, 10, 12, 15]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			}
+		]
+	}
+}	

@@ -1,0 +1,156 @@
+{
+	"tumArcaneGenie":
+	{
+		"name" :
+		{
+			"plural" : "Arcane Genies",
+			"singular" : "Arcane Genie"
+		},
+		"advMapAmount" : 
+		{
+			"max" : 10,
+			"min" : 8
+		},
+		"faction" : "tower",
+		"attack" : 15,
+		"defense" : 13,
+		"damage" :
+		{
+			"max" : 20,
+			"min" : 14
+		},
+		"cost" :
+		{
+			"gold" : 920
+		},
+		"growth" : 3,
+		"hitPoints" : 55,
+		"speed" : 13,
+		"level" : 5,
+		"fightValue" : 998,
+		"aiValue" : 1105,
+		"graphics" :
+		{
+			"animation" : 	"creatures/tower/battle/Cr210",
+			"map" : 		"creatures/tower/map/AVWCR210",
+			"iconSmall" : 	"creatures/tower/iconsSmall/CPrs210X",
+			"iconLarge" : 	"creatures/tower/iconsBig/CPrL210X",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+		},
+		"doubleWide" : false,
+		"sound" :
+		{
+			"attack": "CALFATTK.wav",
+			"defend": "CALFDFND.wav",
+			"killed": "CALFKILL.wav",
+			"move": "CALFMOVE.wav",
+			"shoot": "CALFSHOT.wav",
+			"wince": "CALFWNCE.wav"
+		},
+		"abilities" :
+		{
+			"canFly" :
+			{
+				"type" : "FLYING"
+			},
+			"hateEfreet" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.efreet",
+				"val" : 50
+			},
+			"hateEfreetSultan" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.efreetSultan",
+				"val" : 50
+			},
+			"hateEfreetRajah" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.tumEfreetRajah",
+				"val" : 50
+			},
+			"spellsLength" : 
+			{
+				"type" : "CREATURE_ENCHANT_POWER", //sprawdzić po co to
+				"val" : 5
+			},
+			"randomSpellcaster" :
+			{
+				"type" : "RANDOM_SPELLCASTER",
+				"val" : 2
+			},
+			"casts" :
+			{
+				"type" : "CASTS",
+				"val" : 3
+			},
+			"drainMana" :
+			{
+				"type" : "MANA_DRAIN",
+				"val" : 3
+			},
+			"mindImmunity" :
+			{
+				"type" : "MIND_IMMUNITY"
+			}			
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "ENCHANTER",
+					"subtype" : 46, //Stone Skin
+					"addInfo" : 2
+				},
+				"values" : [0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus":
+				{
+					"type" : "SPELL_IMMUNITY",
+					"subtype" : 59 // berserk
+				},
+				"values" : [false, false, false, true, false, false, true, true, true, true]
+			},
+			{
+				"bonus":
+				{
+					"type" : "SPELL_IMMUNITY",
+					"subtype" : 62 // blind
+				},
+				"values" : [false, false, false, true, true, true, true, true, true, true]
+			},
+			{
+				"bonus":
+				{
+					"type" : "SPELL_IMMUNITY",
+					"subtype" : 60 // hypnotize
+				},
+				"values" : [false, false, false, false, false, false, false, true, true, true]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CASTS"
+				},
+				"values" : [0, 0, 0, 1, 1, 1, 1, 1, 2, 3]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [0, 0, 0, 1, 1, 2, 2, 2, 2, 3]
+			}
+		]
+	}
+}

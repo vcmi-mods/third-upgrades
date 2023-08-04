@@ -1,0 +1,14 @@
+{
+    "basepath" : "town-screen/necropolis/frames/",
+	"images" :
+	[
+		{ "frame" : 23, "file" : "TPNskelH"},
+		{ "frame" : 44, "file" : "TPNskel2"},
+		{ "frame" : 45, "file" : "TPNzomb2"},
+		{ "frame" : 46, "file" : "TPNwigh2"},
+		{ "frame" : 47, "file" : "TPNvamp2"},
+		{ "frame" : 48, "file" : "TPNlich2"},
+		{ "frame" : 49, "file" : "TPNbkni2"},
+		{ "frame" : 50, "file" : "TPNbone2"}
+	]
+}

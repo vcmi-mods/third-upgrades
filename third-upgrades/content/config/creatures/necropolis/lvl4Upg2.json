@@ -1,0 +1,67 @@
+{
+	"tumNosferatu": {
+		"name" : {
+			"singular" : "Nosferatu",
+			"plural" : "Nosferatus"
+		},
+		"faction" : "necropolis",
+		"level" : 4,
+		"cost" : {
+			"gold" : 550
+		},
+		"speed" : 10,
+		"hitPoints" : 50,
+		"attack" : 12,
+		"defense" : 12,
+		"damage" : {
+			"min" : 5,
+			"max" : 8
+		},
+		"growth" : 4,
+		"horde" : 0,
+		"aiValue" : 847,
+		"fightValue" : 1047,
+		"advMapAmount" : {
+			"min" : 10,
+			"max" : 14
+		},
+		"abilities" : {
+			"IS_UNDEAD" : {
+				"type" : "UNDEAD"
+			},
+			"FLYING_ARMY" : {
+				"type" : "FLYING"
+			},
+			"drainsLife" : {
+				"type" : "LIFE_DRAIN", //ile dokładnie?
+				"val" : 100
+			},
+			"noRetalitation" : {
+				"type" : "BLOCKS_RETALIATION",
+				"subtype" : 1
+			}
+		},
+		"graphics" : {
+			"animation" : "creatures/necropolis/battle/CR221",
+			"map" : 	  "creatures/necropolis/map/AVWCR221",
+			"iconSmall" : "creatures/necropolis/iconsSmall/CPrS221X",
+			"iconLarge" : "creatures/necropolis/iconsBig/CPrL221X",
+			"animationTime" : {
+				"attack" : 1,
+				"idle" : 10,
+				"walk" : 1
+			},
+			"timeBetweenFidgets" : 1
+		},
+		"sound" : {
+			"attack" : "NOSFATTK.wav",
+			"defend" : "NOSFDFND.wav",
+			"endMoving" : "NOSFEXT2.wav",
+			"killed" : "NOSFKILL.wav",
+			"move" : "NOSFMOVE.wav",
+			"shoot" : "NOSFSHOT.wav",
+			"startMoving" : "NOSFEXT1.wav",
+			"wince" : "NOSFWNCE.wav"
+		}
+	}
+}

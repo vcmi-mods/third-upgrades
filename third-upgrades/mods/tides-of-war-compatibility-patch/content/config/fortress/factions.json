@@ -1,0 +1,90 @@
+{
+	"core:fortress" :
+	{
+		"town" :
+		{
+			"structures" :
+			{
+			
+				"dwellingLvl5B": { "animation" : "town-screen/fortress/TBTWDW_6alt.def", "x" : 55, "y" : 90, "z" : -1, "border" : "town-screen/fortress/buildings-border/TOTTIT1_6alt.bmp", "area" : "town-screen/fortress/buildings-area/TZTTIT1_6alt.bmp" }, 
+				"dwellingUpLvl5B": { "animation" : "town-screen/fortress/TBTWUP_6alt.def", "x" : 55, "y" : 90, "z" : -1, "border" : "town-screen/fortress/buildings-border/TOTTIT2_6alt.bmp", "area" : "town-screen/fortress/buildings-area/TZTTIT2_6alt.bmp" } 
+			},
+			"buildingsIcons": "town-screen/fortress/HALLFORTALT.DEF",
+			"hallBackground": "town-screen/fortress/fortressHallBg.BMP",
+			"hallSlots":
+			[
+				[ [ "villageHall", "townHall", "cityHall", "capitol" ], [ "fort", "citadel", "castle" ], [ "tavern" ], [ "blacksmith" ] ],
+				[ [ "marketplace", "resourceSilo" ], [ "mageGuild1", "mageGuild2", "mageGuild3" ], [ "shipyard" ] ],
+				[ [ "special1" ], [ "special2", "special3" ], [ "horde1", "horde1Upgr", "horde2" ] ],
+				[ [ "dwellingLvl1", "dwellingUpLvl1", "dwellingUp2Lvl1" ], [ "dwellingLvl2", "dwellingUpLvl2", "dwellingUp2Lvl2" ], [ "dwellingLvl3", "dwellingUpLvl3", "dwellingUp2Lvl3" ], [ "dwellingLvl4", "dwellingUpLvl4", "dwellingUp2Lvl4" ] ],
+				[ [ "dwellingLvl5", "dwellingUpLvl5", "dwellingUp2Lvl5" ], [ "dwellingLvl5B", "dwellingUpLvl5B" ], [ "dwellingLvl6", "dwellingUpLvl6", "dwellingUp2Lvl6" ], [ "dwellingLvl7", "dwellingUpLvl7", "dwellingUp2Lvl7" ] ]
+			],
+			"creatures" :
+			[
+				["gnoll", "gnollMarauder", "tumGnollShaman"],
+				["lizardman", "lizardWarrior", "tumEliteLizard"],
+				["serpentFly", "fireDragonFly", "tumChaoticDragonFly"],
+				["basilisk", "greaterBasilisk", "tumLavaBasilisk"],
+				["gorgon", "mightyGorgon", "tumCatopleba", "mdtTrollHag", "mdtTrollWitch"],
+				["wyvern", "wyvernMonarch", "tumAcidWyvern"],
+				["hydra", "chaosHydra", "tumHellHydra"]
+			],
+			
+			"buildings" :
+			{
+				"dwellingLvl5":   
+				{ 
+					"requires" : [ "allOf", [ "dwellingLvl2" ], [ "dwellingLvl3" ], [ "noneOf", [ "dwellingLvl5B" ] ] ]
+				},
+			
+				"dwellingLvl5B" :
+				{
+					"description" : "The Swamp Hut allows you to recruit Troll Hags.",
+					"name" : "Swamp Hut",
+					"cost" : 
+					{
+						"gold" : 2500,
+						"wood" : 5,
+						"sulfur" : 5
+					},
+					"requires" : [ "allOf",["mageGuild1"], ["dwellingLvl2"], ["dwellingLvl3"], [ "noneOf",[ "dwellingLvl5" ] ] ],
+					"id" : 55
+				},
+				"dwellingUpLvl5B" :
+				{
+					"description" : "The Swamp Hut allows you to recruit Troll Witches.",
+					"name" : "Upg. Swamp Hut",
+					"cost" : 
+					{
+						"wood" : 10,
+						"gold" : 2000,
+						"sulfur" : 5
+					},
+					"id" : 62,
+					"upgrades" : "dwellingLvl5B"
+				},
+				"dwellingUp2Lvl6": 
+				{ 
+					"description" : "The Wyvern Nest allows you to recruit Acid Wyverns.",
+					"name" : "{Upg. Wyvern Nest}",
+				
+					"cost" :
+					{
+						"wood":    25,
+						"mercury": 10,
+						"gold":	7500
+					},
+					"requires" : 
+					[
+						"allOf", ["castle"],
+						[
+							"anyOf", [ "dwellingUp2Lvl5" ], [ "dwellingUpLvl5B" ]
+						]
+					],
+					"upgrades" : "dwellingUpLvl6",
+					"id" : 49
+				}
+			}
+		}
+	}	
+}

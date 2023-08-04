@@ -1,0 +1,30 @@
+{
+	"core:hobgoblin" :
+	{
+		"upgrades": ["tumHobgoblinOverlord"]
+	},
+	"core:goblinWolfRider" :
+	{
+		"upgrades": ["tumWolfRiderKiller"]
+	},
+	"core:orcChieftain" :
+	{
+		"upgrades": ["tumOrcLeader"]
+	},
+	"core:ogreMage" :
+	{
+		"upgrades": ["tumElderOgre"]
+	},
+	"core:thunderbird" :
+	{
+		"upgrades": ["tumLightningbird"]
+	},
+	"core:cyclopKing" :
+	{
+		"upgrades": ["tumCyclopsEmperor"]
+	},
+	"core:ancientBehemoth" :
+	{
+		"upgrades": ["ghostBehemoth"]
+	}
+}

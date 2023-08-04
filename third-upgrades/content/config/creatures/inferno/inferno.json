@@ -1,0 +1,30 @@
+{
+	"core:familiar" :
+	{
+		"upgrades": ["tumVermin"]
+	},
+	"core:magog" :
+	{
+		"upgrades": ["tumWingedMagog"]
+	},
+	"core:cerberus" :
+	{
+		"upgrades": ["tumAstralCerberus"]
+	},
+	"core:hornedDemon" :
+	{
+		"upgrades": ["tumSharpHornedDemon"]
+	},
+	"core:pitLord" :
+	{
+		"upgrades": ["tumPitMaster"]
+	},
+	"core:efreetSultan" :
+	{
+		"upgrades": ["tumEfreetRajah"]
+	},
+	"core:archDevil" :
+	{
+		"upgrades": ["hellBaron"]
+	}
+}

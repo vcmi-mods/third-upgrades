@@ -1,0 +1,87 @@
+{
+	"tumVoidElemental": {
+		"name" : {
+			"singular" : "Void Elemental",
+			"plural" : "Void Elementals"
+		},
+		"faction" : "conflux",
+		"level" : 6,
+		"cost" : {
+			"gold" : 1500
+		},
+		"speed" : 10,
+		"hitPoints" : 90,
+		"attack" : 18,
+		"defense" : 15,
+		"damage" : {
+			"min" : 20,
+			"max" : 30
+		},
+		"growth" : 2,
+		"horde" : 0,
+		"aiValue" : 2816,
+		"fightValue" : 2414,
+		"advMapAmount" : {
+			"min" : 5,
+			"max" : 8
+		},
+		"abilities" : {
+			"nonLiving" : {
+				"type" : "NON_LIVING"
+			},
+			"MULTI_HEADED" : {
+				"type" : "ATTACKS_ALL_ADJACENT"
+			},
+			"const_free_attack" : {
+				"type" : "BLOCKS_RETALIATION"
+			},
+			"IMMUNE_TO_MIND_SPELLS" : {
+				"type" : "MIND_IMMUNITY"
+			},
+			"magicImmunity" : {
+				"type" : "LEVEL_SPELL_IMMUNITY",
+				"val" : 5
+			},
+			"spellResistAura" :
+			{
+				"type" : "SPELL_RESISTANCE_AURA",
+				"val" : 20
+			},
+			"manaChannel" :
+			{
+				"type" : "MANA_CHANNELING",
+				"val" : 20
+			},
+			"drainsMana" :
+			{
+				"type" : "MANA_DRAIN",
+				"val" : 2
+			},
+			"dispellHelpful" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.dispelHelpful",
+				"val" : 100
+			}
+		},
+		"graphics" : {
+			"animation" : "creatures/conflux/battle/CR251",
+			"map" :   	  "creatures/conflux/map/AVWCR251",
+			"iconSmall" : "creatures/conflux/iconsSmall/CPrS251X",
+			"iconLarge" : "creatures/conflux/iconsBig/CPrL251X",
+			"animationTime" : {
+				"attack" : 1,
+				"idle" : 10,
+				"walk" : 1
+			},
+			"timeBetweenFidgets" : 1
+		},
+		"sound" : {
+			"attack" : "MGELATTK.wav",
+			"defend" : "MGELDFND.wav",
+			"killed" : "MGELKILL.wav",
+			"move" : "MGELMOVE.wav",
+			"wince" : "MGELWNCE.wav"
+		}
+	}
+}

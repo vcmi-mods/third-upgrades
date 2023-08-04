@@ -1,0 +1,126 @@
+{
+	"author" : "VMaiko, avatar",
+	"contact" : "http://heroescommunity.com/viewthread.php3?TID=46241",
+	"description" : "In every nine standard H3 town, you have opportunity to upgrade creatures once more. Mod is based at ERA's Third Upgrades Mod v2.17.0. Compatibility patches with Tides of War and HotA Conflux changes will be added later.",
+	"licenseName" : "Creative Commons Attribution-ShareAlike",
+	"licenseURL" : "http://creativecommons.org/licenses/by-sa/4.0/deed",
+	"modType" : "Mechanics",
+	"name" : "New Upgrades Mod",
+	"version" : "1.0.0",
+	"compatibility" :
+	{
+		"min" : "1.3.0"
+	},	
+	"conflicts" :
+	[
+		"hota.gameBalance",
+		"tides-of-war"
+	],
+	"depends" :
+	[
+		"wake-of-gods"
+	],
+	
+	"creatures" :
+	[	
+		"config/creatures/castle/castle",					//castle upgrades
+		"config/creatures/castle/lvl1Upg2",
+		"config/creatures/castle/lvl2Upg2",
+		"config/creatures/castle/lvl3Upg2",
+		"config/creatures/castle/lvl4Upg2",
+		"config/creatures/castle/lvl5Upg2",
+		"config/creatures/castle/lvl6Upg2",
+		"config/creatures/castle/lvl7Upg2",
+
+		"config/creatures/rampart/rampart",				//rampart upgrades
+		"config/creatures/rampart/lvl1Upg2",
+		"config/creatures/rampart/lvl2Upg2",
+		"config/creatures/rampart/lvl3Upg2",
+		"config/creatures/rampart/lvl4Upg2",
+		"config/creatures/rampart/lvl5Upg2",
+		"config/creatures/rampart/lvl6Upg2",
+		"config/creatures/rampart/lvl7Upg2",
+	
+		"config/creatures/tower/tower",					//tower upgrades
+		"config/creatures/tower/lvl1Upg2",
+		"config/creatures/tower/lvl2Upg2",
+		"config/creatures/tower/lvl3Upg2",
+		"config/creatures/tower/lvl4Upg2",
+		"config/creatures/tower/lvl5Upg2",
+		"config/creatures/tower/lvl6Upg2",
+		"config/creatures/tower/lvl7Upg2",
+
+		"config/creatures/inferno/inferno.json",				//inferno upgrades
+		"config/creatures/inferno/lvl1Upg2",
+		"config/creatures/inferno/lvl2Upg2",
+		"config/creatures/inferno/lvl3Upg2",
+		"config/creatures/inferno/lvl4Upg2",
+		"config/creatures/inferno/lvl5Upg2",
+		"config/creatures/inferno/lvl6Upg2",
+		"config/creatures/inferno/lvl7Upg2",
+
+		"config/creatures/necropolis/necropolis",			//necropolis upgrades
+		"config/creatures/necropolis/lvl1Upg2",
+		"config/creatures/necropolis/lvl2Upg2",
+		"config/creatures/necropolis/lvl3Upg2",
+		"config/creatures/necropolis/lvl4Upg2",
+		"config/creatures/necropolis/lvl5Upg2",
+		"config/creatures/necropolis/lvl6Upg2",
+		"config/creatures/necropolis/lvl7Upg2",
+
+		"config/creatures/dungeon/dungeon.json",				//dungeon upgrades
+		"config/creatures/dungeon/lvl1Upg2",
+		"config/creatures/dungeon/lvl2Upg2",
+		"config/creatures/dungeon/lvl3Upg2",
+		"config/creatures/dungeon/lvl4Upg2",
+		"config/creatures/dungeon/lvl5Upg2",
+		"config/creatures/dungeon/lvl6Upg2",
+		"config/creatures/dungeon/lvl7Upg2",
+
+		"config/creatures/stronghold/stronghold.json",			//stronghold upgrades
+		"config/creatures/stronghold/lvl1Upg2",
+		"config/creatures/stronghold/lvl2Upg2",
+		"config/creatures/stronghold/lvl3Upg2",
+		"config/creatures/stronghold/lvl4Upg2",
+		"config/creatures/stronghold/lvl5Upg2",
+		"config/creatures/stronghold/lvl6Upg2",
+		"config/creatures/stronghold/lvl7Upg2",
+		
+		"config/creatures/fortress/fortress.json",				//fortress upgrades
+		"config/creatures/fortress/lvl1Upg2",
+		"config/creatures/fortress/lvl2Upg2",
+		"config/creatures/fortress/lvl3Upg2",
+		"config/creatures/fortress/lvl4Upg2",
+		"config/creatures/fortress/lvl5Upg2",
+		"config/creatures/fortress/lvl6Upg2",
+		"config/creatures/fortress/lvl7Upg2",
+
+		"config/creatures/conflux/conflux.json",			   //conflux upgrades
+		"config/creatures/conflux/lvl1Upg2",
+		"config/creatures/conflux/lvl2Upg2",
+		"config/creatures/conflux/lvl3Upg2",
+		"config/creatures/conflux/lvl4Upg2",
+		"config/creatures/conflux/lvl5Upg2",
+		"config/creatures/conflux/lvl6Upg2",
+		"config/creatures/conflux/lvl7Upg2"
+	],
+
+	"factions" :
+	[
+		"config/town-screen/necropolis/factions",
+		"config/town-screen/fortress/factions",
+		"config/town-screen/rampart/factions",
+		"config/town-screen/inferno/factions",
+		"config/town-screen/tower/factions",
+		"config/town-screen/conflux/factions",
+		"config/town-screen/castle/factions",
+		"config/town-screen/dungeon/factions",
+		"config/town-screen/stronghold/factions"
+	],
+	
+	"settings" : {
+		"combat": {
+			"badLuckDice" : [ 12, 6, 4 ]
+		}
+	}
+}
