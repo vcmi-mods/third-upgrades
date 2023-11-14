@@ -70,6 +70,20 @@
 		},
 		"abilities":
 		{
+			"shooter" : {
+				"type" : "SHOOTER"
+			},
+			"siege" : {
+				"subtype" : "spell.cyclopsShot",
+				"type" : "CATAPULT"
+			},
+			"siegeLevel" :
+			{
+				"subtype" : "spell.cyclopsShot",
+				"type" : "CATAPULT_EXTRA_SHOTS",
+				"valueType" : "BASE_NUMBER",
+				"val" : 1
+			},
 			"siegeDoubleAttack" :
 			{
 				"type" : "CATAPULT_EXTRA_SHOTS", //to wystarczy?
