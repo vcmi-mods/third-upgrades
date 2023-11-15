@@ -72,7 +72,7 @@
 			"deathStare" : 
 			{
 				"type" : "DEATH_STARE",
-				"subtype" : 0,
+				"subtype" : "deathStareGorgon",
 				"val" : 10
 			},
 			"hateCavalier" : 
@@ -115,7 +115,7 @@
 				"bonus" :
 				{
 					"type" : "SPELL_AFTER_ATTACK",
-					"subtype" : 42 // curse
+					"subtype" : "spell.curse"
 				},
 				"values" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 			},

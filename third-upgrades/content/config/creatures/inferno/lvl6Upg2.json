@@ -79,8 +79,8 @@
 			},
 			"immuneToFire" :
 			{
-				"type" : "FIRE_IMMUNITY",
-				"subtype" : 0
+				"type" : "SPELL_SCHOOL_IMMUNITY",
+				"subtype" : "fire"
 			},
 			"fireShield" :
 			{
@@ -89,8 +89,8 @@
 			},
 			"immuneToMind" :
 			{
-				"type" : "MIND_IMMUNITY",
-				"subtype" : 0
+				"type" : "MIND_IMMUNITY"
+				// "subtype" : 0 - TODO - implement
 			},
 			"spellFireWall" :
 			{

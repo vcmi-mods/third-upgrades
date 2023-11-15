@@ -83,7 +83,7 @@
 				"bonus" :
 				{	
 					"type" : "SPELL_AFTER_ATTACK",
-					"subtype" : 71, //poison
+					"subtype" : "spell.poison"
 				},
 				"values" : [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
 			},

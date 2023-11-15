@@ -57,7 +57,7 @@
 			"deathStare" : 
 			{
 				"type" : "DEATH_STARE",
-				"subtype" : 0,
+				"subtype" : "deathStareGorgon",
 				"val" : 10
 			},
 			"thriceRetal" :
@@ -85,7 +85,7 @@
 				"bonus" :
 				{	
 					"type" : "DEATH_STARE",
-					"subtype" : 0,
+					"subtype" : "deathStareGorgon"
 				},
 				"values" : [13, 16, 19, 22, 25, 28, 31, 34, 37, 40]
 			},
@@ -93,7 +93,7 @@
 				"bonus" :
 				{	
 					"type" : "SPELL_DAMAGE_REDUCTION",
-					"subtype" : -1,
+					"subtype" : "spellSchool.any"
 				},
 				"values" : [0, 0, 0, 0, 0, 5, 10, 15, 20, 25]
 			},

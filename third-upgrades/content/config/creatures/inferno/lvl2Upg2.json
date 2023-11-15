@@ -33,8 +33,8 @@
 				"type" : "FLYING"
 			},
 			"fireImmunity" : {
-				"type" : "FIRE_IMMUNITY",
-				"subtype" : 1
+				"type" : "NEGATIVE_EFFECTS_IMMUNITY",
+				"subtype" : "spellSchool.fire"
 			},
 			"fireShield" :
 			{

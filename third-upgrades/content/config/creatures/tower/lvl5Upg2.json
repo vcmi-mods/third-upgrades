@@ -108,7 +108,7 @@
 				"bonus" :
 				{
 					"type" : "ENCHANTER",
-					"subtype" : 46, //Stone Skin
+					"subtype" : "spell.stoneSkin",
 					"addInfo" : 2
 				},
 				"values" : [0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
@@ -117,7 +117,7 @@
 				"bonus":
 				{
 					"type" : "SPELL_IMMUNITY",
-					"subtype" : 59 // berserk
+					"subtype" : "spell.berserk"
 				},
 				"values" : [false, false, false, true, false, false, true, true, true, true]
 			},
@@ -125,7 +125,7 @@
 				"bonus":
 				{
 					"type" : "SPELL_IMMUNITY",
-					"subtype" : 62 // blind
+					"subtype" : "spell.blind"
 				},
 				"values" : [false, false, false, true, true, true, true, true, true, true]
 			},
@@ -133,7 +133,7 @@
 				"bonus":
 				{
 					"type" : "SPELL_IMMUNITY",
-					"subtype" : 60 // hypnotize
+					"subtype" : "spell.hypnotize"
 				},
 				"values" : [false, false, false, false, false, false, false, true, true, true]
 			},

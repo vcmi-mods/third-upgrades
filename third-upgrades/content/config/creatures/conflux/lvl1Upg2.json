@@ -90,7 +90,7 @@
 				"bonus" :
 				{
 					"type" : "HATE",
-					"subtype" : 56 //"creature.skeleton",
+					"subtype" : "creature.skeleton"
 				},
 				"values" : [0, 0, 0, 0, 0, 10, 20, 30, 40, 50]
 			},
@@ -98,7 +98,7 @@
 				"bonus" :
 				{
 					"type" : "HATE",
-					"subtype" : 57 //"creature.skeletonWarrior",
+					"subtype" : "creature.skeletonWarrior"
 				},
 				"values" : [0, 0, 0, 0, 0, 10, 20, 30, 40, 50]
 			},

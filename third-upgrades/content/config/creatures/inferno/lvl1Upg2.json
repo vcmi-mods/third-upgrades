@@ -89,7 +89,7 @@
 				"bonus" :
 				{
 					"type" : "ENCHANTED",
-					"subtype" : 49, // mirth
+					"subtype" : "spell.mirth",
 					"addInfo" : 3 
 				},
 				"values" : [1, 1, 1, 1, 2, 2, 2, 3, 3, 3]
@@ -112,8 +112,8 @@
 			{
 				"bonus" :
 				{
-					"type" : "FIRE_IMMUNITY",
-					"subtype" : 0
+					"type" : "SPELL_SCHOOL_IMMUNITY",
+					"subtype" : "spellSchool.fire"
 				},
 				"values" : [false, false, false, false, false, false, false, true, true, true]
 			},

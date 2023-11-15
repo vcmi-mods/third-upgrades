@@ -80,7 +80,7 @@
 				"bonus" :
 				{
 				"type" : "GENERAL_DAMAGE_REDUCTION",
-				"subtype" : 0, //shield effect
+				"subtype" : "damageTypeRanged"
 				},
 				"values" : [0, 0, 2, 6, 10, 14, 18, 22, 26, 30]
 			},

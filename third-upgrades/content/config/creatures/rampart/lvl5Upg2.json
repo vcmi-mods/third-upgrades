@@ -64,7 +64,6 @@
 			"hpRegen" :
 			{
 				"type" : "HP_REGENERATION",
-				"subtype" : 1,
 				"val" : 20 //chance 50%, hp 40 original
 			}
 		},

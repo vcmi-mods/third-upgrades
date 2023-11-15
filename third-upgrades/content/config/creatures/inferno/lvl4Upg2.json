@@ -70,8 +70,8 @@
 			{
 				"bonus" : 
 				{
-					"type" : "GENERAL_DAMAGE_REDUCTION", 
-					"subtype" : 1,				
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"subtype" : "creatureDamageBoth"
 				},
 				"values" : [ 1, 2, 3, 4, 5, 10, 15, 20, 25, 30 ]
 			},
@@ -79,14 +79,14 @@
 				"bonus" :
 				{
 					"type" : "ENCHANTED",
-					"subtype" : 31, //protectFire
+					"subtype" : "spell.protectFire"
 				},
 				"values" : [1, 1, 1, 1, 1, 1, 2, 2, 2, 2]
 			},
 			{
 				"bonus" :
 				{
-					"type" : "DOUBLE_DAMAGE_CHANCE",
+					"type" : "DOUBLE_DAMAGE_CHANCE"
 				},
 				"values" : [0, 0, 5, 10, 15, 20, 25, 30, 40, 50]
 			},

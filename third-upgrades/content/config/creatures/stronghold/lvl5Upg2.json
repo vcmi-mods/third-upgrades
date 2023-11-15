@@ -101,7 +101,7 @@
 				"bonus" :
 				{
 					"type" : "SPELL_AFTER_ATTACK",
-					"subtype" : 77,
+					"subtype" : "spell.lightningBolt"
 				},
 				"values" : [0, 0, 0, 0, 0, 10, 20, 30, 40, 50]
 			},
