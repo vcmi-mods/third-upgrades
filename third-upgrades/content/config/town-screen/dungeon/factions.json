@@ -21,7 +21,7 @@
 				["medusa", "medusaQueen", "tumMedusaEmpress"],
 				["minotaur", "minotaurKing", "tumBlackMinotaur" ],
 				["manticore", "scorpicore", "tumChimera"],
-				["redDragon", "blackDragon", "darknessDragon"]
+				["redDragon", "blackDragon", "wake-of-gods.level8units:darknessDragon"]
 			],
 
 			"structures" :

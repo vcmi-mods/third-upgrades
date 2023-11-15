@@ -25,6 +25,6 @@
 	},
 	"core:archDevil" :
 	{
-		"upgrades": ["hellBaron"]
+		"upgrades": ["wake-of-gods.level8units:hellBaron"]
 	}
 }

@@ -25,6 +25,6 @@
 	},
 	"core:goldDragon" :
 	{
-		"upgrades": ["diamondDragon"]
+		"upgrades": ["wake-of-gods.level8units:diamondDragon"]
 	}
 }

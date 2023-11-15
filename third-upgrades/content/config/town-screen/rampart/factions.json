@@ -40,7 +40,7 @@
 				["pegasus", "silverPegasus",  "tumGoldenPegasus" ],
 				["dendroidGuard", "dendroidSoldier", "tumElderDendroid"],
 				["unicorn", "warUnicorn", "tumLegendaryUnicorn"],
-				["greenDragon", "goldDragon", "diamondDragon"]
+				["greenDragon", "goldDragon", "wake-of-gods.level8units:diamondDragon"]
 			],
 			
 			"buildings" :

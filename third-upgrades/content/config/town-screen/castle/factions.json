@@ -22,7 +22,7 @@
 				[ "swordsman", "crusader", "tumInquisitor" ],
 				[ "monk", "zealot", "tumHighPriest" ],
 				[ "cavalier", "champion", "tumHolyChampion" ],
-				[ "angel", "archangel", "supremeArchangel" ]
+				[ "angel", "archangel", "wake-of-gods.level8units:supremeArchangel" ]
 			],
 
 			"structures" :
