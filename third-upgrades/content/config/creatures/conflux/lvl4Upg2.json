@@ -67,8 +67,8 @@
 			},
 			"immuneToFire" : 
 			{
-				"type" : "FIRE_IMMUNITY",
-				"subtype" : 0
+				"type" : "SPELL_SCHOOL_IMMUNITY",
+				"subtype" : "spellSchool.fire"
 			},
 			"frostRingVulnerablity" :
 			{

@@ -21,7 +21,7 @@
 				["mage", "archMage", "tumSupremeArchMage"],
 				["genie", "masterGenie", "tumArcaneGenie"],
 				["naga", "nagaQueen", "tumNagaEmpress"],
-				["giant", "titan", "lordofThunder"]
+				["giant", "titan", "wake-of-gods.level8units:lordOfThunder"]
 			],
 
 			"structures" :

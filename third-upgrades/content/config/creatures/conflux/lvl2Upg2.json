@@ -134,7 +134,7 @@
 				"bonus" :
 				{
 					"type" : "SPELL_AFTER_ATTACK",
-					"subtype" : 77, //thunderbolt
+					"subtype" : "spell.thunderbolt",
 					"addInfo" : 2
 				},
 				"values" : [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
@@ -142,7 +142,8 @@
 			{
 				"bonus" :
 				{
-					"type" : "AIR_IMMUNITY"
+					"type" : "SPELL_SCHOOL_IMMUNITY",
+					"subtype" : "spellSchool.air"
 				},
 				"values" : [false, false, false, false, false, true, true, true, true, true]
 			},

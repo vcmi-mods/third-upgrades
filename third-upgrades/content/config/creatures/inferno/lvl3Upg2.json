@@ -72,8 +72,8 @@
 				"idle" : 10,
 				"walk" : 1
 			},
-			"timeBetweenFidgets" : 1,
-			"troopCountLocationOffset" : 0
+			"timeBetweenFidgets" : 1
+			// "troopCountLocationOffset" : 0 // ToDo: Implement?
 		},
 		"sound" : {
 			"attack" : "CERBATTK.wav",

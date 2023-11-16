@@ -141,7 +141,7 @@
 				"bonus" :
 				{
 					"type" : "SPELL_AFTER_ATTACK",
-					"subtype" : 24, //deathRipple
+					"subtype" : "spell.deathRipple"
 				},
 				"values" : [0, 10, 15, 20, 25, 30, 35, 40, 45, 50]
 			},

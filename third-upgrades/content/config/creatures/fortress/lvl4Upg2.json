@@ -68,8 +68,8 @@
 			},
 			"fireImm" :
 			{
-				"type" : "FIRE_IMMUNITY",
-				"subtype" : 0 //all spells
+				"type" : "SPELL_SCHOOL_IMMUNITY",
+				"subtype" : "spellSchool.fire"
 			},
 			"fireBall" :
 			{
@@ -99,7 +99,7 @@
 				"bonus" :
 				{	
 					"type" : "SPELL_AFTER_ATTACK",
-					"subtype" : 70, //stoneGaze
+					"subtype" : "spell.stoneGaze",
 					"addInfo" : 3
 				},
 				"values" : [3, 6, 9, 12, 15, 18, 21, 24, 27, 30]

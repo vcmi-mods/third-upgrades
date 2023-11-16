@@ -69,8 +69,7 @@
 			"regenerate" : {
 				"type" : "HP_REGENERATION",
 				"val" : 100000,
-				"valueType" : "ADDITIVE_VALUE",
-				"subtype" : 1
+				"valueType" : "ADDITIVE_VALUE"
 			}
 		},
 		"stackExperience" :
@@ -79,7 +78,7 @@
 				"bonus" :
 				{
 					"type" : "SPELL_IMMUNITY",
-					"subtype" : 54 // slow
+					"subtype" : "spell.slow"
 				},
 				"values" : [false, false, false, true, true, true, true, true, true, true]
 			},
@@ -87,7 +86,7 @@
 				"bonus" :
 				{
 					"type" : "SPELL_AFTER_ATTACK",
-					"subtype" : 50 //sorrow
+					"subtype" : "spell.sorrow"
 				},
 				"values" : [0, 10, 15, 20, 25, 30, 35, 40, 45, 50]
 			},

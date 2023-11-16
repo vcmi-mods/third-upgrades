@@ -50,8 +50,7 @@
 			"hpRegen" : {
 				"type" : "HP_REGENERATION",
 				"val" : 100000,
-				"valueType" : "ADDITIVE_VALUE",
-				"subtype" : 0
+				"valueType" : "ADDITIVE_VALUE"
 			},			
 			"spellcaster" : {
 				"type" : "ENCHANTED",
@@ -63,8 +62,9 @@
 				"val" : 6
 			},
 			"immuneToWater" : {
-				"type" : "WATER_IMMUNITY",
-				"subtype" : 2
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"subtype" : "water",
+				"val" : 100
 			},
 			"iceBolt" : {
 				"type" : "SPELL_BEFORE_ATTACK",

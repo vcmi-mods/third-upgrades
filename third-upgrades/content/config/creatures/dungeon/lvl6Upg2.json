@@ -104,7 +104,7 @@
 				"bonus" :
 				{
 					"type" : "SPELL_AFTER_ATTACK",
-					"subtype" : 81 // acidBreathDamage
+					"subtype" : "spell.acidBreath"
 				},
 				"values" : [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
 			},
@@ -112,7 +112,7 @@
 				"bonus" :
 				{
 					"type" : "SPELL_IMMUNITY",
-					"subtype" : 74, // paralyze
+					"subtype" : "spell.paralyze"
 				},
 				"values" : [false, false, true, true, true, true, true, true, true, true]
 			},

@@ -37,8 +37,7 @@
 				"val" : 100
 			},
 			"noRetalitation" : {
-				"type" : "BLOCKS_RETALIATION",
-				"subtype" : 1
+				"type" : "BLOCKS_RETALIATION"
 			}
 		},
 		"graphics" : {
