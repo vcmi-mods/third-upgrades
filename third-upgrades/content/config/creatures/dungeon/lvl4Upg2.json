@@ -106,7 +106,7 @@
 				{
 					"type" : "SPELL_AFTER_ATTACK",
 					"subtype" : "spell.stoneGaze",
-					"addInfo" : 2000 // FIXME: replace with range?
+					"addInfo" : [1, 1]
 				},
 				"values" : [0, 0, 0, 2, 4, 6, 8, 10, 12, 15]
 			},
