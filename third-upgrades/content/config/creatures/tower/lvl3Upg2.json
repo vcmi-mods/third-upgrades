@@ -45,7 +45,7 @@
 				"idle" : 10,
 				"walk" : 1.2
 			},
-			"timeBetweenFidgets" : 1
+			"timeBetweenFidgets" : 1,
 		},
 		"sound" : {
 			"attack" : "SGLMATTK.wav",

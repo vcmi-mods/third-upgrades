@@ -70,8 +70,8 @@
 			{
 				"bonus" : 
 				{
-					"type" : "GENERAL_DAMAGE_REDUCTION",
-					"subtype" : "creatureDamageBoth"
+					"type" : "GENERAL_DAMAGE_REDUCTION", 
+					"subtype" : "damageTypeRanged"			
 				},
 				"values" : [ 1, 2, 3, 4, 5, 10, 15, 20, 25, 30 ]
 			},
@@ -86,7 +86,7 @@
 			{
 				"bonus" :
 				{
-					"type" : "DOUBLE_DAMAGE_CHANCE"
+					"type" : "DOUBLE_DAMAGE_CHANCE",
 				},
 				"values" : [0, 0, 5, 10, 15, 20, 25, 30, 40, 50]
 			},

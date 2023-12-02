@@ -62,7 +62,8 @@
 			},
 			"canFly" :
 			{
-				"type" : "FLYING"
+				"type" : "FLYING",
+				"subtype" : "movementFlying"
 			},
 			"hateGremlin" : 
 			{
@@ -89,8 +90,7 @@
 				"bonus" :
 				{
 					"type" : "ENCHANTED",
-					"subtype" : "spell.mirth",
-					"addInfo" : 3 
+					"subtype" : "spell.mirth"
 				},
 				"values" : [1, 1, 1, 1, 2, 2, 2, 3, 3, 3]
 			},
@@ -113,7 +113,7 @@
 				"bonus" :
 				{
 					"type" : "SPELL_SCHOOL_IMMUNITY",
-					"subtype" : "spellSchool.fire"
+					"subtype" : "fire"
 				},
 				"values" : [false, false, false, false, false, false, false, true, true, true]
 			},

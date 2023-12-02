@@ -25,6 +25,6 @@
 	},
 	"core:ancientBehemoth" :
 	{
-		"upgrades": ["wake-of-gods.level8units:ghostBehemoth"]
+		"upgrades": ["ghostBehemoth"]
 	}
 }

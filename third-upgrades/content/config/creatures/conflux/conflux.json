@@ -25,6 +25,6 @@
 	},
 	"core:phoenix" :
 	{	
-		"upgrades": ["wake-of-gods.level8units:sacredPhoenix"]
+		"upgrades": ["sacredPhoenix"]
 	}
 }

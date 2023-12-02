@@ -117,7 +117,7 @@
 				"bonus" :
 				{
 					"type" : "SPELL_IMMUNITY",
-					"subtype" : "spell.dispel"
+					"subtype" : "spell.dispelHelpful"
 				},
 				"values" : [false, false, false, false, false, false, false, false, true, true]
 			},

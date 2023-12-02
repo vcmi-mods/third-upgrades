@@ -56,13 +56,15 @@
 		{
 			"canFly" : 
 			{
-				"type" : "FLYING"
+				"type" : "FLYING",
+				"subtype" : "movementFlying"
 			},
 			"petrify" :
 			{
 				"type" : "SPELL_AFTER_ATTACK",
 				"subtype" : "spell.poison",
-				"val" : 50
+				"val" : 50,
+				"addInfo" : [1, 2]
 			},
 			"acidBreath" :
 			{
@@ -74,7 +76,8 @@
 			{
 				"type" : "SPELL_AFTER_ATTACK",
 				"subtype" : "spell.acidBreath",
-				"val" : 100
+				"val" : 100,
+				"addInfo" : [1, 2]
 			}
 		},
 		"stackExperience" :
@@ -83,7 +86,8 @@
 				"bonus" :
 				{	
 					"type" : "SPELL_AFTER_ATTACK",
-					"subtype" : "spell.poison"
+					"subtype" : "spell.poison",
+					"addInfo" : [1, 2]
 				},
 				"values" : [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
 			},

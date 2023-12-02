@@ -25,6 +25,6 @@
 	},
 	"core:titan" :
 	{
-		"upgrades": ["wake-of-gods.level8units:lordOfThunder"]
+		"upgrades": ["lordOfThunder"]
 	}
 }

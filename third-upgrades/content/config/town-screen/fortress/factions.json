@@ -38,7 +38,7 @@
 				["basilisk", "greaterBasilisk", "tumLavaBasilisk"],
 				["gorgon", "mightyGorgon", "tumCatopleba"],
 				["wyvern", "wyvernMonarch", "tumAcidWyvern"],
-				["hydra", "chaosHydra", "wake-of-gods.level8units:hellHydra"]
+				["hydra", "chaosHydra", "hellHydra"]
 			],
 			
 			"buildings" :

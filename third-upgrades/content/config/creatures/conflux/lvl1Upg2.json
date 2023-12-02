@@ -56,7 +56,8 @@
 		{
 			"canFly" : 
 			{
-				"type" : "FLYING"
+				"type" : "FLYING",
+				"subtype" : "movementFlying"
 			},
 			"noRetaliation" : 
 			{
@@ -64,7 +65,7 @@
 			},
 			"spellResistAura" :
 			{
-				"type" : "SPELL_RESISTANCE_AURA", //spytać czy na pewno ta
+				"type" : "SPELL_RESISTANCE_AURA",
 				"val" : 20
 			},
 			"castsBless" :
@@ -90,7 +91,7 @@
 				"bonus" :
 				{
 					"type" : "HATE",
-					"subtype" : "creature.skeleton"
+					"subtype" : "creature.skeleton",
 				},
 				"values" : [0, 0, 0, 0, 0, 10, 20, 30, 40, 50]
 			},
@@ -98,18 +99,18 @@
 				"bonus" :
 				{
 					"type" : "HATE",
-					"subtype" : "creature.skeletonWarrior"
+					"subtype" : "creature.skeletonWarrior",
 				},
 				"values" : [0, 0, 0, 0, 0, 10, 20, 30, 40, 50]
 			},
-//			{
-//				"bonus" :
-//				{
-//					"type" : "HATE",
-//					"subtype" : "creature.nuBonesWarrior",
-//				},
-//				"values" : [0, 0, 0, 0, 0, 10, 20, 30, 40, 50]
-//			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : "creature.tumSkeletonKnight",
+				},
+				"values" : [0, 0, 0, 0, 0, 10, 20, 30, 40, 50]
+			},
 			{
 				"bonus" :
 				{

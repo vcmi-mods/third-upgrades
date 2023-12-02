@@ -36,11 +36,12 @@
 			"fearless" : {
 				"type" : "FEARLESS"
 			},
-			"poison" : //sprawdzić
+			"poison" :
 			{
 				"type" : "SPELL_AFTER_ATTACK",
 				"subtype" : "spell.poison",
-				"val" : 50
+				"val" : 50,
+				"addInfo" : [1,2]
 			},
 			"hateGriffin" : 
 			{
@@ -73,7 +74,6 @@
 				"walk" : 1
 			},
 			"timeBetweenFidgets" : 1
-			// "troopCountLocationOffset" : 0 // ToDo: Implement?
 		},
 		"sound" : {
 			"attack" : "CERBATTK.wav",

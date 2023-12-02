@@ -85,7 +85,7 @@
 				"type" : "SPELL_AFTER_ATTACK",
 				"subtype" : "spell.poison",
 				"val" : 80,
-				"addInfo" : [0,1]
+				"addInfo" : [1,1]
 			},
 			"freeShoot" :
 			{
@@ -109,7 +109,8 @@
 				"bonus" :
 				{	
 					"type" : "SPELL_AFTER_ATTACK",
-					"subtype" : "spell.poison"
+					"subtype" : "spell.poison",
+					"addInfo" : [1, 1]
 				},
 				"values" : [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
 			},

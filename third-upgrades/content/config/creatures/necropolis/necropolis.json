@@ -25,6 +25,6 @@
 	},
 	"core:ghostDragon" :
 	{
-		"upgrades": ["wake-of-gods.level8units:bloodDragon"]
+		"upgrades": ["bloodDragon"]
 	}
 }

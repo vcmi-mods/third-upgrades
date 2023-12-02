@@ -81,6 +81,11 @@
 			{
 				"type" : "NON_LIVING"
 			},
+			"canFly" : 
+			{
+				"type" : "FLYING",
+				"subtype" : "movementFlying"
+			},
 			"lightingVulnerablity" :
 			{
 				"type" : "MORE_DAMAGE_FROM_SPELL",
@@ -135,17 +140,17 @@
 				{
 					"type" : "SPELL_AFTER_ATTACK",
 					"subtype" : "spell.thunderbolt",
-					"addInfo" : 2
+					"addInfo" : [1, 1]
 				},
 				"values" : [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
 			},
 			{
 				"bonus" :
 				{
-					"type" : "SPELL_SCHOOL_IMMUNITY",
-					"subtype" : "spellSchool.air"
+					"type" : "SPELL_DAMAGE_REDUCTION",
+					"subtype" : "air"
 				},
-				"values" : [false, false, false, false, false, true, true, true, true, true]
+				"values" : [0, 0, 0, 0, 0, 100, 100, 100, 100, 100]
 			},
 			{
 				"bonus" :

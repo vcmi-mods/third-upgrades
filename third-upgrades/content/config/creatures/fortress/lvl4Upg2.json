@@ -69,7 +69,7 @@
 			"fireImm" :
 			{
 				"type" : "SPELL_SCHOOL_IMMUNITY",
-				"subtype" : "spellSchool.fire"
+				"subtype" : "fire"
 			},
 			"fireBall" :
 			{
@@ -99,8 +99,8 @@
 				"bonus" :
 				{	
 					"type" : "SPELL_AFTER_ATTACK",
-					"subtype" : "spell.stoneGaze",
-					"addInfo" : 3
+					"subtype" : "stoneGaze",
+					"addInfo" : [0, 2]
 				},
 				"values" : [3, 6, 9, 12, 15, 18, 21, 24, 27, 30]
 			},
@@ -112,5 +112,5 @@
 				"values" : [0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
 			}
 		]
-	},
+	}
 }	

@@ -106,7 +106,7 @@
 				{
 					"type" : "SPELL_AFTER_ATTACK",
 					"subtype" : "spell.stoneGaze",
-					"addInfo" : [1, 1]
+					"addInfo" : [0, 1]
 				},
 				"values" : [0, 0, 0, 2, 4, 6, 8, 10, 12, 15]
 			},

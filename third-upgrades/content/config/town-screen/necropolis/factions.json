@@ -34,7 +34,7 @@
 				["vampire", "vampireLord", "tumNosferatu"],
 				["lich", "powerLich", "tumLichKing"],
 				["blackKnight", "dreadKnight", "tumDeathKnight"],
-				["boneDragon", "ghostDragon", "wake-of-gods.level8units:bloodDragon"]
+				["boneDragon", "ghostDragon", "bloodDragon"]
 			],
 			
 			"buildings" :

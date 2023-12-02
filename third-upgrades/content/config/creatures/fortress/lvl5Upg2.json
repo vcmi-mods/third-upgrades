@@ -69,7 +69,8 @@
 			{
 				"type" : "SPELL_AFTER_ATTACK",
 				"subtype" : "spell.stoneGaze",
-				"val" : 20
+				"val" : 20,
+				"addInfo" : [1, 2]
 			}
 		},
 		"stackExperience" :
@@ -85,7 +86,7 @@
 				"bonus" :
 				{	
 					"type" : "DEATH_STARE",
-					"subtype" : "deathStareGorgon"
+					"subtype" : "deathStareGorgon",
 				},
 				"values" : [13, 16, 19, 22, 25, 28, 31, 34, 37, 40]
 			},
@@ -93,7 +94,7 @@
 				"bonus" :
 				{	
 					"type" : "SPELL_DAMAGE_REDUCTION",
-					"subtype" : "spellSchool.any"
+					"subtype" : "spellSchool.any",
 				},
 				"values" : [0, 0, 0, 0, 0, 5, 10, 15, 20, 25]
 			},

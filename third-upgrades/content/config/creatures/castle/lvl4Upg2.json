@@ -66,17 +66,9 @@
 				"bonus" :
 				{
 					"type": "GENERAL_DAMAGE_REDUCTION",
-					"subtype" : "damageTypeRanged"
+					"subtype" : "damageTypeAll"
 				},
 				"values" : [0, 0, 0, 0, 0, 0, 5, 10, 15, 20]
-			},
-			{
-				"bonus" :
-				{
-					"type": "GENERAL_DAMAGE_REDUCTION",
-					"subtype" : "damageTypeMelee"
-				},
-				"values" :  [0, 0, 0, 0, 0, 0, 5, 10, 15, 20]
 			},
 			{
 				"bonus" :
@@ -110,5 +102,4 @@
 			}
 		]
 	}
-	
 }

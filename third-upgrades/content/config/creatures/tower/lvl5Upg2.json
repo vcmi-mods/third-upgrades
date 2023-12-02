@@ -57,7 +57,8 @@
 		{
 			"canFly" :
 			{
-				"type" : "FLYING"
+				"type" : "FLYING",
+				"subtype" : "movementFlying"
 			},
 			"hateEfreet" : 
 			{
@@ -79,7 +80,7 @@
 			},
 			"spellsLength" : 
 			{
-				"type" : "CREATURE_ENCHANT_POWER", //sprawdzić po co to
+				"type" : "CREATURE_ENCHANT_POWER",
 				"val" : 5
 			},
 			"randomSpellcaster" :

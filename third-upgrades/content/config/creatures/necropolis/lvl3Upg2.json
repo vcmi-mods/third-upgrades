@@ -56,7 +56,8 @@
 		{
 			"canFly" : 
 			{
-				"type" : "FLYING"
+				"type" : "FLYING",
+				"subtype" : "movementFlying"
 			},
 			"undead" :
 			{
@@ -86,7 +87,8 @@
 				"bonus" :
 				{
 					"type" : "SPELL_AFTER_ATTACK",
-					"subtype" : "spell.sorrow"
+					"subtype" : "spell.sorrow",
+					"addInfo" : [2, 2]
 				},
 				"values" : [0, 10, 15, 20, 25, 30, 35, 40, 45, 50]
 			},

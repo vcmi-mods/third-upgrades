@@ -75,7 +75,8 @@
 			},
 			"canFly" :
 			{
-				"type" : "FLYING"
+				"type" : "FLYING",
+				"subtype" : "movementFlying"
 			},
 			"immuneToFire" :
 			{
@@ -90,7 +91,6 @@
 			"immuneToMind" :
 			{
 				"type" : "MIND_IMMUNITY"
-				// "subtype" : 0 - TODO - implement
 			},
 			"spellFireWall" :
 			{

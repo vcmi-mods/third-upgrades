@@ -34,7 +34,7 @@
 				["demon", "hornedDemon", "tumSharpHornedDemon"],
 				["pitFiend", "pitLord", "tumPitMaster"],
 				["efreet", "efreetSultan", "tumEfreetRajah"],
-				["devil", "archDevil", "wake-of-gods.level8units:hellBaron"]
+				["devil", "archDevil", "hellBaron"]
 			],
 			
 			"buildings" :

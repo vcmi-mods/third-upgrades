@@ -30,11 +30,12 @@
 				"type" : "SHOOTER" //dopisać że strzela fireballami i no melee penalty
 			},
 			"canFly" : {
-				"type" : "FLYING"
+				"type" : "FLYING",
+				"subtype" : "movementFlying"
 			},
 			"fireImmunity" : {
 				"type" : "NEGATIVE_EFFECTS_IMMUNITY",
-				"subtype" : "spellSchool.fire"
+				"subtype" : "fire"
 			},
 			"fireShield" :
 			{

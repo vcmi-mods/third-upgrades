@@ -30,7 +30,8 @@
 				"type" : "UNDEAD"
 			},
 			"FLYING_ARMY" : {
-				"type" : "FLYING"
+				"type" : "FLYING",
+				"subtype" : "movementFlying"
 			},
 			"drainsLife" : {
 				"type" : "LIFE_DRAIN", //ile dokładnie?

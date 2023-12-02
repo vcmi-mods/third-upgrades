@@ -80,7 +80,7 @@
 				"bonus" :
 				{
 				"type" : "GENERAL_DAMAGE_REDUCTION",
-				"subtype" : "damageTypeRanged"
+				"subtype" : "damageTypeMelee",
 				},
 				"values" : [0, 0, 2, 6, 10, 14, 18, 22, 26, 30]
 			},

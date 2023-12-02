@@ -45,7 +45,14 @@
 			},
 			"missile" :
 			{
-				"projectile": "CPRGTIX.DEF", //brak oryginalnego strzału (promień)
+				"ray" :
+				[
+					{ "start" : [ 160, 160, 160, 255 ], "end" : [ 160, 160, 160,  64 ] },
+					{ "start" : [ 192, 192, 192, 255 ], "end" : [ 192, 192, 192, 128 ] },
+					{ "start" : [ 224, 224, 224, 255 ], "end" : [ 224, 224, 224, 255 ] },
+					{ "start" : [ 192, 192, 192, 255 ], "end" : [ 192, 192, 192, 128 ] },
+					{ "start" : [ 160, 160, 160, 255 ], "end" : [ 160, 160, 160,  64 ] }
+				],
 				"attackClimaxFrame" : 9,
 				"offset" :
 				{
@@ -141,7 +148,7 @@
 				{
 					"type" : "SPELL_AFTER_ATTACK",
 					"subtype" : "spell.weakness",
-					"addInfo" : 2
+					"addInfo" : [2, 1]
 				},
 				"values" : [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
 			},
