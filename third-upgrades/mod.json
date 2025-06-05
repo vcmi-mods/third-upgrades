@@ -1,19 +1,19 @@
 {
 	"name" : "Third Upgrades Mod",
-	"author" : "VMaiko (author of the idea), avatar (porting), Xardas33 (upgraded buildings graphics), Olegmods.INC (ToW third upgrades idea, some building graphics, some creatures and configs), Aphra (graphics), FirePaladin (Tower T7 building graphics and 3rd upgrade centaur), Koven1Nordsiard (Dungeon alt-T5 building graphics), Toriko (some unit graphics), Nephretes (3rd upgrade dryad), Naga Empresses' updated moving animation by Orzie, Elf Noble supposedly made by Witchking, Elder Dendroid made by Trith, Inquisitor graphics by yogdush.",
+	"author" : "VMaiko (author of the idea), avatar (porting), Xardas33 (upgraded buildings graphics), Olegmods.INC (ToW third upgrades idea, some building and creature graphics, configs), Aphra (graphics), FirePaladin (Tower T7 building graphics), Koven1Nordsiard (Dungeon alt-T5 building graphics), Toriko (some unit graphics), Nephretes (3rd upgrade dryad), yogdush (3rd upgrade Centaur, Dwarf and Swordsman) Naga Empresses' updated moving animation by Orzie, Elf Noble supposedly made by Witchking, Elder Dendroid made by Trith.",
 	"contact" : "http://heroescommunity.com/viewthread.php3?TID=46241",
 	"description" : "In every nine standard H3 town, you have opportunity to upgrade creatures once more. Mod is based at ERA's Third Upgrades Mod v2.17.0.",
 	"licenseName" : "Creative Commons Attribution-ShareAlike",
 	"licenseURL" : "http://creativecommons.org/licenses/by-sa/4.0/deed",
 	"modType" : "Expansion",
-	"version" : "1.1.11",
+	"version" : "1.1.12",
 	"compatibility" :
 	{
 		"min" : "1.6.1"
 	},
 	"russian" : {
 		"name" : "Третий уровень улучшений",
-		"description" : "В каждом из девяти стандартных городов H3 у вас есть возможность улучшить существ еще раз. Мод основан на третьей версии обновления ERA версии 2.17.0.",
+		"description" : "В каждом из девяти стандартных городов H3 у вас есть возможность улучшить существ еще раз. Мод основан на моде Third Upgrades Mod версии 2.17.0 для платформы ЭРА.",
 		"translations" : [
 			"translation/third-upgrades/russian.json"
 		]
@@ -27,6 +27,7 @@
 	},
 	"changelog" :
     {
+	        "1.1.12"   : [ "Specialties returned, added new creatures mod and WoG creatures compatibility submod" ],
 	        "1.1.11"   : [ "Specialty txt removed, Winged Magog fixes" ],
 		"1.1.10"   : [ "Bug fix." ],
 		"1.1.9"   : [ "Major update." ],
@@ -50,7 +51,19 @@
 	[
 		"wake-of-gods.level8units"
 	],
-	
+	"artifacts" :
+	[
+		"config/artifacts/book",
+		"config/artifacts/summoner_book"
+	],
+	"spells" :
+	[
+		"config/spells/summons_book"
+	],
+	"heroes" :
+	[
+		"config/heroes/heroes_fix"
+	],
 	"creatures" :
 	[	
 		"config/creatures/castle/castle",

@@ -1,0 +1,110 @@
+{
+	"dreadGuard":
+	{
+		"name" : 
+		{
+			"plural" : "Dread Guards",
+			"singular" : "Dread Guard"
+		},
+		"advMapAmount" :
+		{
+			"min" : 5,
+			"max" : 12
+		},
+		"faction" : "necropolis",
+		"attack" : 10,
+		"defense" : 14,
+		"cost" :
+		{
+			"gold" : 850
+		},
+		"damage" :
+		{
+			"max" : 20,
+			"min" : 10
+		},
+		"growth" : 3,
+		"hitPoints" : 80,
+		"level" : 5,
+		"speed" : 8,
+		"fightValue" : 1483,
+		"aiValue" : 1400,
+		"graphics" :
+		{
+			"animation" : "creatures/dreadGuard/dreadGuard",
+			"map" : 	  "creatures/dreadGuard/dreadGuard_map",
+			"iconSmall" : "creatures/dreadGuard/dreadGuard_s",
+			"iconLarge" : "creatures/dreadGuard/dreadGuard_b",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+		},
+		"doubleWide" : false,
+		"sound" :
+		{
+			"attack": "blackGuard/BLGRATTK.wav",
+			"defend": "blackGuard/BLGRDFND.wav",
+			"killed": "blackGuard/BLGRKILL.wav",
+			"move": "blackGuard/BLGRMOVE.wav",
+			"wince": "blackGuard/BLGRWNCE.wav"
+		},
+		"abilities" :
+		{
+			"undead" :
+			{
+				"type" : "UNDEAD"
+			},
+			"hatesSwords" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.swordsman",
+				"val" : 50
+			},
+			"hatesCrusade" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.crusader",
+				"val" : 50
+			},
+			"hatesInqusitor" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.tumInquisitor",
+				"val" : 50
+			},
+			"defender" :
+			{
+				"type" : "DEFENSIVE_STANCE",
+				"val" : 2
+			},
+			"chargeImmune" :
+			{
+				"type" : "CHARGE_IMMUNITY"
+			},
+			"additionalAttack" :
+			{
+				"type" : "ADDITIONAL_ATTACK",
+				"val" : 1
+			},
+			"additionalAttack" :
+			{
+				"type" : "DOUBLE_DAMAGE_CHANCE",
+				"val" : 10
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "DEFENSIVE_STANCE"
+				},
+				"values" : [2, 2, 2, 2, 2, 3, 3, 3, 3, 4]
+			}
+		]	
+	}
+}

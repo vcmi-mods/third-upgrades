@@ -26,6 +26,7 @@
 			"max" : 22
 		},
 		"abilities" : {
+
 			"shooter" : {
 				"type" : "SHOOTER" //dopisać że strzela fireballami i no melee penalty
 			},

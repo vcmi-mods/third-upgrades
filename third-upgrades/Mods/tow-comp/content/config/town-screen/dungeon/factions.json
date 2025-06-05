@@ -38,7 +38,7 @@
 				"dwellingUp2Lvl7": { "animation" : "town-screen/dungeon/TBDNUP2_6.def", "x" : 550, "y" : 0,   "z" : -1, "border" : "town-screen/dungeon/borders/TODDRA3A.bmp", "area" : "town-screen/dungeon/areas/TZDDRA3A.bmp" },
 				"dwellingLvl5B": { "border" : "town-screen/dungeon/buildings-border/TODMIN1", "area" : "town-screen/dungeon/buildings-area/TZDMIN1", "animation" : "town-screen/dungeon/primevalMaw.def", "x" : 520, "y" : 140, "z" : 5 },
 				"dwellingUpLvl5B": { "border" : "town-screen/dungeon/buildings-border/TODMIN2", "area" : "town-screen/dungeon/buildings-area/TZDMIN2", "animation" : "town-screen/dungeon/primevalMawUpg.def", "x" : 520, "y" : 140, "z" : 5 },
-				"dwellingUp2Lvl5B": { "border" : "altborder", "area" : "altarea", "animation" : "town-screen/dungeon/dnAlt3.def", "x" : 450, "y" : 109, "z" : 1 }
+				"dwellingUp2Lvl5B": { "border" : "altborder", "area" : "altarea", "animation" : "town-screen/dungeon/dnAlt3.def", "x" : 450, "y" : 109, "z" : 5 }
 			},
 
 			"buildings" :

@@ -1,0 +1,135 @@
+{
+	"core:creatureBank" :
+	{
+		"types" :
+		{
+			"dreadedTower" :
+			{
+				"name" : "Dreaded Tower",
+				"templates" : {
+					"base" : {
+						"animation" : "banks/dreadBank",
+						"visitableFrom" : [ "---", "-+-", "+++" ],
+						"mask" : [ "VVV", "VVV", "BAB" ],
+						"allowedTerrains" : [ "sand", "subterra", "rough", "lava", "dirt" ]
+					}
+				},
+				"sounds" : {
+					"ambient" : ["banks/LOOPBGBA"],
+					"visit" : ["banks/ENTRBGBA"]
+				},
+				"rmg" : {
+					"value" : 7500,
+					"rarity" : 20,
+					"zoneLimit" : 1,
+					"mapLimit" : 10
+				},
+				"onGuardedMessage" : 32,
+				"onVisitedMessage" : 33,
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "creatureBankWide",
+				"rewards" : [
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 0, "max" : 20 },
+						"guards" : [
+							{ "amount" : 4, "type" : "blackGuard" },
+							{ "amount" : 4, "type" : "blackGuard" },
+							{ "amount" : 4, "type" : "blackGuard", "upgradeChance" : 50 },
+							{ "amount" : 4, "type" : "blackGuard" },
+							{ "amount" : 4, "type" : "blackGuard" }
+						],
+						"creatures" :
+						[
+							{ "amount" : 1, "type" : "boneDragon" }
+						]
+					},
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 20, "max" : 40 },
+						"guards" : [
+							{ "amount" : 8, "type" : "blackGuard" },
+							{ "amount" : 8, "type" : "blackGuard" },
+							{ "amount" : 8, "type" : "blackGuard", "upgradeChance" : 50  },
+							{ "amount" : 8, "type" : "blackGuard" },
+							{ "amount" : 8, "type" : "blackGuard" }
+						],
+						"creatures" :
+						[
+							{ "amount" : 2, "type" : "boneDragon" }
+						]
+					},
+					{
+
+						"appearChance" : { "min" : 40, "max" : 60 },
+						"guards" : [
+							{ "amount" : 12, "type" : "blackGuard" },
+							{ "amount" : 12, "type" : "blackGuard" },
+							{ "amount" : 12, "type" : "blackGuard", "upgradeChance" : 50  },
+							{ "amount" : 12, "type" : "blackGuard" },
+							{ "amount" : 12, "type" : "blackGuard" }
+						],
+						"creatures" :
+						[
+							{ "amount" : 3, "type" : "boneDragon" }
+						]
+					},
+	
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 60, "max" : 80 },
+						"guards" : [
+							{ "amount" : 16, "type" : "blackGuard" },
+							{ "amount" : 16, "type" : "blackGuard" },
+							{ "amount" : 16, "type" : "blackGuard", "upgradeChance" : 50  },
+							{ "amount" : 16, "type" : "blackGuard" },
+							{ "amount" : 16, "type" : "blackGuard" }
+						],
+						"creatures" :
+						[
+							{ "amount" : 4, "type" : "boneDragon" }
+						]
+					},
+					
+					{
+						"message" : 34,
+						"appearChance" : { "min" : 80, "max" : 95 },
+						"guards" : [
+							{ "amount" : 16, "type" : "dreadGuard" },
+							{ "amount" : 16, "type" : "dreadGuard" },
+							{ "amount" : 16, "type" : "dreadGuard" },
+							{ "amount" : 16, "type" : "dreadGuard" },
+							{ "amount" : 16, "type" : "dreadGuard" }
+						],
+						"creatures" :
+						[
+							{ "amount" : 4, "type" : "ghostDragon" }
+						]
+					},
+					
+					{
+						"message" : "After defeating a huge undead army, you discover that this tower was a necromancer's main base. With a clear conscience, you decide to take anything you can.",
+						"appearChance" : { "min" : 95, "max" : 100 },
+						"guards" : [
+							{ "amount" : 24, "type" : "blackKnight" },
+							{ "amount" : 32, "type" : "blackGuard" },
+							{ "amount" : 18, "type" : "dreadGuard" },
+							{ "amount" : 12, "type" : "dreadKnight" },
+							{ "amount" : 18, "type" : "dreadGuard" },
+							{ "amount" : 32, "type" : "blackGuard" },
+							{ "amount" : 24, "type" : "blackKnight" }
+						],
+						"resources" :
+						{
+							"gold" : 12500
+						},
+						"artifacts": [
+    							"cloakOfTheUndeadKing"
+						]
+					}
+				]
+			}
+		}
+	}
+}

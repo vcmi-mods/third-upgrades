@@ -1,0 +1,44 @@
+{
+	"summoningGuide":
+	{
+		"type": ["HERO"],
+		"slot" : "MISC",
+		"class": "MINOR",
+		"value": 3000,	
+		"text":
+		{
+			"name": "Summoning Guide",
+			"description": "{Summoning Guide}\r\n\r\nAdds all Summon Elementals to the hero's spellbook.",
+			"event": "When you were busy preparing for your modest meal, a man approached you and introduced himself as a seller of foreign books. He was desperately trying to sell you his first book. Out of curiosity, you decided to take a look at what he had, and immediately realized that this fool had no idea what he owned. You agreed to buy one tome from him for a few pieces of silver and, advising him to do something else, you left, holding the Summoning Guide in your hands."
+		},
+		"graphics":
+		{
+			"image": "artifacts/summon_book/SummoningBook.bmp",
+			"bonus": "artifacts/summon_book/SummoningBook_bonus.png",
+			"map": "artifacts/summon_book/SummoningBook_map.def"
+		},
+		"bonuses":
+		[
+			{
+				"type": "SPELL",
+				"subtype" : "spell.fireElemental",
+				"val": 0
+			},
+			{
+				"type": "SPELL",
+				"subtype" : "spell.earthElemental",
+				"val": 0
+			},
+			{
+				"type": "SPELL",
+				"subtype" : "spell.waterElemental",
+				"val": 0
+			},
+			{
+				"type": "SPELL",
+				"subtype" : "spell.airElemental",
+				"val": 0
+			}
+		]
+	}
+}

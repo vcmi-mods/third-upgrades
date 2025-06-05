@@ -1,0 +1,294 @@
+{
+    "summonHurricaneElemental": {
+        "type": "combat",
+        "name": "Hurricane Elemental",
+        "school": {
+            "air": true,
+            "earth": false,
+            "fire": false,
+            "water": false
+        },
+        "level": 5,
+        "power": 1,
+        "defaultGainChance": 0,
+        "gainChance": {},
+        "flags": {
+            "indifferent": true,
+		"special": true
+        },
+        "graphics": {
+            "iconBook": "placeholder/null",
+            "iconScroll": "placeholder/null",
+            "iconScenarioBonus": "placeholder/null",
+            "iconEffect": "placeholder/null"
+        },
+        "animation": {
+            "cast": [
+                "C12SPF0.def"
+            ]
+        },
+        "sounds": {
+            "cast": "SUMNELM"
+        },
+        "targetType": "NO_TARGET",
+        "levels": {
+            "base": {
+                "description": "{Summon Hurricane Elemental}\r\n\r\nAllows you to summon Hurricane Elementals.\r\n\r\nOnce cast, any other creature can be summoned.",
+                "range": "X",
+                "cost": 35,
+                "power": 1,
+		"aiValue": 10,
+                "battleEffects": {
+                    "summon": {
+                        "exclusive": false,
+                        "id": "tumHurricaneElemental",
+                        "permanent": false,
+                        "type": "core:summon"
+                    }
+                }
+            },
+            "none": {
+                "cost": 50,
+                "power": 1,
+				"aiValue": 10
+            },
+            "basic": {
+				"description": "{Basic Summon Hurricane Elemental}\r\n\r\nAllows you to summon Hurricane Elementals.\r\n\r\nOnce cast, any other creature can be summoned.",
+                "cost": 40,
+                "power": 2,
+				"aiValue": 10
+            },
+            "advanced": {
+				"description": "{Advanced Summon Hurricane Elemental}\r\n\r\nAllows you to summon Hurricane Elementals.\r\n\r\nOnce cast, any other creature can be summoned.",
+                "cost": 40,
+                "power": 3,
+				"aiValue": 10
+            },
+            "expert": {
+				"description": "{Expert Summon Hurricane Elemental}\r\n\r\nAllows you to summon Hurricane Elementals.\r\n\r\nOnce cast, any other creature can be summoned.",
+                "cost": 40,
+                "power": 4,
+				"aiValue": 10
+            }
+        }
+    },
+    "summonCryogenicElemental": {
+        "type": "combat",
+        "name": "Cryogenic Elemental",
+        "school": {
+            "air": false,
+            "earth": false,
+            "fire": false,
+            "water": true
+        },
+        "level": 5,
+        "power": 1,
+        "defaultGainChance": 0,
+        "gainChance": {},
+        "flags": {
+            "indifferent": true,
+		"special": true
+        },
+        "graphics": {
+            "iconBook": "placeholder/null",
+            "iconScroll": "placeholder/null",
+            "iconScenarioBonus": "placeholder/null",
+            "iconEffect": "placeholder/null"
+        },
+        "animation": {
+            "cast": [
+                "C12SPF0.def"
+            ]
+        },
+        "sounds": {
+            "cast": "SUMNELM"
+        },
+        "targetType": "NO_TARGET",
+        "levels": {
+            "base": {
+                "description": "{Summon Cryogenic Elemental}\r\n\r\nAllows you to summon Cryogenic Elementals.\r\n\r\nOnce cast, any other creature can be summoned.",
+                "range": "X",
+                "cost": 35,
+                "power": 1,
+		"aiValue": 10,
+                "battleEffects": {
+                    "summon": {
+                        "exclusive": false,
+                        "id": "tumLifeElemental",
+                        "permanent": false,
+                        "type": "core:summon"
+                    }
+                }
+            },
+            "none": {
+                "cost": 50,
+                "power": 1,
+				"aiValue": 10
+            },
+            "basic": {
+				"description": "{Basic Summon Cryogenic Elemental}\r\n\r\nAllows you to summon Cryogenic Elementals.\r\n\r\nOnce cast, any other creature can be summoned.",
+                "cost": 40,
+                "power": 2,
+				"aiValue": 10
+            },
+            "advanced": {
+				"description": "{Advanced Summon Cryogenic Elemental}\r\n\r\nAllows you to summon Cryogenic Elementals.\r\n\r\nOnce cast, any other creature can be summoned.",
+                "cost": 40,
+                "power": 3,
+				"aiValue": 10
+            },
+            "expert": {
+				"description": "{Expert Summon Cryogenic Elemental}\r\n\r\nAllows you to summon Cryogenic Elementals.\r\n\r\nOnce cast, any other creature can be summoned.",
+                "cost": 40,
+                "power": 4,
+				"aiValue": 10
+            }
+        }
+    },
+    "summonPlasmaElemental": {
+        "type": "combat",
+        "name": "Plasma Elemental",
+        "school": {
+            "air": false,
+            "earth": false,
+            "fire": true,
+            "water": false
+        },
+        "level": 5,
+        "power": 1,
+        "defaultGainChance": 0,
+        "gainChance": {},
+        "flags": {
+            "indifferent": true,
+		"special": true
+        },
+        "graphics": {
+            "iconBook": "placeholder/null",
+            "iconScroll": "placeholder/null",
+            "iconScenarioBonus": "placeholder/null",
+            "iconEffect": "placeholder/null"
+        },
+        "animation": {
+            "cast": [
+                "C12SPF0.def"
+            ]
+        },
+        "sounds": {
+            "cast": "SUMNELM"
+        },
+        "targetType": "NO_TARGET",
+        "levels": {
+            "base": {
+                "description": "{Summon Plasma Elemental}\r\n\r\nAllows you to summon Plasma Elementals.\r\n\r\nOnce cast, any other creature can be summoned.",
+                "range": "X",
+                "cost": 35,
+                "power": 1,
+		"aiValue": 10,
+                "battleEffects": {
+                    "summon": {
+                        "exclusive": false,
+                        "id": "tumPlasmaElemental",
+                        "permanent": false,
+                        "type": "core:summon"
+                    }
+                }
+            },
+            "none": {
+                "cost": 50,
+                "power": 1,
+				"aiValue": 10
+            },
+            "basic": {
+				"description": "{Basic Summon Plasma Elemental}\r\n\r\nAllows you to summon Plasma Elementals.\r\n\r\nOnce cast, any other creature can be summoned.",
+                "cost": 40,
+                "power": 2,
+				"aiValue": 10
+            },
+            "advanced": {
+				"description": "{Advanced Summon Plasma Elemental}\r\n\r\nAllows you to summon Plasma Elementals.\r\n\r\nOnce cast, any other creature can be summoned.",
+                "cost": 40,
+                "power": 3,
+				"aiValue": 10
+            },
+            "expert": {
+				"description": "{Expert Summon Plasma Elemental}\r\n\r\nAllows you to summon Plasma Elementals.\r\n\r\nOnce cast, any other creature can be summoned.",
+                "cost": 40,
+                "power": 4,
+				"aiValue": 10
+            }
+        }
+    },
+    "summonLavaElemental": {
+        "type": "combat",
+        "name": "Lava Elemental",
+        "school": {
+            "air": false,
+            "earth": true,
+            "fire": false,
+            "water": false
+        },
+        "level": 5,
+        "power": 1,
+        "defaultGainChance": 0,
+        "gainChance": {},
+        "flags": {
+            "indifferent": true,
+		"special": true
+        },
+        "graphics": {
+            "iconBook": "placeholder/null",
+            "iconScroll": "placeholder/null",
+            "iconScenarioBonus": "placeholder/null",
+            "iconEffect": "placeholder/null"
+        },
+        "animation": {
+            "cast": [
+                "C12SPF0.def"
+            ]
+        },
+        "sounds": {
+            "cast": "SUMNELM"
+        },
+        "targetType": "NO_TARGET",
+        "levels": {
+            "base": {
+                "description": "{Summon Lava Elemental}\r\n\r\nAllows you to summon Lava Elementals.\r\n\r\nOnce cast, any other creature can be summoned.",
+                "range": "X",
+                "cost": 35,
+                "power": 1,
+		"aiValue": 10,
+                "battleEffects": {
+                    "summon": {
+                        "exclusive": false,
+                        "id": "tumMineralElemental",
+                        "permanent": false,
+                        "type": "core:summon"
+                    }
+                }
+            },
+            "none": {
+                "cost": 50,
+                "power": 1,
+				"aiValue": 10
+            },
+            "basic": {
+				"description": "{Basic Summon Lava Elemental}\r\n\r\nAllows you to summon Lava Elementals.\r\n\r\nOnce cast, any other creature can be summoned.",
+                "cost": 40,
+                "power": 2,
+				"aiValue": 10
+            },
+            "advanced": {
+				"description": "{Advanced Summon Lava Elemental}\r\n\r\nAllows you to summon Lava Elementals.\r\n\r\nOnce cast, any other creature can be summoned.",
+                "cost": 40,
+                "power": 3,
+				"aiValue": 10
+            },
+            "expert": {
+				"description": "{Expert Summon Lava Elemental}\r\n\r\nAllows you to summon Lava Elementals.\r\n\r\nOnce cast, any other creature can be summoned.",
+                "cost": 40,
+                "power": 4,
+				"aiValue": 10
+            }
+        }
+    }
+}

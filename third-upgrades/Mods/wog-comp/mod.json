@@ -1,0 +1,28 @@
+{
+	"name" : "New WoG units",
+	"description" : "Adds upgrades for WoG creatures.",
+	"author" : "Olegmods.INC, Aphra, yogdush",
+	"contact" : "Olegmods.INC on Discord",
+	"version" : "1.0.0",
+	"compatibility" :
+	{
+		"min" : "1.2.0"
+	},
+	"modType" : "Compatibility",	
+	"creatures" :
+	[
+		"config/creatures/centaurArcher"
+	],
+	"objects" :
+	[
+		"config/dwellings/sylvanStables"
+	],
+	"depends" :
+	[
+		"wake-of-gods.creatures"
+	],
+	"softDepends" :
+	[
+		"wake-of-gods.woggraphicfix.wf_creatures"
+	]
+}

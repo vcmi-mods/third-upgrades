@@ -1,0 +1,22 @@
+{
+	"name" : "New TUM units",
+	"description" : "Adds a bunch of new neutral creatures.",
+	"author" : "Olegmods.INC, Aphra, yogdush",
+	"contact" : "Olegmods.INC on Discord",
+	"version" : "1.0.0",
+	"compatibility" :
+	{
+		"min" : "1.2.0"
+	},
+	"modType" : "Creatures",	
+	"creatures" :
+	[
+		"config/creatures/deathKnightUp",
+		"config/creatures/deathKnight"
+	],	
+	"objects" :
+	[
+		"config/dwellings/corruptedCathedral",
+		"config/banks/dreadTower"
+	]
+}

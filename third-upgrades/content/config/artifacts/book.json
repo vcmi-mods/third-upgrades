@@ -1,0 +1,57 @@
+{
+	"magicCompendium":
+	{
+		"type": ["HERO"],
+		"slot" : "MISC",
+		"class": "RELIC",
+		"value": 225000,
+		"text":
+		{
+			"name": "Compendium of Magic",
+			"description": "{Compendium of Magic}\r\n\r\nAllows hero to cast all spells in existence on expert level and summons four types of third upgrade elementals.",
+			"event": "You were hunting down some game for dinner when a black dragon suddenly appeared and pinned you to the ground with its giant paw. His hot breath burned your skin. The dragon noisily inhaled through his nostrils. Well, that's it! It seems that you are finished... But the monster said: 'You are the chosen one! I'll have to look for breakfast elsewhere.' The dragon soared up, leaving you unharmed. Rising up, you found the Compendium of Magic at your feet."
+		},
+		"graphics":
+		{
+			"image": "artifacts/compendium/book.bmp",
+			"bonus": "artifacts/compendium/book_bonus.png",
+			"map": "artifacts/compendium/book_map.def"
+		},
+		"components":
+		[
+			"tomeOfFireMagic",
+			"tomeOfAirMagic",
+			"tomeOfWaterMagic",
+			"tomeOfEarthMagic",
+			"summoningGuide"
+		],
+		"bonuses":
+		[
+			{
+				"type": "MAGIC_SCHOOL_SKILL",
+				"subtype" : "spellSchool.any",
+				"val": 3
+			},
+			{
+				"type": "OPENING_BATTLE_SPELL",
+				"subtype": "spell.summonHurricaneElemental",
+				"propagator": "HERO"
+			},
+			{
+				"type": "OPENING_BATTLE_SPELL",
+				"subtype": "spell.summonCryogenicElemental",
+				"propagator": "HERO"
+			},
+			{
+				"type": "OPENING_BATTLE_SPELL",
+				"subtype": "spell.summonPlasmaElemental",
+				"propagator": "HERO"
+			},
+			{
+				"type": "OPENING_BATTLE_SPELL",
+				"subtype": "spell.summonLavaElemental",
+				"propagator": "HERO"
+			}
+		]
+	}
+}

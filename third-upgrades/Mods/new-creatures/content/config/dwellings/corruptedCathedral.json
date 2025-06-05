@@ -1,0 +1,20 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : {
+			"tumCorruptedCathedral" : {
+				"name" : "Ruined Cathedral",
+				"creatures" : [[ "blackGuard" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "dwellings/ruinedCathedral.def",
+						"mask" : [ "VVVV", "VVVV", "VABV" ]
+					}
+				},
+				"sounds" : {
+					"ambient" : ["LOOPSWOR"]
+				}
+			}
+		}
+	}
+}

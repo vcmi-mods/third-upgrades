@@ -1,0 +1,9 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : {
+			"wake-of-gods.creatures:sylvanHomestead" : {
+				"creatures" : [[ "centaurArcher" ]]
+			}
+		}
+	}
+}
