@@ -769,15 +769,6 @@
 				"selectMode" : "selectPlayer",
 				"visitMode" : "unlimited",
 				"canRefuse" : true,
-                "templates" :
-                {
-                    "default" :
-                    {
-                        "animation" : "object/altarn", 
-                        "mask" : [ "VVVV","VVVV","VBAB" ], 
-                        "visitableFrom" : [ "---", "+++", "+++" ]
-                    }
-                }
             }
         }
     }
