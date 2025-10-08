@@ -19,7 +19,10 @@
 			},
 			"fearless" :
 			{
-				"type" : "FEARLESS"
+				"type":"FEARFUL",
+				"valueType" : "INDEPENDENT_MIN",
+				"description" : "PLACEHOLDER",
+				"val" : 0
 			},
 			"enchanted":
 			{
@@ -130,7 +133,7 @@
 			{
 				"bonus" :
 				{
-					"type" : "MAGIC_RESISTANCE",				
+					"type" : "MAGIC_RESISTANCE"				
 				},
 				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
 			},

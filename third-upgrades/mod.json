@@ -6,10 +6,10 @@
 	"licenseName" : "Creative Commons Attribution-ShareAlike",
 	"licenseURL" : "http://creativecommons.org/licenses/by-sa/4.0/deed",
 	"modType" : "Expansion",
-	"version" : "1.1.12",
+	"version" : "1.1.13",
 	"compatibility" :
 	{
-		"min" : "1.6.1"
+		"min" : "1.7.0"
 	},
 	"russian" : {
 		"name" : "Третий уровень улучшений",
@@ -27,6 +27,7 @@
 	},
 	"changelog" :
     {
+		"1.1.13" : [ "Updated for VCMI 1.7" ],
 	        "1.1.12"   : [ "Specialties returned, added new creatures mod and WoG creatures compatibility submod" ],
 	        "1.1.11"   : [ "Specialty txt removed, Winged Magog fixes" ],
 		"1.1.10"   : [ "Bug fix." ],
@@ -163,7 +164,8 @@
 
 	"settings" : {
 		"combat": {
-			"badLuckDice" : [ 12, 6, 4 ]
+			//"badLuckDice" : [ 12, 6, 4 ]
+			"badLuckChance" : [ 2, 4, 4 ]
 		}
 	}
 }

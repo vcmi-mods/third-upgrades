@@ -132,9 +132,9 @@
 					"middleY" : -99,
 					"upperX" : 28,
 					"upperY" : -107
-				},
+				}
 			},
-			"timeBetweenFidgets" : 1,
+			"timeBetweenFidgets" : 1
 		},
 		"sound" : {
 			"attack" : "ICELATTK.wav",

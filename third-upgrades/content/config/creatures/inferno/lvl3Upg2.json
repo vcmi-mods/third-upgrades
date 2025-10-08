@@ -34,7 +34,10 @@
 				"type" : "THREE_HEADED_ATTACK"
 			},
 			"fearless" : {
-				"type" : "FEARLESS"
+				"type":"FEARFUL",
+				"valueType" : "INDEPENDENT_MIN",
+				"description" : "PLACEHOLDER",
+				"val" : 0
 			},
 			"poison" :
 			{

@@ -93,14 +93,16 @@
 				"bonus" :
 				{
 					"type" : "ENCHANTED",
-					"subtype" : "spell.protectFire",
+					"subtype" : "spell.protectFire"
 				},
 				"values" : [1, 1, 1, 2, 2, 2, 2, 3, 3, 3]	
 			},
 			{
 				"bonus" :
 				{
-					"type" : "FEARLESS"
+					"type" : "FEARFUL",
+					"valueType" : "INDEPENDENT_MIN",
+					"val" : 0
 				},
 				"values" : [false, false, false, false, false, false, true, true, true, true]
 			},

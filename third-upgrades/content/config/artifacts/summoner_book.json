@@ -14,31 +14,35 @@
 		"graphics":
 		{
 			"image": "artifacts/summon_book/SummoningBook.bmp",
-			"bonus": "artifacts/summon_book/SummoningBook_bonus.png",
+			"scenarioBonus": "artifacts/summon_book/SummoningBook_bonus.png",
 			"map": "artifacts/summon_book/SummoningBook_map.def"
 		},
 		"bonuses":
-		[
+		{
+			"FireElementalSpell":
 			{
 				"type": "SPELL",
 				"subtype" : "spell.fireElemental",
 				"val": 0
 			},
+			"EarthElementalSpell":
 			{
 				"type": "SPELL",
 				"subtype" : "spell.earthElemental",
 				"val": 0
 			},
+			"WaterElementalSpell":
 			{
 				"type": "SPELL",
 				"subtype" : "spell.waterElemental",
 				"val": 0
 			},
+			"AirElementalSpell":
 			{
 				"type": "SPELL",
 				"subtype" : "spell.airElemental",
 				"val": 0
 			}
-		]
+		}
 	}
 }

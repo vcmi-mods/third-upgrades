@@ -72,18 +72,14 @@
 			},
 			"ufearless" :
 			{
-				"type" : "FEARLESS"
+				"type":"FEARFUL",
+				"valueType" : "INDEPENDENT_MIN",
+				"description" : "PLACEHOLDER",
+				"val" : 0
 			}	
 		},
 		"stackExperience" :
 		[
-			{
-				"bonus" :
-				{
-					"type" : "FEARLESS"
-				},
-				"values" : [false, false, false, false, false, true, true, true, true, true]
-			},
 			{
 				"bonus" :
 				{

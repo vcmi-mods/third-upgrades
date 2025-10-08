@@ -16,10 +16,10 @@
 				"dwellingUp2Lvl5": { "animation" : "town-screen/conflux/TBELUP2_4.def", "x" : 264, "y" : 168, "z" : -1, "border" : "town-screen/conflux/borders/TOEL2UP_4.bmp", "area" : "town-screen/conflux/areas/TZEL2UP_4.bmp" },
 				"dwellingUp2Lvl6": { "animation" : "town-screen/conflux/TBELUP2_5.def", "x" : 394, "y" : 283, "z" : 10,  "border" : "TOELUP_5.bmp", "area" : "TZELUP_5.bmp" },
 				"dwellingUp2Lvl7": { "animation" : "town-screen/conflux/TBELUP2_6.def", "x" : 34,  "y" : 0,   "z" : -2, "border" : "TOELUP_6.bmp", "area" : "TZELUP_6.bmp" },
-				"hordePhoenix": { "animation" : "hota/phoenixHorde.def", "border" : "hota/phoenixHordeBorder.png", "area" : "hota/phoenixHordeArea.png", "x" : 685, "y" : 105,  "z" : 1 },
-				"hordePhoenixUpgr": { "animation" : "hota/phoenixHordeUpgraded.def", "border" : "hota/phoenixHordeUpgradedBorder.png", "area" : "hota/phoenixHordeUpgradedArea.png", "x" : 685, "y" : 105, "z" : 1
+				"hordePhoenix": { "animation" : "hota/TBELHrd3", "border" : "hota/phoenixHordeBorder.png", "area" : "hota/phoenixHordeArea.png", "x" : 685, "y" : 105,  "z" : 1 },
+				"hordePhoenixUpgr": { "animation" : "hota/TBELHrd4.def", "border" : "hota/phoenixHordeUpgradedBorder.png", "area" : "hota/phoenixHordeUpgradedArea.png", "x" : 685, "y" : 105, "z" : 1
 				},
-				"hordePhoenixUpgr2": { "animation" : "hota/phoenixHordeUpgraded.def", "border" : "hota/phoenixHordeUpgradedBorder.png", "area" : "hota/phoenixHordeUpgradedArea.png", "x" : 685, "y" : 105, "z" : 1
+				"hordePhoenixUpgr2": { "animation" : "hota/TBELHrd4.def", "border" : "hota/phoenixHordeUpgradedBorder.png", "area" : "hota/phoenixHordeUpgradedArea.png", "x" : 685, "y" : 105, "z" : 1
 				}
 			},
 			"buildingsIcons": "town-screen/conflux/ALTHALLELEM.DEF",

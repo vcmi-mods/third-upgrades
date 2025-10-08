@@ -42,7 +42,10 @@
 				"addInfo" : 1
 			},
 			"fearless" : {
-				"type" : "FEARLESS"
+				"type":"FEARFUL",
+				"valueType" : "INDEPENDENT_MIN",
+				"description" : "PLACEHOLDER",
+				"val" : 0
 			},
 			"hatePixie" : 
 			{

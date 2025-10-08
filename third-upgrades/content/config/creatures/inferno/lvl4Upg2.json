@@ -86,14 +86,16 @@
 			{
 				"bonus" :
 				{
-					"type" : "DOUBLE_DAMAGE_CHANCE",
+					"type" : "DOUBLE_DAMAGE_CHANCE"
 				},
 				"values" : [0, 0, 5, 10, 15, 20, 25, 30, 40, 50]
 			},
 			{
 				"bonus" :
 				{
-					"type" : "FEARLESS"
+					"type" : "FEARFUL",
+					"valueType" : "INDEPENDENT_MIN",
+					"val" : 0
 				},
 				"values" : [false, false, false, false, false, false, false, true, true, true]
 			},

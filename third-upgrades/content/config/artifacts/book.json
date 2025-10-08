@@ -14,7 +14,7 @@
 		"graphics":
 		{
 			"image": "artifacts/compendium/book.bmp",
-			"bonus": "artifacts/compendium/book_bonus.png",
+			"scenarioBonus": "artifacts/compendium/book_bonus.png",
 			"map": "artifacts/compendium/book_map.def"
 		},
 		"components":
@@ -26,32 +26,37 @@
 			"summoningGuide"
 		],
 		"bonuses":
-		[
+		{
+			"AllMagicExpert":
 			{
 				"type": "MAGIC_SCHOOL_SKILL",
 				"subtype" : "spellSchool.any",
 				"val": 3
 			},
+			"SummonHurricaneElementals":
 			{
 				"type": "OPENING_BATTLE_SPELL",
 				"subtype": "spell.summonHurricaneElemental",
 				"propagator": "HERO"
 			},
+			"SummonCryogenicElementals":
 			{
 				"type": "OPENING_BATTLE_SPELL",
 				"subtype": "spell.summonCryogenicElemental",
 				"propagator": "HERO"
 			},
+			"SummonPlasmaElementals":
 			{
 				"type": "OPENING_BATTLE_SPELL",
 				"subtype": "spell.summonPlasmaElemental",
 				"propagator": "HERO"
 			},
+			"SummonLavaElementals":
 			{
 				"type": "OPENING_BATTLE_SPELL",
 				"subtype": "spell.summonLavaElemental",
 				"propagator": "HERO"
 			}
-		]
+		}
 	}
 }
