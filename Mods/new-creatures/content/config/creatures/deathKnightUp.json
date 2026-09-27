@@ -87,11 +87,6 @@
 			},
 			"additionalAttack" :
 			{
-				"type" : "ADDITIONAL_ATTACK",
-				"val" : 1
-			},
-			"additionalAttack" :
-			{
 				"type" : "DOUBLE_DAMAGE_CHANCE",
 				"val" : 10
 			}

@@ -133,8 +133,7 @@
 							["castle"], 
 							["dwellingUpLvl6"]
 					],		
-					"upgrades" : "dwellingUpLvl1",
-					"id" : 44
+					"upgrades" : "dwellingUpLvl1"
 				},
 				"horde2":
 				{
@@ -150,7 +149,6 @@
 						"horde1Upgr"
 					],
 					"upgrades" : "dwellingUp2Lvl1",
-					"id" : 23,
 					"mode" : "auto"
 				},
 				"dwellingUp2Lvl2":
@@ -170,8 +168,7 @@
 							["castle"], 
 							["dwellingUpLvl6"]
 					],	
-					"upgrades" : "dwellingUpLvl2",
-					"id" : 45
+					"upgrades" : "dwellingUpLvl2"
 				},
 				"dwellingUp2Lvl3":
 				{
@@ -191,8 +188,7 @@
 							["castle"], 
 							["dwellingUpLvl6"]
 					],		
-					"upgrades" : "dwellingUpLvl3",
-					"id" : 46
+					"upgrades" : "dwellingUpLvl3"
 				},
 				"dwellingUp2Lvl4":
 				{
@@ -211,8 +207,7 @@
 					[
 						"dwellingUpLvl7"
 					],
-					"upgrades" :"dwellingUpLvl4",
-					"id" : 47
+					"upgrades" :"dwellingUpLvl4"
 				},
 				"dwellingUp2Lvl5":
 				{
@@ -231,8 +226,7 @@
 						"allOf",
 						[ "castle" ],
 						[ "anyOf", [ "dwellingUp2Lvl4" ], [ "dwellingUpLvl4B" ] ]
-					],
-					"id" : 48
+					]
 				},
 				"dwellingUp2Lvl6":
 				{
@@ -250,8 +244,7 @@
 						"gold":	9000
 					},
 					"upgrades" : "dwellingUpLvl6",
-					"requires" : [ "dwellingUp2Lvl5" ],
-					"id" : 49
+					"requires" : [ "dwellingUp2Lvl5" ]
 				},
 				"dwellingUp2Lvl7":
 				{
@@ -268,7 +261,6 @@
 						"gems":    5,
 						"gold":	25000
 					},
-					"id" : 50, 
 					"requires" : 
 					[
 						"special3"

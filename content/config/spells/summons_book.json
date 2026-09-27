@@ -37,7 +37,6 @@
                 "range": "X",
                 "cost": 35,
                 "power": 1,
-		"aiValue": 10,
                 "battleEffects": {
                     "summon": {
                         "exclusive": false,
@@ -49,26 +48,22 @@
             },
             "none": {
                 "cost": 50,
-                "power": 1,
-				"aiValue": 10
+                "power": 1
             },
             "basic": {
 				"description": "{Basic Summon Hurricane Elemental}\r\n\r\nAllows you to summon Hurricane Elementals.\r\n\r\nOnce cast, any other creature can be summoned.",
                 "cost": 40,
-                "power": 2,
-				"aiValue": 10
+                "power": 2
             },
             "advanced": {
 				"description": "{Advanced Summon Hurricane Elemental}\r\n\r\nAllows you to summon Hurricane Elementals.\r\n\r\nOnce cast, any other creature can be summoned.",
                 "cost": 40,
-                "power": 3,
-				"aiValue": 10
+                "power": 3
             },
             "expert": {
 				"description": "{Expert Summon Hurricane Elemental}\r\n\r\nAllows you to summon Hurricane Elementals.\r\n\r\nOnce cast, any other creature can be summoned.",
                 "cost": 40,
-                "power": 4,
-				"aiValue": 10
+                "power": 4
             }
         }
     },
@@ -110,7 +105,6 @@
                 "range": "X",
                 "cost": 35,
                 "power": 1,
-		"aiValue": 10,
                 "battleEffects": {
                     "summon": {
                         "exclusive": false,
@@ -122,26 +116,22 @@
             },
             "none": {
                 "cost": 50,
-                "power": 1,
-				"aiValue": 10
+                "power": 1
             },
             "basic": {
 				"description": "{Basic Summon Cryogenic Elemental}\r\n\r\nAllows you to summon Cryogenic Elementals.\r\n\r\nOnce cast, any other creature can be summoned.",
                 "cost": 40,
-                "power": 2,
-				"aiValue": 10
+                "power": 2
             },
             "advanced": {
 				"description": "{Advanced Summon Cryogenic Elemental}\r\n\r\nAllows you to summon Cryogenic Elementals.\r\n\r\nOnce cast, any other creature can be summoned.",
                 "cost": 40,
-                "power": 3,
-				"aiValue": 10
+                "power": 3
             },
             "expert": {
 				"description": "{Expert Summon Cryogenic Elemental}\r\n\r\nAllows you to summon Cryogenic Elementals.\r\n\r\nOnce cast, any other creature can be summoned.",
                 "cost": 40,
-                "power": 4,
-				"aiValue": 10
+                "power": 4
             }
         }
     },
@@ -183,7 +173,6 @@
                 "range": "X",
                 "cost": 35,
                 "power": 1,
-		"aiValue": 10,
                 "battleEffects": {
                     "summon": {
                         "exclusive": false,
@@ -195,26 +184,22 @@
             },
             "none": {
                 "cost": 50,
-                "power": 1,
-				"aiValue": 10
+                "power": 1
             },
             "basic": {
 				"description": "{Basic Summon Plasma Elemental}\r\n\r\nAllows you to summon Plasma Elementals.\r\n\r\nOnce cast, any other creature can be summoned.",
                 "cost": 40,
-                "power": 2,
-				"aiValue": 10
+                "power": 2
             },
             "advanced": {
 				"description": "{Advanced Summon Plasma Elemental}\r\n\r\nAllows you to summon Plasma Elementals.\r\n\r\nOnce cast, any other creature can be summoned.",
                 "cost": 40,
-                "power": 3,
-				"aiValue": 10
+                "power": 3
             },
             "expert": {
 				"description": "{Expert Summon Plasma Elemental}\r\n\r\nAllows you to summon Plasma Elementals.\r\n\r\nOnce cast, any other creature can be summoned.",
                 "cost": 40,
-                "power": 4,
-				"aiValue": 10
+                "power": 4
             }
         }
     },
@@ -256,7 +241,6 @@
                 "range": "X",
                 "cost": 35,
                 "power": 1,
-		"aiValue": 10,
                 "battleEffects": {
                     "summon": {
                         "exclusive": false,
@@ -268,26 +252,22 @@
             },
             "none": {
                 "cost": 50,
-                "power": 1,
-				"aiValue": 10
+                "power": 1
             },
             "basic": {
 				"description": "{Basic Summon Lava Elemental}\r\n\r\nAllows you to summon Lava Elementals.\r\n\r\nOnce cast, any other creature can be summoned.",
                 "cost": 40,
-                "power": 2,
-				"aiValue": 10
+                "power": 2
             },
             "advanced": {
 				"description": "{Advanced Summon Lava Elemental}\r\n\r\nAllows you to summon Lava Elementals.\r\n\r\nOnce cast, any other creature can be summoned.",
                 "cost": 40,
-                "power": 3,
-				"aiValue": 10
+                "power": 3
             },
             "expert": {
 				"description": "{Expert Summon Lava Elemental}\r\n\r\nAllows you to summon Lava Elementals.\r\n\r\nOnce cast, any other creature can be summoned.",
                 "cost": 40,
-                "power": 4,
-				"aiValue": 10
+                "power": 4
             }
         }
     }

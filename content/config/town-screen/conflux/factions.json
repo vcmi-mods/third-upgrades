@@ -61,7 +61,6 @@
 					{
 						"gold":	1000
 					},
-					"id" : 22, 
 					"requires" : [ "horde1Upgr" ],
 					"upgrades" : "dwellingUp2Lvl1",
 					"mode" : "auto"
@@ -86,7 +85,6 @@
 							["castle"], 
 							["dwellingUpLvl6"]
 					],		
-					"id" : 44, 
 					"upgrades" : "dwellingUpLvl1"
 				},
 				"dwellingUp2Lvl2": 
@@ -102,7 +100,6 @@
 						"gems":    2,
 						"gold":	 3000
 					},
-					"id" : 45, 
 					"requires" : 
 					[ 
 						"allOf",
@@ -123,7 +120,6 @@
 						"ore":     10,
 						"gold":	3500
 					},
-					"id" : 46, 
 					"requires" : 
 					[ 
 						"allOf",
@@ -144,7 +140,6 @@
 						"ore":     10,
 						"gold":	4000
 					},
-					"id" : 47, 
 					"requires" : 
 					[
 						"dwellingUp2Lvl3"
@@ -162,7 +157,6 @@
 						"sulfur":  5,
 						"gold":	3000
 					},
-					"id" : 48, 
 					"requires" : [ "dwellingUp2Lvl4" ],
 					"upgrades" : "dwellingUpLvl5"
 				},
@@ -181,7 +175,6 @@
 						"gems":    5,
 						"gold":	6000
 					},
-					"id" : 49, 
 					"requires" :  [ "allOf", [ "dwellingUp2Lvl5" ], [ "special2" ], [ "castle" ] ], 
 					"upgrades" : "dwellingUpLvl6"
 				},
@@ -197,7 +190,6 @@
 						"ore":     20,
 						"gold":	25000
 					},
-					"id" : 50, 
 					"requires" : 
 					[
 						"allOf", 

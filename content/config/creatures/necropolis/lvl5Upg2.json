@@ -105,8 +105,7 @@
 			{
 				"type" : "ENCHANTED",
 				"subtype" : "spell.precision",
-				"val" : 3,
-				"addInfo" : 1
+				"val" : 3
 			},
 			"hateMage" : 
 			{

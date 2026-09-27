@@ -163,7 +163,7 @@
 
 	"settings" : {
 		"combat": {
-			"badLuckDice" : [ 12, 6, 4 ]
+			"badLuckChance" : [ 2, 4, 6 ]
 		}
 	}
 }

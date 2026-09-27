@@ -49,7 +49,6 @@
 				"extraCapitol":   {
 					"name" : "Wild",
 					"description" : "Wild mark unlocks 3rd level structures to build.",
-					"id" : 29, 
 					"requires" : 
 					[ 
 						"allOf",
@@ -73,8 +72,7 @@
 							["castle"], 
 							["dwellingUpLvl6"]
 					],	
-					"upgrades" : "dwellingUpLvl1",
-					"id" : 44
+					"upgrades" : "dwellingUpLvl1"
 				},
 				"horde1Upgr2" :
 				{
@@ -84,7 +82,6 @@
 					{
 						"gold" : 1000
 					},
-					"id" : 20,
 					"requires" : 
 					[
 						"horde1Upgr"
@@ -107,8 +104,7 @@
 							["castle"], 
 							["dwellingUpLvl6"]
 					],			
-					"upgrades" : "dwellingUpLvl2",
-					"id" : 45
+					"upgrades" : "dwellingUpLvl2"
 				},
 				"dwellingUp2Lvl3":
 				{
@@ -126,8 +122,7 @@
 							["castle"], 
 							["dwellingUpLvl6"]
 					],		
-					"upgrades" : "dwellingUpLvl3",
-					"id" : 46
+					"upgrades" : "dwellingUpLvl3"
 				},
 				"dwellingUp2Lvl4":
 				{
@@ -143,8 +138,7 @@
 					[
 						"dwellingUp2Lvl3"
 					],			 
-					"upgrades" : "dwellingUpLvl4",
-					"id" : 47
+					"upgrades" : "dwellingUpLvl4"
 				},
 				"dwellingUp2Lvl5":
 				{
@@ -160,8 +154,7 @@
 						"dwellingUp2Lvl4"
 					],
 								
-					"upgrades" : "dwellingUpLvl5",
-					"id" : 48
+					"upgrades" : "dwellingUpLvl5"
 				},
 				"horde2Upgr2" :
 				{
@@ -171,7 +164,6 @@
 					{
 						"gold" : 2000
 					},
-					"id" : 23,
 					"requires" : 
 					[
 						"horde2Upgr"
@@ -198,8 +190,7 @@
 							["dwellingUpLvl6"],
 							["special2"]
 					],
-					"upgrades" : "dwellingUpLvl6",
-					"id" : 49
+					"upgrades" : "dwellingUpLvl6"
 				},
 				"dwellingUp2Lvl7":
 				{
@@ -218,8 +209,7 @@
 							["dwellingUp2Lvl6"], 
 						    ["mageGuild4"]
 					],	
-					"upgrades" : "dwellingUpLvl7",
-					"id" : 50
+					"upgrades" : "dwellingUpLvl7"
 				}
 			}	
 		}

@@ -55,7 +55,6 @@
 				"extraCapitol":   {
 					"name" : "Faith",
 					"description" : "Faith mark unlocks 3rd level structures to build.",
-					"id" : 29, 
 					"requires" : 
 					[ 
 						"allOf",
@@ -76,7 +75,6 @@
 						"horde1Upgr"
 					],
 					"upgrades" : "dwellingUp2Lvl3",
-					"id" : 23,
 					"mode" : "auto"
 				},
 				"dwellingLvl7":
@@ -102,8 +100,7 @@
 							["castle"], 
 							["dwellingUpLvl6"]
 					],		
-					"upgrades" : "dwellingUpLvl1",
-					"id" : 44
+					"upgrades" : "dwellingUpLvl1"
 				},
 				"dwellingUp2Lvl2" : 
 				{
@@ -122,8 +119,7 @@
 							["castle"], 
 							["dwellingUpLvl6"]
 					],		
-					"upgrades" : "dwellingUpLvl2",
-					"id" : 45
+					"upgrades" : "dwellingUpLvl2"
 				},
 				"dwellingUp2Lvl3" : 
 				{
@@ -140,8 +136,7 @@
 							["castle"], 
 							["dwellingUpLvl6"]
 					],	
-					"upgrades" : "dwellingUpLvl3",
-					"id" : 46
+					"upgrades" : "dwellingUpLvl3"
 				},
 				"dwellingUp2Lvl4" : 
 				{
@@ -160,8 +155,7 @@
 							["special3"], 
 							["dwellingUp2Lvl3"]
 					],					
-					"upgrades" : "dwellingUpLvl4",
-					"id" : 47
+					"upgrades" : "dwellingUpLvl4"
 				},
 				"dwellingUp2Lvl5" : 
 				{
@@ -185,8 +179,7 @@
 							["mageGuild3"]
 							
 					],
-					"upgrades" : "dwellingUpLvl5",
-					"id" : 48
+					"upgrades" : "dwellingUpLvl5"
 				},
 				
 				"dwellingUp2Lvl6" : 
@@ -202,8 +195,7 @@
 					[ 
 						"dwellingUp2Lvl5"
 					],
-					"upgrades" : "dwellingUpLvl6",
-					"id" : 49
+					"upgrades" : "dwellingUpLvl6"
 				},
 				"dwellingUp2Lvl7" : 
 				{ 
@@ -223,8 +215,7 @@
 							["castle"],
 							["dwellingUp2Lvl6"] 
 					],
-					"upgrades"	: "dwellingUpLvl7",
-					"id" : 50
+					"upgrades"	: "dwellingUpLvl7"
 				},
 				"dwellingLvl7B" :
 				{

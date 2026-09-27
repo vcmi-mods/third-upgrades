@@ -14,7 +14,7 @@
 		"graphics":
 		{
 			"image": "artifacts/compendium/book.bmp",
-			"bonus": "artifacts/compendium/book_bonus.png",
+			"scenarioBonus": "artifacts/compendium/book_bonus.png",
 			"map": "artifacts/compendium/book_map.def"
 		},
 		"components":
@@ -25,33 +25,38 @@
 			"tomeOfEarthMagic",
 			"summoningGuide"
 		],
-		"bonuses":
-		[
+		"bonuses" :
+		{
+			"magicSchools" :
 			{
 				"type": "MAGIC_SCHOOL_SKILL",
 				"subtype" : "spellSchool.any",
 				"val": 3
 			},
+			"summonHurricane" :
 			{
 				"type": "OPENING_BATTLE_SPELL",
 				"subtype": "spell.summonHurricaneElemental",
 				"propagator": "HERO"
 			},
+			"summonCryogenic" :
 			{
 				"type": "OPENING_BATTLE_SPELL",
 				"subtype": "spell.summonCryogenicElemental",
 				"propagator": "HERO"
 			},
+			"summonPlasma" :
 			{
 				"type": "OPENING_BATTLE_SPELL",
 				"subtype": "spell.summonPlasmaElemental",
 				"propagator": "HERO"
 			},
+			"summonLava" :
 			{
 				"type": "OPENING_BATTLE_SPELL",
 				"subtype": "spell.summonLavaElemental",
 				"propagator": "HERO"
 			}
-		]
+		}
 	}
 }

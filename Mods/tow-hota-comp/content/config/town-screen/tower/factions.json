@@ -47,7 +47,6 @@
 				"extraCapitol":   {
 					"name" : "Geomancy",
 					"description" : "Geomancy mark unlocks 3rd level structures to build.",
-					"id" : 29, 
 					"requires" : 
 					[ 
 						"allOf", ["castle"], ["dwellingUpLvl6"]
@@ -77,8 +76,7 @@
 						"wood":    5,
 						"ore":     5,
 						"gold":	1300
-					},
-					"id" : 44					
+					}
 				},
 				"dwellingUp2Lvl2":
 				{
@@ -93,7 +91,6 @@
 						"ore":    15,
 						"gold":	2500
 					},
-					"id" : 45, 
 					"upgrades" : "dwellingUpLvl2"
 				},
 				"horde1Upgr2" :
@@ -106,7 +103,6 @@
 					},
 					"requires" : [ "horde1Upgr" ],
 					"upgrades" : "dwellingUp2Lvl2",
-					"id" : 20,
 					"mode" : "auto" 
 				},
 
@@ -125,7 +121,6 @@
 						"ore":     10,
 						"gold":	4000
 					},
-					"id" : 46, 
 					"upgrades" : "dwellingUpLvl3"
 				},
 				"dwellingUp2Lvl4":
@@ -146,7 +141,6 @@
 						"gems":    5,
 						"gold":	4500
 					},
-					"id" : 47, 
 					"upgrades" : "dwellingUpLvl4"
 				},
 				"dwellingUp2Lvl5":
@@ -165,7 +159,6 @@
 						"gems":    6,
 						"gold":	5000
 					},
-					"id" : 48, 
 					"upgrades" : "dwellingUpLvl5"
 				},
 				"dwellingUp2Lvl6":
@@ -186,7 +179,6 @@
 						"gems":    5,
 						"gold":	7000
 					},
-					"id" : 49, 
 					"upgrades" : "dwellingUpLvl6"
 				},
 				"dwellingUp2Lvl7":
@@ -204,7 +196,6 @@
 						"gems":    40,
 						"gold":	30000
 					},
-					"id" : 50, 
 					"upgrades" : "dwellingUpLvl7"
 				},
 

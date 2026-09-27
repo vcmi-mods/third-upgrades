@@ -18,8 +18,7 @@
 			{
 				"type" : "ENCHANTED",
 				"subtype" : "spell.mdtRage",
-				"val" : 3,
-				"addInfo" : 100
+				"val" : 3
 			},
 			"soulSteal" : 
 			{
