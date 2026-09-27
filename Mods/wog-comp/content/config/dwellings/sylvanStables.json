@@ -1,0 +1,9 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : {
+			"sylvanHomestead" : {
+				"creatures" : [[ "centaurArcher" ]]
+			}
+		}
+	}
+}

@@ -1,0 +1,169 @@
+{
+	"name" : "Wrath of the Creators",
+	"author" : "VMaiko (author of the idea), avatar (porting), Xardas33 (upgraded buildings graphics), Olegmods.INC (ToW third upgrades idea, some building and creature graphics, configs), Aphra (graphics), FirePaladin (Tower T7 building graphics), Koven1Nordsiard (Dungeon alt-T5 building graphics), Toriko (some unit graphics), Nephretes (3rd upgrade dryad), yogdush (3rd upgrade Centaur, Dwarf and Swordsman) Naga Empresses' updated moving animation by Orzie, Elf Noble supposedly made by Witchking, Elder Dendroid made by Trith and edited by Olegmods.INC, Arcane Genie made by Kallen.",
+	"contact" : "https://discord.gg/XE5358s7DZ",
+	"description" : "In every nine standard H3 town, you have opportunity to upgrade creatures once more. Mod is based at ERA's Third Upgrades Mod v2.17.0.",
+	"licenseName" : "Creative Commons Attribution-ShareAlike",
+	"licenseURL" : "http://creativecommons.org/licenses/by-sa/4.0/deed",
+	"modType" : "Expansion",
+	"version" : "1.1.12",
+	"compatibility" :
+	{
+		"min" : "1.6.1"
+	},
+	"russian" : {
+		"name" : "Третий уровень улучшений",
+		"description" : "В каждом из девяти стандартных городов H3 у вас есть возможность улучшить существ еще раз. Мод основан на моде Third Upgrades Mod версии 2.17.0 для платформы ЭРА.",
+		"translations" : [
+			"translation/russian.json"
+		]
+	},
+	"chinese": {
+		"name": "二阶升级",
+		"description": "为原版9个派系的生物提供第二阶升级。该模组基于ERA的Third Upgrades Mod v2.17.0开发。",
+		"translations": [
+			"translation/chinese.json"
+		]
+	},
+	"changelog" :
+    {
+	        "1.1.12"   : [ "Specialties returned, added new creatures mod and WoG creatures compatibility submod" ],
+	        "1.1.11"   : [ "Specialty txt removed, Winged Magog fixes" ],
+		"1.1.10"   : [ "Bug fix." ],
+		"1.1.9"   : [ "Major update." ],
+		"1.1.8"   : [ "Added few upgraded buildings graphics from old Raven's Upgrades mod (made by Xardas33)" ],
+		"1.1.7"   : [ "Added Chinese translation" ],
+		"1.1.6"   : [ "Added Russian translation" ],
+	    "1.1.5"   : [ "Dependencies fix" ],
+		"1.1.4"   : [ "Unicorn Glade fix" ],
+		"1.1.3"   : [ "Hobgoblin and Cyclops Emperor fixed" ],
+		"1.1.2"   : [ "Graphical changes by Aphra" ],
+		"1.1.1"   : [ "Horde buildings fixes" ],
+		"1.1.0"   : [ "Added ToW and HotA compatibility patches" ],
+		"1.0.2"   : [ "Update to vcmi-1.4 version" ],
+		"1.0.1"   : [ "Fixed Cyclops Emperors shoot ability" ],
+		"1.0.0"   : [ "Initial release" ]
+    },	
+	"conflicts" :
+	[
+	],
+	"depends" :
+	[
+		"wake-of-gods.level8units"
+	],
+	"artifacts" :
+	[
+		"config/artifacts/book",
+		"config/artifacts/summoner_book"
+	],
+	"spells" :
+	[
+		"config/spells/summons_book"
+	],
+	"heroes" :
+	[
+		"config/heroes/heroes_fix"
+	],
+	"creatures" :
+	[	
+		"config/creatures/castle/castle",
+		"config/creatures/castle/lvl1Upg2",
+		"config/creatures/castle/lvl2Upg2",
+		"config/creatures/castle/lvl3Upg2",
+		"config/creatures/castle/lvl4Upg2",
+		"config/creatures/castle/lvl5Upg2",
+		"config/creatures/castle/lvl6Upg2",
+		"config/creatures/castle/lvl7Upg2",
+
+		"config/creatures/rampart/rampart",
+		"config/creatures/rampart/lvl1Upg2",
+		"config/creatures/rampart/lvl2Upg2",
+		"config/creatures/rampart/lvl3Upg2",
+		"config/creatures/rampart/lvl4Upg2",
+		"config/creatures/rampart/lvl5Upg2",
+		"config/creatures/rampart/lvl6Upg2",
+		"config/creatures/rampart/lvl7Upg2",
+	
+		"config/creatures/tower/tower",
+		"config/creatures/tower/lvl1Upg2",
+		"config/creatures/tower/lvl2Upg2",
+		"config/creatures/tower/lvl3Upg2",
+		"config/creatures/tower/lvl4Upg2",
+		"config/creatures/tower/lvl5Upg2",
+		"config/creatures/tower/lvl6Upg2",
+		"config/creatures/tower/lvl7Upg2",
+
+		"config/creatures/inferno/inferno.json",
+		"config/creatures/inferno/lvl1Upg2",
+		"config/creatures/inferno/lvl2Upg2",
+		"config/creatures/inferno/lvl3Upg2",
+		"config/creatures/inferno/lvl4Upg2",
+		"config/creatures/inferno/lvl5Upg2",
+		"config/creatures/inferno/lvl6Upg2",
+		"config/creatures/inferno/lvl7Upg2",
+
+		"config/creatures/necropolis/necropolis",
+		"config/creatures/necropolis/lvl1Upg2",
+		"config/creatures/necropolis/lvl2Upg2",
+		"config/creatures/necropolis/lvl3Upg2",
+		"config/creatures/necropolis/lvl4Upg2",
+		"config/creatures/necropolis/lvl5Upg2",
+		"config/creatures/necropolis/lvl6Upg2",
+		"config/creatures/necropolis/lvl7Upg2",
+
+		"config/creatures/dungeon/dungeon.json",
+		"config/creatures/dungeon/lvl1Upg2",
+		"config/creatures/dungeon/lvl2Upg2",
+		"config/creatures/dungeon/lvl3Upg2",
+		"config/creatures/dungeon/lvl4Upg2",
+		"config/creatures/dungeon/lvl5Upg2",
+		"config/creatures/dungeon/lvl6Upg2",
+		"config/creatures/dungeon/lvl7Upg2",
+
+		"config/creatures/stronghold/stronghold.json",
+		"config/creatures/stronghold/lvl1Upg2",
+		"config/creatures/stronghold/lvl2Upg2",
+		"config/creatures/stronghold/lvl3Upg2",
+		"config/creatures/stronghold/lvl4Upg2",
+		"config/creatures/stronghold/lvl5Upg2",
+		"config/creatures/stronghold/lvl6Upg2",
+		"config/creatures/stronghold/lvl7Upg2",
+		
+		"config/creatures/fortress/fortress.json",
+		"config/creatures/fortress/lvl1Upg2",
+		"config/creatures/fortress/lvl2Upg2",
+		"config/creatures/fortress/lvl3Upg2",
+		"config/creatures/fortress/lvl4Upg2",
+		"config/creatures/fortress/lvl5Upg2",
+		"config/creatures/fortress/lvl6Upg2",
+		"config/creatures/fortress/lvl7Upg2",
+
+		"config/creatures/conflux/conflux.json",
+		"config/creatures/conflux/lvl1Upg2",
+		"config/creatures/conflux/lvl2Upg2",
+		"config/creatures/conflux/lvl3Upg2",
+		"config/creatures/conflux/lvl4Upg2",
+		"config/creatures/conflux/lvl5Upg2",
+		"config/creatures/conflux/lvl6Upg2",
+		"config/creatures/conflux/lvl7Upg2"
+	],
+
+	"factions" :
+	[
+		"config/town-screen/necropolis/factions",
+		"config/town-screen/fortress/factions",
+		"config/town-screen/rampart/factions",
+		"config/town-screen/inferno/factions",
+		"config/town-screen/tower/factions",
+		"config/town-screen/conflux/factions",
+		"config/town-screen/castle/factions",
+		"config/town-screen/dungeon/factions",
+		"config/town-screen/stronghold/factions"
+	],
+
+	"settings" : {
+		"combat": {
+			"badLuckChance" : [ 2, 4, 6 ]
+		}
+	}
+}
